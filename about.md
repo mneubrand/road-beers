@@ -14,6 +14,7 @@ European destinations before making a move to Megan’s hometown of San Francisc
 possible. Weekend trips to other states, a month in India, trips back to Europe, weeks in Hawaii and Puerto Rico, local thru-hikes—you name it, we were up for it.
 After years of discussions, planning, and saving, we’re finally ready to make our dream of long-term travel a reality.
 
+<!--
 ## Megan
 
 My first memories of wanderlust were spent as a child daydreaming on the deck of my home as I watched the planes take off from SFO Airport. Where were all of these planes going? What sort of mysterious places would they land at? Shortly into college, after scrimping and saving, I bought a ticket to Vietnam—my first international trip—and boy, was I hooked.
@@ -27,4 +28,5 @@ TODO
 
 **Favorite drink from the road:**
 TODO
+-->
 
