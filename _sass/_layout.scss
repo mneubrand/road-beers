@@ -265,8 +265,8 @@ $small-nav-height: 70px;
 .gallery-item {
   float: left;
   margin-top: 10px;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
   text-align: center;
 
   .thumbnail {
@@ -277,8 +277,19 @@ $small-nav-height: 70px;
 .gallery-caption {
   font-size: 20px;
   margin-top: 0px;
+  width: 150px;
 }
 
 .lb-data .lb-details .lb-caption {
   font-size: 20px;
+}
+
+.jmt-days {
+  width: 250px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.jmt-days li {
+  margin-bottom: 5px;
 }
