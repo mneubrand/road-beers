@@ -1,0 +1,42 @@
+<header class="site-header">
+
+    <nav class="site-nav navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="site-title">
+                    <h1 class="left">Road</h1>
+                    {% include logo.svg %}
+                    <h1 class="right">Beers</h1>
+                </div>
+            </div>
+
+            <div class="navbar-content">
+                <ul class="nav navbar-nav">
+                    <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
+                    <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
+                    <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
+                </ul>
+                <div class="site-location">
+                    <div>{{ site.current_location }}</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="site-nav-mobile navbar">
+        <div class="container-fluid">
+            <div class="site-title">
+                {% include small_logo.svg %}
+            </div>
+
+            <div class="navbar-content">
+                <ul class="nav navbar-nav">
+                    <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
+                    <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
+                    <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>

@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <h1>Posts</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <article class="post">
+            <span class="post-meta">
+                <div class="day">{{ post.date | date: "%-d" }}</div>
+                <div class="month">{{ post.date | date: "%b, %Y" }}</div>
+            </span>
+
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+
+            <!-- first image -->
+            {% assign src = post.content | split: 'src="' %}
+            {% assign src = src[1] | split: '"' | first %}
+
+            {% assign alt = post.content | split: '<em>' %}
+            {% assign alt = alt[1] | split: '</em>' | first %}
+            <div class="preview">
+                <img src="{{ src }}" alt="{{ alt }}" class="thumbnail" />
+                <!--em>{{ alt }}</em-->
+            </div>
+            <!-- /first image -->
+
+            <div class="post-preview">
+                {% assign s = post.content | split:"<!--more-->" %}
+                {{ s[0] }}
+                <a href="{{ post.url }}">Read More...</a>
+            </div>
+        </article>
+        {% endfor %}
+    </ul>
+
+</div>
