@@ -148,14 +148,16 @@ module Jekyll
 	 	def thumbify(items)
 	 		if items.count > 0
 		 		items.each do |item|
-		 			img = Magick::Image.read(item['file']).first
-		 			thumb = img.resize_to_fill!(@config['thumb_width'], @config['thumb_height'])
-		 			dir = File.dirname(item['thumbname'])
-		 			if !File.exists?(dir)
-		 			    FileUtils.mkdir_p(dir)
-		 			end
-		 			thumb.write(item['thumbname'])
-		 			thumb.destroy!
+		 		    if !File.exists?(item['thumbname'])
+                        img = Magick::Image.read(item['file']).first
+                        thumb = img.resize_to_fill!(@config['thumb_width'], @config['thumb_height'])
+                        dir = File.dirname(item['thumbname'])
+                        if !File.exists?(dir)
+                            FileUtils.mkdir_p(dir)
+                        end
+                        thumb.write(item['thumbname'])
+                        thumb.destroy!
+                    end
 		 		end
 	 		end
 	 	end

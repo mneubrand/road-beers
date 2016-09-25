@@ -109,6 +109,7 @@ $small-nav-height: 70px;
 }
 
 .site-nav-mobile {
+  min-height: 88px;
   display: block;
 
   @media (min-width: 1050px) {
