@@ -238,6 +238,10 @@ $small-nav-height: 70px;
 .post-content {
   margin-bottom: $spacing-unit;
 
+  h1 {
+    margin-top: 20px;
+  }
+
   h2 {
     font-size: 32px;
 
@@ -274,7 +278,7 @@ $small-nav-height: 70px;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
   }
-  
+
 }
 
 .gallery-item {
