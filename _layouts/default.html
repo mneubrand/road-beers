@@ -15,6 +15,15 @@
 
     {% include footer.html %}
 
+    <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
+    <script>
+    lightbox.option({
+      'resizeDuration': 400,
+      'fadeDuration': 300,
+      'showImageNumberLabel': false
+    });
+    </script>
+
   </body>
 
 </html>

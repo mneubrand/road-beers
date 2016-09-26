@@ -285,10 +285,7 @@ $small-nav-height: 70px;
 }
 
 .jmt-days {
-  padding: 5px;
-  width: 350px;
   font-size: 24px;
-  background-color: #fff;
 
   li {
     margin-bottom: 10px;
@@ -304,4 +301,14 @@ $small-nav-height: 70px;
     }
 
   }
+}
+
+.jmt-map {
+  height: 500px;
+}
+
+.jmt-container {
+  padding: 5px;
+  width: 350px;
+  background-color: #fff;
 }
