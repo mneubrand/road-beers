@@ -2,12 +2,14 @@
 layout: jmt
 title:  "The John Muir Trail - Part 2"
 date:   2016-09-11 13:00 -0800
+categories: jmt
 ---
 
-Since first hearing about the John Muir Trail from the Movie "Mile, mile and a half" we wanted to do the trail ourselves. With a year of travel coming up we finally
-had the time to embark on this epic 200+ mile hike and cross this item of our bucket list.
+Almost half of the trail behind us but all the big passes and Mount Whitney are still waiting and there is no more resupply until the end.
 
 <!--more-->
+
+## [First half of the trail here](/2016/09/11/the-john-muir-trail-part2.html)
 
 # Day 11 - Muir Trail Ranch to Evolution Creek
 *8.1 miles*

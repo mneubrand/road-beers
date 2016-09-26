@@ -177,6 +177,7 @@ $small-nav-height: 70px;
 
   > article {
     margin-bottom: $spacing-unit;
+    min-height: 200px;
   }
 
   .preview {
@@ -260,6 +261,20 @@ $small-nav-height: 70px;
       font-size: 18px;
     }
   }
+
+  img {
+    margin: 0 auto;
+    display: block;
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+  }
+  
 }
 
 .gallery-item {

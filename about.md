@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![Megan and Markus](/images/about.jpg)
+
 The saying goes, "couples who drink together stay together." The same can be said for those who travel together. Welcome to Road Beers, we’re Megan and Markus,
 and we invite you to follow us as we traverse the globe, in search of adventure, food, and local watering holes.
 
@@ -14,19 +16,18 @@ European destinations before making a move to Megan’s hometown of San Francisc
 possible. Weekend trips to other states, a month in India, trips back to Europe, weeks in Hawaii and Puerto Rico, local thru-hikes—you name it, we were up for it.
 After years of discussions, planning, and saving, we’re finally ready to make our dream of long-term travel a reality.
 
-<!--
 ## Megan
 
-My first memories of wanderlust were spent as a child daydreaming on the deck of my home as I watched the planes take off from SFO Airport. Where were all of these planes going? What sort of mysterious places would they land at? Shortly into college, after scrimping and saving, I bought a ticket to Vietnam—my first international trip—and boy, was I hooked.
+My first memories of wanderlust were spent as a child daydreaming on the deck of my home as I watched the planes take off from SFO Airport. Where were all of these planes going?
+What sort of mysterious places would they land at? Shortly into college, after scrimping and saving, I bought a ticket to Vietnam—my first international trip—and boy, was I hooked.
 
 **Favorite drink from the road:**
 As cliché as it sounds, is there anything better than a glass of rosé at a quaint Parisian bistro? I think not.
 
 ## Markus
 
-TODO
+Already as a little kid I was telling people that I'd get out of this place one day. I didn't travel much internationally before college but since then studied abroad in
+Denmark, moved to the U.S. and visited a lot of awesome places.
 
 **Favorite drink from the road:**
-TODO
--->
-
+A cold beer after a long hike.

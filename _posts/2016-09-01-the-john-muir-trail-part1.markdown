@@ -2,6 +2,7 @@
 layout: jmt
 title:  "The John Muir Trail - Part 1"
 date:   2016-09-01 12:00 -0800
+categories: jmt
 ---
 
 Since first hearing about the John Muir Trail from the Movie "Mile, mile and a half" we wanted to do the trail ourselves. With a year of travel coming up we finally
@@ -218,4 +219,4 @@ jmt_day10/2.jpg:: Deer sightings
 jmt_day10/3.jpg:: Descent to MTR
 {% endgallery %}
 
-[Second half of the trail here](/2016/09/11/the-john-muir-trail-part2.html)
+## [Second half of the trail here](/2016/09/11/the-john-muir-trail-part2.html)
