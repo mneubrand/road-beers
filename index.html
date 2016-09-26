@@ -22,19 +22,16 @@ layout: default
             {% assign src = post.content | split: 'src="' %}
             {% assign src = src[1] | split: '"' | first %}
 
-            {% assign alt = post.content | split: '<em>' %}
-            {% assign alt = alt[1] | split: '</em>' | first %}
             <div class="preview">
-                <img src="{{ src }}" alt="{{ alt }}" class="thumbnail" />
-                <!--em>{{ alt }}</em-->
+                <img src="{{ src }}" class="thumbnail" />
             </div>
             <!-- /first image -->
 
-            <div class="post-preview">
+            <p class="post-preview">
                 {% assign s = post.content | split:"<!--more-->" %}
-                {{ s[0] }}
+                {{ s[0] | strip_html }}
                 <a href="{{ post.url }}">Read More...</a>
-            </div>
+            </p>
         </article>
         {% endfor %}
     </ul>

@@ -47,7 +47,7 @@ layout: post
             }
         }
 
-        function highlightActiveDay() {
+        function highlightActiveDay(updateHash) {
             var closest;
             $('.post-content h1').each(function (index, elem) {
                 elem = $(elem);
@@ -66,14 +66,16 @@ layout: post
                 }
             });
 
-            location.hash = closest.attr('id');
+            if(updateHash) {
+                history.replaceState(undefined, undefined, '#' + closest.attr('id'));
+            }
         }
 
         showDays(); // TODO also bind that to resize
 
         $(window).scroll(function () {
             positionDays();
-            highlightActiveDay();
+            highlightActiveDay(true);
         });
     })();
 </script>
