@@ -1,0 +1,79 @@
+---
+layout: post
+---
+<div class="jmt-days" style="display: none;"></div>
+{{ content }}
+
+<script>
+    (function() {
+        var margin = 15;
+
+        function showDays() {
+            var postOffset = $('.post').offset();
+            var jmtDays = $('.jmt-days');
+
+            if (postOffset.left > jmtDays.width() + 2 * margin) {
+                jmtDays.css('display', 'block');
+                jmtDays.css('position', 'absolute');
+                jmtDays.css('left', (postOffset.left - jmtDays.width()) / 2);
+                jmtDays.css('top', postOffset.top);
+
+                var html = '<ul>';
+                $('.post-content h1').each(function (index, elem) {
+                    html += '<li><a href="#day' + (index+1) + '">' + elem.innerText + '</a></li>';
+                    $(elem).attr('id', 'day' + (index+1));
+                });
+                html += '</ul>';
+                jmtDays.html(html);
+            } else {
+                jmtDays.css('display', 'none');
+            }
+
+            positionDays();
+            highlightActiveDay();
+        }
+
+        function positionDays() {
+            var postOffset = $('.post').offset();
+            var scroll = $(window).scrollTop();
+            var jmtDays = $('.jmt-days');
+
+            if (scroll >= postOffset.top + margin) {
+                jmtDays.css('position', 'fixed');
+                jmtDays.css('top', margin);
+            } else {
+                jmtDays.css('position', 'absolute');
+                jmtDays.css('top', postOffset.top);
+            }
+        }
+
+        function highlightActiveDay() {
+            var closest;
+            $('.post-content h1').each(function (index, elem) {
+                elem = $(elem);
+                var offset = $(window).scrollTop();
+                if (!closest || Math.abs(elem.offset().top - offset) < Math.abs(closest.offset().top - offset)) {
+                    closest = elem;
+                }
+            });
+
+            $('.jmt-days li').each(function (index, elem) {
+                elem = $(elem);
+                if(elem.text() === closest.text()) {
+                    elem.addClass('active');
+                } else {
+                    elem.removeClass('active');
+                }
+            });
+
+            location.hash = closest.attr('id');
+        }
+
+        showDays(); // TODO also bind that to resize
+
+        $(window).scroll(function () {
+            positionDays();
+            highlightActiveDay();
+        });
+    })();
+</script>

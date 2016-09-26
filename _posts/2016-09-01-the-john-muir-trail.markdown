@@ -201,7 +201,7 @@ jmt_day9/3.jpg:: Marie Lake
 jmt_day9/4.jpg:: Selden Pass
 jmt_day9/5.jpg:: Selden Pass
 jmt_day9/6.jpg:: Heart Lake
-jmt_day9/7].jpg:: Sallie Keyes Lake
+jmt_day9/7.jpg:: Sallie Keyes Lake
 {% endgallery %}
 
 # Day 10 - Sallie Keyes Lake to Muir Trail Ranch
