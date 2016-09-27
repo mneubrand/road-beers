@@ -219,4 +219,4 @@ jmt_day10/2.jpg:: Deer sightings
 jmt_day10/3.jpg:: Descent to MTR
 {% endgallery %}
 
-## [Second half of the trail here](/2016/09/11/the-john-muir-trail-part2.html)
+## [Second half of the trail here](/jmt/2016/09/11/the-john-muir-trail-part2.html)

@@ -9,7 +9,7 @@ Almost half of the trail behind us but all the big passes and Mount Whitney are 
 
 <!--more-->
 
-## [First half of the trail here](/2016/09/11/the-john-muir-trail-part2.html)
+## [First half of the trail here](/jmt/2016/09/01/the-john-muir-trail-part1.html)
 
 # Day 11 - Muir Trail Ranch to Evolution Creek
 *8.1 miles*
