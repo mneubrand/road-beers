@@ -59,8 +59,8 @@ jmt_day2/4.jpg:: Panorama from Donahue Pass
 jmt_day2/5.jpg:: Looking back up Donahue Pass
 jmt_day2/6.jpg:: Marmot checking us out before Island Pass
 jmt_day2/7.jpg:: Thousand Island Lakes
-jmt_day2/8.jpg:: Panorama from our camp spot
-jmt_day2/9.jpg:: Camp spot
+jmt_day2/8.jpg:: Panorama from our campsite
+jmt_day2/9.jpg:: campsite
 jmt_day2/10.jpg:: Relaxing in the evening
 {% endgallery %}
 
@@ -75,7 +75,7 @@ as Thousand Island Lake. We hit Shadow Lake Junction around 11:30am and ran into
 a 4 pound floating device for this section to float around in some lakes! We talked for a bit and shared lunch before we started the final climb of the day to Rosalie Lake. Megan felt
 better again, so Markus was again the one trailing behind on the climb as she practically ran up the switchbacks.
 
-We found a nice camp spot near Rosalie Lake around 1:30pm. Since this was a short day, we had time to relax and nap before dinner. Dinner was amazing--we brought some Bettie Crocker 
+We found a nice campsite near Rosalie Lake around 1:30pm. Since this was a short day, we had time to relax and nap before dinner. Dinner was amazing--we brought some Bettie Crocker 
 Brownie Mix and made something that resembled hot chocolate with it. Tasted great!
 
 {% gallery day3 %}
@@ -83,7 +83,7 @@ jmt_day3/1.jpg:: Sunrise over Thousand Island Lake
 jmt_day3/2.jpg:: Sunrise over Thousand Island Lake
 jmt_day3/3.jpg:: Ruby Lake
 jmt_day3/4.jpg:: Garnet Lake
-jmt_day3/5.jpg:: Panorama from camp spot at Rosalie Lake
+jmt_day3/5.jpg:: Panorama from campsite at Rosalie Lake
 {% endgallery %}
 
 # Day 4 - Rosalie Lake to Red's Meadow
@@ -133,7 +133,7 @@ jmt_day5/4.jpg:: Between Deer Creek and Duck Lake
 *1.7 miles*
 
 Considering that at this point we were 2 days ahead of our planned schedule and beat up from yesterday we decided to take it easy. We only hiked the short distance to Lake Virginia
-and found a nice and secluded camp spot further down the shore. The rest of the day we spent relaxing, napping, and reading. Originally we planned on a lot of swimming as well, but the lake
+and found a nice and secluded campsite further down the shore. The rest of the day we spent relaxing, napping, and reading. Originally we planned on a lot of swimming as well, but the lake
 was so cold that we couldn't stand it for more than a minute. Lake Virginia was a beautiful spot for a rest day. Great views and plenty of wildlife to watch. Markus was especially fond of
 some small rodents that behaved and looked similar to prairie dogs. According to our guide book they're Belding's ground squirrels.
 
@@ -153,7 +153,7 @@ ran into 2 guys that started at the same spot we did 2 days later and overtook u
 
 We reached Squaw Lake shortly before noon and had lunch there. The last 500 ft climb over Silver Pass (10740 ft) was pretty rough because the sun was at its highest and the trail was completely
 exposed. The views from the top were spectacular and another hiker took a photo of us there to commemorate our wedding anniversary. After a final series of steep switchbacks we finally reached 
-our destination for and found a nice little camp spot across Mono Creek. However, our wedding anniversary dinner was a complete disaster. The pasta burned and the hot chocolate brownie mix 
+our destination for and found a nice little campsite across Mono Creek. However, our wedding anniversary dinner was a complete disaster. The pasta burned and the hot chocolate brownie mix 
 didn't get creamy because we forgot to add oil.
 
 {% gallery day7 %}
@@ -172,7 +172,7 @@ jmt_day7/8.jpg:: Dinner disaster in the making
 
 Markus pissed off some chipmunks when he used the bathroom this morning. They ran circles around him and yelled--he probably wrecked their living room. From the Lake Edison Junction the mind
 numbing 2000 ft climb over Bear Ridge began via seemingly endless switchbacks. We almost made it to the top by noon and had lunch. Ironically the last 2.3 miles from Bear Ridge to Bear Creek
-felt the worst despite being downhill. We finally reached our camp spot around 2:30pm and spent the rest of the afternoon doing laundry and soaking in ice cold Bear Creek. 
+felt the worst despite being downhill. We finally reached our campsite around 2:30pm and spent the rest of the afternoon doing laundry and soaking in ice cold Bear Creek. 
 
 {% gallery day8 %}
 jmt_day8/1.jpg:: Soaking in Bear Creek
@@ -184,7 +184,7 @@ jmt_day8/2.jpg:: Soaking in Bear Creek
 
 Today went pretty well--we made it to Marie Lake shortly after noon despite a late start. From there Selden Pass is only 350 ft elevation gain more so we decided to have lunch and push on to
 Sallie Keyes Lake. Markus felt like his right hip was bruised the entire time, but it turned out it was just a pimple in the exact spot the waist belt of his pack sits--bad luck. The views
-from Selden Pass (10900 ft) were great and we made it to our camp spot in the forest along Sallie Keyes Lake by 2:30pm. In the late afternoon two girls pitched up tents just 50 ft from us without
+from Selden Pass (10900 ft) were great and we made it to our campsite in the forest along Sallie Keyes Lake by 2:30pm. In the late afternoon two girls pitched up tents just 50 ft from us without
 saying a word to us and despite hundreds of other possible spots nearby. A bit annoying, but I guess we better get used to it as people will cramp up together near Muir Trail Ranch and near
 the approaches to the big passes that are coming soon.
 

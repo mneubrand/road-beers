@@ -19,7 +19,7 @@
                     <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
                 </ul>
                 <div class="site-location">
-                    <div>{{ site.current_location }}</div>
+                    <div id="current-location"></div>
                 </div>
             </div>
         </div>
@@ -40,7 +40,13 @@
                     <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
                 </ul>
             </div>
+
+            <div class="site-location">
+                <div id="current-location-small"></div>
+            </div>
         </div>
     </nav>
+
+    <script src="{{ "/js/location.js" | prepend: site.baseurl }}"></script>
 
 </header>

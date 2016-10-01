@@ -8,8 +8,6 @@
 # Site settings
 email: us@road-beers.com
 
-current_location: Currently in<br/>Las Vegas, NV
-
 gallerytag:
     dir: photos
     url: /photos

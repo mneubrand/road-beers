@@ -46,6 +46,10 @@ $small-nav-height: 70px;
 
   }
 
+  .site-location {
+    color: $highlight-color2;
+  }
+
 }
 
 .site-nav {
@@ -95,7 +99,6 @@ $small-nav-height: 70px;
     text-align: center;
     float: right;
     font-size: 0.8em;
-    color: $highlight-color2;
     height: $small-nav-height;
     width: 200px;
   }
@@ -133,6 +136,13 @@ $small-nav-height: 70px;
       transform: translateY(-50%);
     }
 
+  }
+
+  .site-location {
+    clear: both;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: right;
   }
 
 }

@@ -28,6 +28,7 @@ module Jekyll
 			@config = context.registers[:site].config['gallerytag']
 			columns = (@config['columns'] != nil) ? @config['columns'] : 4
 			images = gallery_images
+            site_url = context['site']['url']
 
 			images_html = ""
 			images.each_with_index do |image, key|
@@ -35,6 +36,8 @@ module Jekyll
 				images_html << "<dt class=\"gallery-icon\">\n"
 				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
 				images_html << "<img src=\"#{image['thumbnail']}\" class=\"thumbnail\" width=\"150\" height=\"150\" />\n"
+				#images_html << "<img src=\"/images/loading.gif\" data-src=\"#{image['thumbnail']}\" class=\"thumbnail lazy\" width=\"150\" height=\"150\" />\n"
+				#images_html << "<noscript><img src=\"#{image['thumbnail']}\" class=\"thumbnail\" width=\"150\" height=\"150\" /></noscript>\n"
 				images_html << "</a>\n"
 				images_html << "</dt>\n"
 				images_html << "<dd class=\"gallery-caption\">#{image['caption']}</dd>"
