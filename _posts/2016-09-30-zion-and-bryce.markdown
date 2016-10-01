@@ -6,9 +6,11 @@ categories: roadtrip
 ---
 
 After spending some time with Megan's grandpa and his wife Lynda (thanks for having us Bill and Lynda and for the amazing BBQ, and endless BBQ discussions) we were headed to Utah to spend some time in Zion 
-and Bryce Canyon. On the way to Zion we made a quick stop at the Horseshoe Bend, a horseshoe-shaped meander of the Colorado River near Page, and arrived in Zion at night.
+and Bryce Canyon.
 
 <!--more-->
+
+On the way to Zion we made a quick stop at the Horseshoe Bend, a horseshoe-shaped meander of the Colorado River near Page, and arrived in Zion at night.
 
 {% gallery bend %}
 zion_horsebend/1.jpg:: Horseshoe Bend

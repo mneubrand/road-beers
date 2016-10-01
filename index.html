@@ -6,7 +6,7 @@ layout: default
 
     <h1 class="post-title">Posts <a href="/feed.xml"><img src="images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></h1>
 
-    <ul class="post-list">
+    <div class="post-list">
         {% for post in site.posts %}
         <article class="post">
             <span class="post-meta">
@@ -14,9 +14,9 @@ layout: default
                 <div class="month">{{ post.date | date: "%b, %Y" }}</div>
             </span>
 
-            <h2>
+            <h1>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+            </h1>
 
             <!-- first image -->
             {% assign src = post.content | split: 'src="' %}
@@ -34,6 +34,15 @@ layout: default
             </p>
         </article>
         {% endfor %}
-    </ul>
+    </div>
+
+    <div class="recent-posts">
+        <h1 class="post-title">Recent</h1>
+        <ul>
+        {% for post in site.posts %}
+            <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
 
 </div>

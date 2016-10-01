@@ -181,13 +181,17 @@ $small-nav-height: 70px;
   font-size: 20px;
 }
 
+.home {
+  position: relative;
+}
+
 .post-list {
   margin-left: 0;
   list-style: none;
 
   > article {
     margin-bottom: $spacing-unit;
-    min-height: 200px;
+    min-height: 220px;
   }
 
   .preview {
@@ -198,6 +202,24 @@ $small-nav-height: 70px;
       margin-right: 20px;
       margin-bottom: 20px;
     }
+  }
+}
+
+.recent-posts {
+  display: none;
+  position: absolute;
+  float: left;
+  top: 0;
+  right: -280px;
+  width: 250px;
+
+  @media (min-width: $content-width + 300px) {
+    display: block;
+  }
+
+  li {
+    list-style: none;
+    font-size: 0.8em;
   }
 }
 
