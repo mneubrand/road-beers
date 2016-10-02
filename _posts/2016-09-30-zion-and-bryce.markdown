@@ -5,8 +5,8 @@ date:   2016-09-30 12:00 -0800
 categories: roadtrip
 ---
 
-After spending some time with Megan's grandpa and his wife Lynda (thanks for having us Bill and Lynda and for the amazing BBQ, and endless BBQ discussions) we were headed to Utah to spend some time in Zion 
-and Bryce Canyon.
+After spending some time with Megan's grandpa and his wife Lynda (thanks for having us Bill and Lynda and for the amazing BBQ, and endless BBQ discussions) we were headed to Utah to spend some
+time in Zion and Bryce Canyon.
 
 <!--more-->
 
