@@ -112,7 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-10-02-monument-and-mesa-verde.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-10-05-grand-teton-and-yellowstone.markdown" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-10-05-grand-teton-and-yellowstone.markdown">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="500">
+                <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-10-02-monument-and-mesa-verde.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-10-02-monument-and-mesa-verde.markdown">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
@@ -171,6 +187,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-10-02-monument-valley-and-mesa-verde.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-09-30-zion-and-bryce.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-10-02-monument-and-mesa-verde.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-05-monument-and-mesa-verde.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-05-grand-teton-and-yellowstone.markdown" />
       </list>
     </option>
   </component>
@@ -232,6 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,8 +342,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,19 +357,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\road-beers\_posts" />
-      <recent name="C:\Projects\road-beers\images" />
-      <recent name="C:\Projects\road-beers\_layouts" />
-      <recent name="C:\Projects\road-beers\img\jmt_day1" />
-      <recent name="C:\Projects\road-beers\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\road-beers\images" />
       <recent name="C:\Projects\road-beers\fonts" />
       <recent name="C:\Projects\road-beers\js" />
       <recent name="C:\Projects\road-beers\assets\lightbox" />
       <recent name="C:\Projects\road-beers\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\road-beers\_posts" />
+      <recent name="C:\Projects\road-beers\images" />
+      <recent name="C:\Projects\road-beers\_layouts" />
+      <recent name="C:\Projects\road-beers\img\jmt_day1" />
+      <recent name="C:\Projects\road-beers\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -466,15 +484,17 @@
       <workItem from="1475433989711" duration="1802000" />
       <workItem from="1475435828304" duration="1047000" />
       <workItem from="1475463628383" duration="1920000" />
+      <workItem from="1475689318733" duration="994000" />
+      <workItem from="1475708634806" duration="1624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81725000" />
+    <option name="totallyTimeSpent" value="84343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2275574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -511,13 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -691,13 +704,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-09-01-the-john-muir-trail-part1.markdown">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -709,13 +722,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-09-11-the-john-muir-trail-part2.markdown">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -809,13 +822,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -868,6 +881,20 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="561">
             <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-05-grand-teton-and-yellowstone.markdown">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="500">
+            <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
             <folding />
           </first_editor>
           <second_editor />
