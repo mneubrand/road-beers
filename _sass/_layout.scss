@@ -304,9 +304,24 @@ $small-nav-height: 70px;
     }
   }
 
-  img {
+}
+
+.gallery-item {
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+
+  .thumbnail {
+    margin-bottom: 5px;
+  }
+
+  .gallery-icon {
+    width: 158px;
+    height: 158px;
+    position: relative;
     margin: 0 auto;
-    display: block;
     padding: 4px;
     margin-bottom: 10px;
     background-color: #fff;
@@ -315,26 +330,24 @@ $small-nav-height: 70px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
+
+    .lazy {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 150px;
+      max-height: 150px;
+      margin: auto;
+    }
   }
 
-}
-
-.gallery-item {
-  float: left;
-  margin-top: 10px;
-  margin-left: 6px;
-  margin-right: 6px;
-  text-align: center;
-
-  .thumbnail {
-    margin-bottom: 5px;
+  .gallery-caption {
+    font-size: 20px;
+    margin-top: 0px;
+    width: 150px;
   }
-}
-
-.gallery-caption {
-  font-size: 20px;
-  margin-top: 0px;
-  width: 150px;
 }
 
 .lb-data .lb-details .lb-caption {

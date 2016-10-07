@@ -19,7 +19,8 @@ layout: default
             </h1>
 
             <!-- first image -->
-            {% assign src = post.content | split: 'src="' %}
+            {% assign src = post.content | split: 'noscript' %}
+            {% assign src = src[1] | split: 'src="' %}
             {% assign src = src[1] | split: '"' | first %}
 
             <div class="preview">
