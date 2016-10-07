@@ -23,7 +23,7 @@ grand_teton/4.jpg:: Jackson Lake
 
 # Yellowstone
 
-We entered Yellowstone while the first snow of the season fell. We drove straight to our cabin at Old Faithful and didn't do much sightseeing on the first day asides watching the Old Faithful
+We entered Yellowstone while the first snow of the season fell. We drove straight to our cabin at Old Faithful and didn't do much sightseeing on the first day besides watching the Old Faithful
 Geyser erupt twice. The entire next day we spent driving through the park visiting sites and doing small trails. Yellowstone is so huge that we couldn't even cover all the main roads and sights.
 You could easily spend a week here. We saw a lot of the Geysers in Lower and Middle Geyser Basin, both falls in the Grand Canyon of the Yellowstone and plenty of wildlife. Unfortunately both roads
 to Mammoth Hot Springs were closed so we couldn't get to the northern part of the park. Overnight it snowed again so all the roads on our way out of the park were snow covered. On the drive we ran

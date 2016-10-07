@@ -13,6 +13,7 @@ time in Zion and Bryce Canyon.
 On the way to Zion we made a quick stop at the Horseshoe Bend, a horseshoe-shaped meander of the Colorado River near Page, and arrived in Zion at night.
 
 {% gallery bend %}
+zion_horsebend/0.jpg:: Lynda, Megan and Bill
 zion_horsebend/1.jpg:: Horseshoe Bend
 zion_horsebend/2.jpg:: Horseshoe Bend
 {% endgallery %}

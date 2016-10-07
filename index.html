@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">Posts <a href="/feed.xml"><img src="images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></h1>
 
     <div class="post-list">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <article class="post">
             <span class="post-meta">
                 <div class="day">{{ post.date | date: "%-d" }}</div>
@@ -36,11 +36,31 @@ layout: default
         {% endfor %}
     </div>
 
+    <div class="text-center">
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path }}">«</a>
+                {% else %}
+            <li class="disabled"><a href="#">«</a>
+                {% endif %}
+            </li>
+
+            <li><a href="#" class="disabled">{{ paginator.page }} of {{ paginator.total_pages }}</a></li>
+
+            {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path }}">»</a>
+                {% else %}
+            <li class="disabled"><a href="#">»</a>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+
     <div class="recent-posts">
         <h1 class="post-title">Recent</h1>
         <ul>
-        {% for post in site.posts %}
-            <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% for i in (0..6) %}
+            <li><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a></li>
         {% endfor %}
         </ul>
     </div>

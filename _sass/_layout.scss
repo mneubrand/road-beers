@@ -203,6 +203,11 @@ $small-nav-height: 70px;
       margin-bottom: 20px;
     }
   }
+
+}
+
+.pagination {
+  margin: 0 auto;
 }
 
 .recent-posts {
@@ -268,6 +273,7 @@ $small-nav-height: 70px;
 }
 
 .post-content {
+  border-bottom: 1px solid #cccccc;
   margin-bottom: $spacing-unit;
 
   h1 {
