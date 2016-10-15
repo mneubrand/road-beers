@@ -181,10 +181,6 @@ $small-nav-height: 70px;
   font-size: 20px;
 }
 
-.home {
-  position: relative;
-}
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -274,7 +270,7 @@ $small-nav-height: 70px;
 
 .post-content {
   border-bottom: 1px solid #cccccc;
-  margin-bottom: $spacing-unit;
+  margin-bottom: 15px;
 
   h1 {
     margin-top: 20px;
@@ -381,4 +377,51 @@ $small-nav-height: 70px;
   padding: 5px;
   width: 350px;
   background-color: #fff;
+}
+
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.accordionPanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+
+  ul {
+    margin: 15px 0px;
+  }
+
+  li {
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 0.8em;
+  }
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.accordionPanel.show {
+  opacity: 1;
+  max-height: 700px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.fb-like {
+  margin-bottom: 15px;
 }

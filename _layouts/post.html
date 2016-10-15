@@ -1,50 +1,52 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="wrapper">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post-header">
-    <span class="post-meta">
-        <div class="day">{{ page.date | date: "%-d" }}</div>
-        <div class="month">{{ page.date | date: "%b, %Y" }}</div>
-    </span>
+        <header class="post-header">
+        <span class="post-meta">
+            <div class="day">{{ page.date | date: "%-d" }}</div>
+            <div class="month">{{ page.date | date: "%b, %Y" }}</div>
+        </span>
 
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    </header>
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        </header>
 
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
-    </div>
+        <div class="post-content" itemprop="articleBody">
+            {{ content }}
+        </div>
 
-    <div id="fb-root"></div>
-    <div class="fb-like"  data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
-    <div class="fb-comments" data-numposts="5" data-width="100%"></div>
-    
-    <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
-    <script>
-        lightbox.option({
-            'resizeDuration': 400,
-            'fadeDuration': 300,
-            'showImageNumberLabel': false
-        });
+        <div id="fb-root"></div>
+        <div class="fb-like"  data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+        <div class="fb-comments" data-numposts="5" data-width="100%"></div>
 
-        $('img.lazy').jail();
+        <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
+        <script>
+            lightbox.option({
+                'resizeDuration': 400,
+                'fadeDuration': 300,
+                'showImageNumberLabel': false
+            });
 
-        (function (d, s, id) {
-            var localhost = 'localhost:4000';
-            var url = location.href;
-            if(url.indexOf(localhost) >= 0) {
-                url = url.replace(localhost, 'www.road-beers.com');
-            }
-            $('.fb-like').attr('data-href', url);
-            $('.fb-comments').attr('data-href', url);
+            $('img.lazy').jail();
 
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-</article>
+            (function (d, s, id) {
+                var localhost = 'localhost:4000';
+                var url = location.href;
+                if(url.indexOf(localhost) >= 0) {
+                    url = url.replace(localhost, 'www.road-beers.com');
+                }
+                $('.fb-like').attr('data-href', url);
+                $('.fb-comments').attr('data-href', url);
+
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </article>
+</div>

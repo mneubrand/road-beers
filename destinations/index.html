@@ -4,11 +4,25 @@ layout: default
 
 <div class="home">
 
-  tbd
+  <!--<div style="height: 700px; width: 1250px; margin: 0 auto;">
+    <div id="map" style="height: 700px; width: 980px; margin-right: 20px; float: left"></div>
+    <div style="width: 250px; float: right">
+      {% for category in site.categories %}
+        <button class="accordion">{{ category[0] }}</button>
+        <div class="accordionPanel">
+          <ul>
+            {% for posts in category %}
+              {% for post in posts %}
+                <li><a class="post-link" href="{{ post.url }}">{{ post.title  | prepend: site.baseurl }}</a></li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 
-  <div id="map" style="height: 500px; width: 800px;"></div>
-
-  <!--<script>
+  <script>
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
@@ -20,8 +34,23 @@ layout: default
         mapTypeId: google.maps.MapTypeId.HYBRID
       });
     }
+
+    (function() {
+      $('.accordion').each(function (index, elem) {
+        $(elem).click(function() {
+          $('.accordion').removeClass('active');
+          $(this).toggleClass('active');
+
+          $('.accordion').next().removeClass('show');
+          $(this).next().toggleClass('show');
+        });
+      });
+
+    })();
   </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD56SmCl6V9AengboOB2vXlG4CMBPpxtNY&callback=initMap" async defer></script>-->
+
+  TBD
 
 </div>
