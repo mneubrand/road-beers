@@ -18,21 +18,22 @@ layout: default
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h1>
 
-            <!-- first image -->
-            {% assign src = post.content | split: 'noscript' %}
-            {% assign src = src[1] | split: 'src="' %}
-            {% assign src = src[1] | split: '"' | first %}
+            <div class="post-preview">
+                <!-- first image -->
+                {% assign src = post.content | split: 'noscript' %}
+                {% assign src = src[1] | split: 'src="' %}
+                {% assign src = src[1] | split: '"' | first %}
+                <div class="preview">
+                    <img src="{{ src }}" class="thumbnail" />
+                </div>
+                <!-- /first image -->
 
-            <div class="preview">
-                <img src="{{ src }}" class="thumbnail" />
+                <p>
+                    {% assign s = post.content | split:"<!--more-->" %}
+                    {{ s[0] | strip_html }}
+                    <a href="{{ post.url }}">Read More...</a>
+                </p>
             </div>
-            <!-- /first image -->
-
-            <p class="post-preview">
-                {% assign s = post.content | split:"<!--more-->" %}
-                {{ s[0] | strip_html }}
-                <a href="{{ post.url }}">Read More...</a>
-            </p>
         </article>
         {% endfor %}
     </div>

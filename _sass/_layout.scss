@@ -186,8 +186,8 @@ $small-nav-height: 70px;
   list-style: none;
 
   > article {
-    margin-bottom: $spacing-unit;
-    min-height: 220px;
+    margin-bottom: 15px;
+    min-height: 240px;
   }
 
   .preview {
@@ -248,13 +248,6 @@ $small-nav-height: 70px;
 
 .post-link {
   display: block;
-}
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: $spacing-unit;
 }
 
 .post-title {
@@ -389,14 +382,12 @@ button.accordion {
   border: none;
   outline: none;
   transition: 0.4s;
+
+  .active, :hover {
+    background-color: #ddd;
+  }
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-  background-color: #ddd;
-}
-
-/* Style the accordion panel. Note: hidden by default */
 div.accordionPanel {
   padding: 0 18px;
   background-color: white;
@@ -414,12 +405,11 @@ div.accordionPanel {
     margin: 10px 0px;
     font-size: 0.8em;
   }
-}
 
-/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
-div.accordionPanel.show {
-  opacity: 1;
-  max-height: 700px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+  .show {
+    opacity: 1;
+    max-height: 700px;
+  }
 }
 
 .fb-like {
