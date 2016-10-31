@@ -308,14 +308,33 @@ $small-nav-height: 70px;
 
   img {
     display: block;
-    margin: 0 auto;
     padding: 4px;
-    margin-bottom: 10px;
-    line-height: 1.42857143;
+    margin: 0 auto 10px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: border .2s ease-in-out;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.3em;
+  }
+
+  blockquote p {
+    display: inline;
   }
 
 }
@@ -335,6 +354,12 @@ $small-nav-height: 70px;
     width: 158px;
     height: 158px;
     position: relative;
+    padding: 4px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
 
     .lazy {
       position: absolute;
@@ -345,6 +370,12 @@ $small-nav-height: 70px;
       max-width: 150px;
       max-height: 150px;
       margin: auto;
+    }
+
+    img {
+      border: 0;
+      margin: 0;
+      padding: 0;
     }
   }
 
