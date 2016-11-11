@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="wrapper">
-
-    <h1 class="post-title">Posts <a href="/feed.xml"><img src="{{ site.baseurl }}/images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></h1>
+<div class="wrapper wide">
 
     <div class="post-list">
+        <h1 class="post-title">Posts <a href="/feed.xml"><img src="{{ site.baseurl }}/images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></h1>
+
         {% for post in paginator.posts %}
         <article class="post">
             <span class="post-meta">
@@ -36,26 +36,26 @@ layout: default
             </div>
         </article>
         {% endfor %}
-    </div>
 
-    <div class="text-center">
-        <ul class="pagination">
-            {% if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path }}">«</a>
-                {% else %}
-            <li class="disabled"><a href="#">«</a>
-                {% endif %}
-            </li>
+        <div class="text-center">
+            <ul class="pagination">
+                {% if paginator.previous_page %}
+                <li><a href="{{ paginator.previous_page_path }}">«</a>
+                    {% else %}
+                <li class="disabled"><a href="#">«</a>
+                    {% endif %}
+                </li>
 
-            <li><a href="#" class="disabled">{{ paginator.page }} of {{ paginator.total_pages }}</a></li>
+                <li><a href="#" class="disabled">{{ paginator.page }} of {{ paginator.total_pages }}</a></li>
 
-            {% if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path }}">»</a>
-                {% else %}
-            <li class="disabled"><a href="#">»</a>
-                {% endif %}
-            </li>
-        </ul>
+                {% if paginator.next_page %}
+                <li><a href="{{ paginator.next_page_path }}">»</a>
+                    {% else %}
+                <li class="disabled"><a href="#">»</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="recent-posts">
