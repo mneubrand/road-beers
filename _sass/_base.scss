@@ -141,7 +141,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-    width: 740px;
+    max-width: 740px;
     margin: 0 auto;
     position: relative;
     padding-right: $spacing-unit;
@@ -149,8 +149,16 @@ pre {
     @extend %clearfix;
 
     &.wide {
-        width: 975px;
+        max-width: 975px;
     }
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
 }
 
 

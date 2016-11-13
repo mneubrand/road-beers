@@ -182,7 +182,7 @@ $small-nav-height: 70px;
 }
 
 .post-list {
-  width: 680px;
+  max-width: 680px;
   float: left;
   margin-left: 0;
   list-style: none;
@@ -190,6 +190,10 @@ $small-nav-height: 70px;
   > article {
     margin-bottom: 15px;
     min-height: 230px;
+
+    @media (max-width: $content-width) {
+      min-height: 250px;
+    }
   }
 
   .preview {
@@ -218,6 +222,10 @@ $small-nav-height: 70px;
     line-height: 1em;
     margin-bottom: 10px;
   }
+
+  @media (max-width: $content-width) {
+    display: none;
+  }
 }
 
 .post-meta {
@@ -240,7 +248,7 @@ $small-nav-height: 70px;
 .post-preview {
   margin-left: 88px;
 
-  @media (max-width: 700px) {
+  @media (max-width: $content-width) {
     margin-left: 0px;
   }
 }
@@ -264,6 +272,10 @@ $small-nav-height: 70px;
 .post-header {
   .post-title {
     padding-bottom: 10px;
+  }
+
+  @media (max-width: $content-width) {
+    min-height: 68px;
   }
 }
 
@@ -338,6 +350,7 @@ $small-nav-height: 70px;
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
+  min-height: 230px;
 
   .thumbnail {
     margin-bottom: 5px;
