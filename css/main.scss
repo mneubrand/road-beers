@@ -63,12 +63,16 @@ $highlight-color3: #015249;
 $brand-color:      $highlight-color;
 
 // Width of the content area
-$content-width:    740px;
+$content-width:    900px;
 
 $footer-height:    60px;
 
 $on-palm:          600px;
-$on-laptop:        740px;
+$on-laptop:        900px;
+
+$post-width:       400px;
+
+$border-color:     #eeeeee;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

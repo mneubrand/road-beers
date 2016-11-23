@@ -182,7 +182,7 @@ $small-nav-height: 70px;
 }
 
 .post-list {
-  max-width: 680px;
+  max-width: 780px;
   float: left;
   margin-left: 0;
   list-style: none;
@@ -212,9 +212,9 @@ $small-nav-height: 70px;
   margin: 0 auto;
 }
 
-.recent-posts {
+.column-right {
   float: right;
-  width: 200px;
+  width: 325px;
 
   li {
     list-style: none;
@@ -248,7 +248,7 @@ $small-nav-height: 70px;
 .post-preview {
   margin-left: 88px;
 
-  @media (max-width: $content-width) {
+  @media (max-width: $post-width) {
     margin-left: 0px;
   }
 }
@@ -262,10 +262,14 @@ $small-nav-height: 70px;
   letter-spacing: -1px;
   line-height: 1;
   padding-bottom: 5px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid $border-color;
 
   @include media-query($on-laptop) {
     font-size: 36px;
+    min-height: 68px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -274,13 +278,13 @@ $small-nav-height: 70px;
     padding-bottom: 10px;
   }
 
-  @media (max-width: $content-width) {
+  @media (max-width: $post-width) {
     min-height: 68px;
   }
 }
 
 .post-content {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 15px;
 
   h1 {

@@ -5,7 +5,7 @@ layout: default
 <div class="wrapper wide">
 
     <div class="post-list">
-        <h1 class="post-title">Posts <a href="/feed.xml"><img src="{{ site.baseurl }}/images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></h1>
+        <h1 class="post-title"><span>Posts <a href="/feed.xml"><img src="{{ site.baseurl }}/images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></span></h1>
 
         {% for post in paginator.posts %}
         <article class="post">
@@ -24,7 +24,7 @@ layout: default
                 {% assign src = src[1] | split: 'src="' %}
                 {% assign src = src[1] | split: '"' | first %}
                 <div class="preview">
-                    <img src="{{ src }}" class="thumbnail" />
+                    <img src="{{ src }}" class="thumbnail"/>
                 </div>
                 <!-- /first image -->
 
@@ -58,12 +58,19 @@ layout: default
         </div>
     </div>
 
-    <div class="recent-posts">
+    <div class="column-right">
+        <h1 class="post-title">Hello</h1>
+        <img src="/images/about.jpg" alt="Markus and Megan"/>
+        <p style="padding: 10px;">
+        Welcome to Road Beers, we’re Megan and Markus, and we invite you to follow us as we traverse the globe, in search of adventure, food, and local watering holes.
+        </p>
+
         <h1 class="post-title">Recent</h1>
         <ul>
-        {% for i in (0..10) %}
-            <li><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a></li>
-        {% endfor %}
+            {% for i in (0..10) %}
+            <li><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title
+                }}</a></li>
+            {% endfor %}
         </ul>
     </div>
 
