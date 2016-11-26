@@ -1,21 +1,15 @@
 ---
 layout: post
-title:  "Xela, Guatemala"
-date:   2016-11-10 01:00 -0800
+title:  "Xela and Antigua"
+date:   2016-11-23 01:00 -0800
 categories: southamerica
 ---
 
-Quetzaltenango, often referred to as Xela, is Guatemala's second largest city. We chose Xela as our home to take Spanish lessons in for three weeks prior to traveling further in Central
-and South America.
+We spent 2 more weeks in Xela taking Spanish lessons and doing small trips in its surroundings. Afterwards we headed to Antigua to begin our trip through the rest of Guatemala and Central America.
 
 <!--more-->
 
-Guatemala has numerous Spanish schools to choose from, with most being centered in the beautiful city of Antigua, known for its colonial architecture. While Antigua was attractive
-to us, Xela offers something that Antigua can’t deliver--the ability to learn Spanish in a city that is not overrun with tourism, thus forcing us to practice Spanish in our daily lives. We chose
-[ICA](http://guatemalaspanish.com/) as our school because it has a long-standing reputation of providing quality classes. We take one-on-one classes with our instructor (Gato) for four hours a day,
-Monday-Friday. In the afternoons, the school has different activities that you can choose from including trips around Xela. We paid roughly 660 USD for 3 weeks of 20 hours per week of classes.
-The school also offers free English lessons to local middle schoolers. We volunteer a few days a week to help the kids practice English, although we honestly believe we’re probably learning more
-from the kids than they are from us.
+# Xela
 
 Our apartment in Xela is modest, but contains everything we need, we paid 280 USD for three weeks. We had a few issues the first week with our shower, also known as a
 [Suicide Shower or Widow Maker](http://johnnyvagabond.com/travel-tips/survive-suicide-shower/). Originally we had no hot water (which if you read the article, may have been for the better) and
@@ -33,11 +27,31 @@ On the weekend we visited [Fuentes Georginas](http://www.lonelyplanet.com/guatem
 afternoon, when the sky was cloudy and the air was cold, making it an extra relaxing afternoon. On Sunday we visited El Baúl a forested hill on the outskirts of the city overlooking Xela.
 
 {% gallery xela %}
-xela/4.jpg:: View from ICA with Volcán Santa María
-xela/6.jpg:: Suicide shower
-xela/1.jpg:: Día de Todos los Santos
-xela/2.jpg:: Día de Todos los Santos
-xela/3.jpg:: Old church in Salcajá
-xela/5.jpg:: Fuentes Georginas
-xela/7.jpg:: View from El Baúl
+xela2/1.jpg:: Market in San Francisco de Alto
+xela2/2.jpg:: Market in San Francisco de Alto
+xela2/3.jpg:: Summit of Volcán Santa María
+xela2/4.jpg:: Summit of Volcán Santa María
+xela2/5.jpg:: Below the clouds on Volcán Santa María
+xela2/6.jpg:: Guatemalan cooking class
+xela2/7.jpg:: Guatemalan cooking class
+xela2/8.jpg:: Cuban cigars on Lake Atitlan
+xela2/9.jpg:: Lake Atitlan
+xela2/10.jpg:: Lake Atitlan
+xela2/11.jpg:: Lake Atitlan
+xela2/12.jpg:: Cafe Panorama in Xela
+{% endgallery %}
+
+# Antigua
+
+{% gallery antigua %}
+antigua/1.jpg:: Parque Central? in Antigua
+antigua/2.jpg:: Pidgeon head statue
+antigua/3.jpg:: Inglesia Merced?
+antigua/4.jpg:: Arc?
+antigua/5.jpg:: Decoration in our hostel
+antigua/6.jpg:: Antigua
+antigua/7.jpg:: View from Cerro de la cruz?
+antigua/8.jpg:: Sky Cafe
+antigua/9.jpg:: Sunset from Sky Cafe
+antigua/10.jpg:: Church?
 {% endgallery %}

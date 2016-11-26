@@ -42,8 +42,7 @@ module Jekyll
 				images_html << "<dd class=\"gallery-caption\">#{image['caption']}</dd>"
 				images_html << "</dl>\n\n"
 			end
-			images_html << "<br style=\"clear: both;\">" if images.count % 4 != 0
-			gallery_html = "<div class=\"gallery\">\n\n#{images_html}\n\n</div>\n"
+			gallery_html = "<div class=\"gallery\">\n\n#{images_html}\n\n</div><div style=\"clear: both;\"></div>\n"
 
 			return gallery_html
 

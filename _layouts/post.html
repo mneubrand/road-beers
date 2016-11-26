@@ -21,16 +21,7 @@ layout: default
         <div class="fb-like"  data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
         <div class="fb-comments" data-numposts="5" data-width="100%"></div>
 
-        <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
         <script>
-            lightbox.option({
-                'resizeDuration': 400,
-                'fadeDuration': 300,
-                'showImageNumberLabel': false
-            });
-
-            $('img.lazy').jail();
-
             (function (d, s, id) {
                 var localhost = 'localhost:4000';
                 var url = location.href;
