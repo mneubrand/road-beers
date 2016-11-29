@@ -105,7 +105,7 @@ layout: default
                 if(data[index].kml) {
                     if(!data[index].layer) {
                         data[index].layer = new google.maps.KmlLayer({
-                            url: 'http://www.road-beers.com/kml/northamerica.kmz',
+                            url: 'http://www.road-beers.com/kml/' + index + '.kmz',
                             map: map
                         });
                     }
