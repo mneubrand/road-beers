@@ -430,48 +430,83 @@ $small-nav-height: 70px;
   background-color: #fff;
 }
 
-button.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+.destinations {
 
-  &.active, &:hover {
-    background-color: #ddd;
+  #left {
+    width: 100%;
+
+    @media (min-width: $content-width-wide) {
+      float: left;
+      width: 870px;
+    }
+
+    #map {
+      width: 100%;
+
+      @media (min-width: $content-width-wide) {
+        width: 870px;
+      }
+    }
+
+    #description {
+      margin-top: 10px;
+    }
   }
 
-  &:after {
-    content: "+"  ;
-    float: right;
-    margin-left: 5px;
+  #right {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @media (min-width: $content-width-wide) {
+      float: right;
+      width: 250px;
+    }
   }
 
-  &.active:after {
-    content: "";
+  button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    &.active, &:hover {
+      background-color: #ddd;
+    }
+
+    &:after {
+      content: "+";
+      float: right;
+      margin-left: 5px;
+    }
+
+    &.active:after {
+      content: "";
+    }
   }
-}
 
-div.accordionPanel {
-  padding: 0 15px;
-  background-color: white;
-  height: 0;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-  opacity: 0;
+  div.accordionPanel {
+    padding: 0 15px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
 
-  ul {
-    margin: 12px 0px;
-  }
+    ul {
+      margin: 12px 0px;
+    }
 
-  &.show {
-    opacity: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
+    &.show {
+      max-height: 680px;
+      opacity: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
   }
 }
 

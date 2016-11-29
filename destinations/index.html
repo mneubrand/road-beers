@@ -4,12 +4,8 @@ layout: default
 
 <div class="home">
 
-    <div class="wrapper wide">
-        <div id="left" style="width: 870px; float: left">
-            <div id="map" style="width: 870px;"></div>
-            <div id="description" style="margin-top: 10px"></div>
-        </div>
-        <div style="width: 250px; float: right">
+    <div class="wrapper wide destinations">
+        <div id="right">
             {% for category in site.categories %}
             <button class="accordion"
                     data-category="{{ category[0] }}"></button>
@@ -26,6 +22,10 @@ layout: default
             </div>
             {% endfor %}
         </div>
+        <div id="left">
+            <div id="map"></div>
+            <div id="description"></div>
+        </div>
     </div>
 
     <script>
@@ -41,9 +41,8 @@ layout: default
             }
         };
 
-        var height = Math.min(800, window.innerHeight - 60 /* footer */ - 161 /* header */ - 60 /* padding */);
+        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 60 /* footer */ - 161 /* header */ - 60 /* padding */));
         $('#left').height(height);
-        var catHeight = height - {{ site.categories | size}} * 75;
         $('#map').height(height - 70);
 
         function initMap() {
@@ -68,9 +67,7 @@ layout: default
                 newElem.toggleClass('active');
 
                 currentNext.removeClass('show');
-                currentNext.height(0);
                 newNext.toggleClass('show');
-                newNext.height(catHeight);
 
                 // Remove all existing markers
                 for (var i = 0; i < markers.length; i++) {

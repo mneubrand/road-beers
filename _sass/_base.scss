@@ -149,7 +149,7 @@ pre {
     @extend %clearfix;
 
     &.wide {
-        max-width: 1200px;
+        max-width: $content-width-wide;
     }
 
     @include media-query($on-laptop) {
