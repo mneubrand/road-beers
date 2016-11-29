@@ -181,7 +181,7 @@ $small-nav-height: 70px;
   font-size: 20px;
 }
 
-.post-list {
+.posts {
   max-width: 780px;
   float: left;
   margin-left: 0;
@@ -216,15 +216,16 @@ $small-nav-height: 70px;
   float: right;
   width: 325px;
 
-  li {
-    list-style: none;
-    font-size: 0.8em;
-    line-height: 1em;
-    margin-bottom: 10px;
-  }
-
   @media (max-width: $content-width) {
     display: none;
+  }
+}
+
+.post-list {
+  li {
+    font-size: 0.8em;
+    line-height: 1em;
+    margin: 14px 0;
   }
 }
 
@@ -433,39 +434,44 @@ button.accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
 
-  .active, :hover {
+  &.active, &:hover {
     background-color: #ddd;
+  }
+
+  &:after {
+    content: "+"  ;
+    float: right;
+    margin-left: 5px;
+  }
+
+  &.active:after {
+    content: "";
   }
 }
 
 div.accordionPanel {
-  padding: 0 18px;
+  padding: 0 15px;
   background-color: white;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: 0.6s ease-in-out;
+  transition: 0.3s ease-in-out;
   opacity: 0;
 
   ul {
-    margin: 15px 0px;
+    margin: 12px 0px;
   }
 
-  li {
-    list-style: none;
-    margin: 10px 0px;
-    font-size: 0.8em;
-  }
-
-  .show {
+  &.show {
     opacity: 1;
-    max-height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
 

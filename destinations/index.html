@@ -4,53 +4,132 @@ layout: default
 
 <div class="home">
 
-  <!--<div style="height: 700px; width: 1250px; margin: 0 auto;">
-    <div id="map" style="height: 700px; width: 980px; margin-right: 20px; float: left"></div>
-    <div style="width: 250px; float: right">
-      {% for category in site.categories %}
-        <button class="accordion">{{ category[0] }}</button>
-        <div class="accordionPanel">
-          <ul>
-            {% for posts in category %}
-              {% for post in posts %}
-                <li><a class="post-link" href="{{ post.url }}">{{ post.title  | prepend: site.baseurl }}</a></li>
-              {% endfor %}
-            {% endfor %}
-          </ul>
+    <div class="wrapper wide">
+        <div id="left" style="width: 870px; float: left">
+            <div id="map" style="width: 870px;"></div>
+            <div id="description" style="margin-top: 10px"></div>
         </div>
-      {% endfor %}
+        <div style="width: 250px; float: right">
+            {% for category in site.categories %}
+            <button class="accordion"
+                    data-category="{{ category[0] }}"></button>
+            <div class="accordionPanel">
+                <ol class="post-list">
+                    {% for posts in category %}
+                        {% for post in posts reversed %}
+                            {% if post.url %}
+                            <li data-lat="{{post.lat}}" data-lng="{{post.lng}}"><a class="post-link" href="{{ post.url }}">{{ post.title | prepend: site.baseurl }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ol>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-  </div>
 
-  <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8,
-        disableDefaultUI: true,
-        draggable: false,
-        disableDoubleClickZoom: true,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-      });
-    }
+    <script>
+        var data = {
+            'northamerica': {
+                name: 'North America',
+                kml: true,
+                description: ''
+            },
+            'centralamerica': {
+                name: 'Central America',
+                description: ''
+            }
+        };
 
-    (function() {
-      $('.accordion').each(function (index, elem) {
-        $(elem).click(function() {
-          $('.accordion').removeClass('active');
-          $(this).toggleClass('active');
+        var height = Math.min(800, window.innerHeight - 60 /* footer */ - 161 /* header */ - 60 /* padding */);
+        $('#left').height(height);
+        var catHeight = height - {{ site.categories | size}} * 75;
+        $('#map').height(height - 70);
 
-          $('.accordion').next().removeClass('show');
-          $(this).next().toggleClass('show');
-        });
-      });
+        function initMap() {
+            var markers = [], layer;
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 0, lng: 0},
+                zoom: 2,
+                disableDefaultUI: true,
+                draggable: false,
+                disableDoubleClickZoom: true,
+                scrollwheel: false
+            });
 
-    })();
-  </script>
+            var catChange = function () {
+                var newElem = $(this);
+                var newNext = newElem.next();
+                var currentElem = $('.accordion.active');
+                var currentNext = currentElem.next();
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD56SmCl6V9AengboOB2vXlG4CMBPpxtNY&callback=initMap" async defer></script>-->
+                // Toggle accordion
+                currentElem.removeClass('active');
+                newElem.toggleClass('active');
 
-  TBD
+                currentNext.removeClass('show');
+                currentNext.height(0);
+                newNext.toggleClass('show');
+                newNext.height(catHeight);
+
+                // Remove all existing markers
+                for (var i = 0; i < markers.length; i++) {
+                    markers[i].setMap(null);
+                }
+                markers = [];
+
+                // Add new markers and move map to them
+                var bounds = new google.maps.LatLngBounds();
+                newNext.find('.post-list > li').each(function (index, elem) {
+                    var lat = parseFloat($(elem).attr('data-lat'));
+                    var lng = parseFloat($(elem).attr('data-lng'));
+                    var marker = new google.maps.Marker({
+                        position: {lat: lat, lng: lng},
+                        label: '' + (index+1),
+                        map: map
+                    });
+                    bounds.extend(marker.getPosition());
+                    markers.push(marker);
+                });
+                map.fitBounds(bounds);
+                map.setZoom(Math.min(map.getZoom(), 5));
+
+                // Remove old KML layer if there is one
+                if(layer) {
+                    layer.setMap(null);
+                    layer = null;
+                }
+
+                // If there is a KML layer add it
+                var index = newElem.attr('data-category');
+                if(data[index].kml) {
+                    if(!data[index].layer) {
+                        data[index].layer = new google.maps.KmlLayer({
+                            url: 'http://www.road-beers.com/kml/northamerica.kmz',
+                            map: map
+                        });
+                    }
+                    layer = data[index].layer;
+                    layer.setMap(map);
+                }
+
+                // Update description
+                $('#description').text(data[index].description);
+            };
+
+            $('.accordion').each(function (index, elem) {
+                elem = $(elem);
+                elem.text(data[elem.attr('data-category')]['name']);
+                elem.click(catChange);
+
+                if(index == 0) {
+                    elem.click();
+                }
+            });
+        };
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD56SmCl6V9AengboOB2vXlG4CMBPpxtNY&callback=initMap"
+            async defer></script>
 
 </div>

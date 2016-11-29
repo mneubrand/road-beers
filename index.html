@@ -4,7 +4,7 @@ layout: default
 
 <div class="wrapper wide">
 
-    <div class="post-list">
+    <div class="posts">
         <h1 class="post-title"><span>Posts <a href="/feed.xml"><img src="{{ site.baseurl }}/images/feed-icon-28x28.png" alt="feed icon" style="margin-left: 15px"/></a></span></h1>
 
         {% for post in paginator.posts %}
@@ -68,10 +68,9 @@ layout: default
         </p>
 
         <h1 class="post-title">Recent</h1>
-        <ul>
+        <ul class="post-list">
             {% for i in (0..10) %}
-            <li><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title
-                }}</a></li>
+            <li style="list-style: none"><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title}}</a></li>
             {% endfor %}
         </ul>
     </div>

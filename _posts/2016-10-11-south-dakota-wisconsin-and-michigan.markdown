@@ -2,7 +2,9 @@
 layout: post
 title:  "South Dakota, Wisconsin and Michigan"
 date:   2016-10-11 01:00 -0800
-categories: roadtrip
+categories: northamerica
+lat: 42.7297381
+lng: -87.8580762
 ---
 
 After Yellowstone we started the long drive to Racine, WI with a few stops in between including Deadwood, SD. 

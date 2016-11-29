@@ -2,7 +2,9 @@
 layout: jmt
 title:  "The John Muir Trail - Part 1"
 date:   2016-09-01 12:00 -0800
-categories: jmt
+categories: northamerica
+lat: 37.5177359
+lng: -119.0595498
 ---
 
 Since first hearing about the John Muir Trail from the Movie "Mile, Mile and a Half" we wanted to do the trail ourselves. With a year of travel coming up we finally
