@@ -58,6 +58,5 @@ tikal/5.jpg:: Temple V
 tikal/6.jpg:: Temple I
 tikal/7.jpg:: Tikal
 tikal/8.jpg:: Temple I
-tikal/9.jpg:: View from Temple II
 tikal/10.jpg:: View from Temple II
 {% endgallery %}
