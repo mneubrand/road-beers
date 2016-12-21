@@ -7,7 +7,7 @@ lat: 6.2442023,4.5941106
 lng: -75.616231,-75.582973
 ---
 
-After about one month and a week in Central America we made one last quick stop in Costa Rica and were on our way to Colombia where we'll be until after Christmas.
+We continued our trip in Colombia through Medellín, the second-largest city in Colombia, and afterwards headed to a small town in the middle of Colombia's coffee region.
 
 <!--more-->
 
