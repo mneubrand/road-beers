@@ -504,8 +504,6 @@ $small-nav-height: 70px;
     &.show {
       max-height: 680px;
       opacity: 1;
-      overflow-x: hidden;
-      overflow-y: auto;
     }
   }
 }
