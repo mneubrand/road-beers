@@ -3,8 +3,8 @@ layout: post
 title:  "Memphis, Bemis, and Nashville"
 date:   2016-10-17 01:00 -0800
 categories: northamerica
-lat: 35.1291054
-lng: -90.1108697
+lat: 35.1291054,36.1865589
+lng: -90.1108697,-86.9253281
 ---
 
 After visiting Steph and Brandon we drove to Memphis to stay with Megan’s Great Uncle Bruce. Megan hadn’t seen Uncle Bruce in years, so this was truly a special occasion.

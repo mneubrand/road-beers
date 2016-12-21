@@ -3,8 +3,8 @@ layout: post
 title:  "Zion and Bryce Canyon"
 date:   2016-09-30 12:00 -0800
 categories: northamerica
-lat: 37.3667857
-lng: -112.8046873
+lat: 37.3220096,37.573297
+lng: -113.1833174,-112.318396
 ---
 
 After spending some time with Megan's grandpa and his wife Lynda (thanks for having us Bill and Lynda and for the amazing BBQ, and endless BBQ discussions) we were headed to Utah to spend some

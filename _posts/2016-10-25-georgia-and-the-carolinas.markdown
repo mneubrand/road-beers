@@ -3,8 +3,8 @@ layout: post
 title:  "Georgia and the Carolinas"
 date:   2016-10-25 01:00 -0800
 categories: northamerica
-lat: 33.7676932
-lng: -84.4906436
+lat: 33.7676932,35.8437476,35.2030728,32.8209674,32.0387665
+lng: -84.4906436,-78.7150955,-80.9796087,-80.1105609,-81.3404589
 ---
 
 From Nashville we were headed to Georgia to spend a few days in Atlanta and then made our way to North Carolina via Savannah and Charleston.

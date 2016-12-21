@@ -3,8 +3,8 @@ layout: post
 title:  "Semuc Champey and Flores"
 date:   2016-11-30 01:00 -0800
 categories: centralamerica
-lat: 16.9102827
-lng: -89.8849656
+lat: 16.9102827,15.5330352
+lng: -89.8849656,-89.9621487
 ---
 
 From Antigua we headed to Semuc Champey and Flores, two of the main tourist attractions in Guatemala and our last two stops in the country.

@@ -3,8 +3,8 @@ layout: post
 title:  "Nicaragua"
 date:   2016-12-08 01:00 -0800
 categories: centralamerica
-lat: 11.9288488
-lng: -85.977309
+lat: 11.9288488,11.4983613,11.2600028
+lng: -85.977309,-85.6580852,-85.8768078
 ---
 
 After we spent a month in Guatemala we headed to Nicaragua as our final stop in Central America and to also finally spend some time on the beach.

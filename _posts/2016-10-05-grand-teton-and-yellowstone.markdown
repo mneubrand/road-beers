@@ -3,8 +3,8 @@ layout: post
 title:  "Grand Teton and Yellowstone"
 date:   2016-10-05 01:00 -0800
 categories: northamerica
-lat: 44.4279684
-lng: -110.5906429
+lat: 44.4279684,43.8075909
+lng: -110.5906429,-110.8285961
 ---
 
 From Mesa Verde we headed north towards Yellowstone with a little stop on the way in Northern Utah and spent two nights at the Old Faithful Lodge Cabins in Yellowstone.

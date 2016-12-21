@@ -91,15 +91,19 @@ layout: default
             // Add new markers and move map to them
             var bounds = new google.maps.LatLngBounds();
             newNext.find('.post-list > li').each(function (index, elem) {
-                var lat = parseFloat($(elem).attr('data-lat'));
-                var lng = parseFloat($(elem).attr('data-lng'));
-                var marker = new google.maps.Marker({
-                    position: {lat: lat, lng: lng},
-                    label: '' + (index+1),
-                    map: map
-                });
-                bounds.extend(marker.getPosition());
-                markers.push(marker);
+                var lat = $(elem).attr('data-lat').split(',');
+                var lng = $(elem).attr('data-lng').split(',');
+
+                for(var i = 0; i < lat.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: {lat: parseFloat(lat[i]), lng: parseFloat(lng[i])},
+                        label: '' + (index+1),
+                        map: map
+                    });
+
+                    bounds.extend(marker.getPosition());
+                    markers.push(marker);
+                };
             });
             map.fitBounds(bounds);
             map.setZoom(Math.min(map.getZoom(), 5));

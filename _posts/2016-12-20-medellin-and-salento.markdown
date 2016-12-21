@@ -3,8 +3,8 @@ layout: post
 title:  "Medellín and Salento"
 date:   2016-12-15 01:00 -0800
 categories: southamerica
-lat: 6.2442023
-lng: -75.616231
+lat: 6.2442023,4.5941106
+lng: -75.616231,-75.582973
 ---
 
 After about one month and a week in Central America we made one last quick stop in Costa Rica and were on our way to Colombia where we'll be until after Christmas.
