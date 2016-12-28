@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Medellín and Salento"
-date:   2016-12-15 01:00 -0800
+date:   2016-12-20 01:00 -0800
 categories: southamerica
 lat: 6.2442023,4.5941106
 lng: -75.616231,-75.582973
