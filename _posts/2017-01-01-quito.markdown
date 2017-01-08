@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Quito"
+date:   2017-01-01 01:00 -0800
+categories: southamerica
+lat: -0.1862504
+lng: -78.5709669
+---
+From Otavalo it was a short two hour bus ride to our second stop in Ecuador, Quito, where we would spend New Year's Eve.
+
+<!--more-->
+
+Megan adored Quito from the very beginning--there was something magical about this booming capital high in the Andes mountains. Quito is the longest we've stayed in one place since Xela, Guatemala
+--5 nights (was supposed to be 4, but we'll get to that later). We chose a small Airbnb apartment located above the most amazing empanada restaurant:
+[Empanadas de Morocho de la Ulloa](https://www.facebook.com/EmpanadasdeMorocho.Ulloa/). We rented the apartment from the owner of the restaurant, Alicia, and she was sweet as can be. She treated us
+to empanadas when we first arrived and took great care of us.
+
+The next day we went to [Quilotoa](https://en.wikipedia.org/wiki/Quilotoa) for some hiking. The color of the water in the volcano is
+unreal, it changes between various shades of turquoise. As we hiked down into the crater, we focused on the beauty surrounding us and not on the impeding walk back up. At the bottom we enjoyed
+taxo (banana passionfruit) which is quite popular in the Ecuadorian Andes. We needed the energy for the walk back up where we became painfully aware of the high elevation we were at:
+3,914 m (12,841 ft) . On our way back to Quito we made a stop at a traditional indigenous home near the volcano. The home was very simple and the highlight was the roaming guinea pigs all along the
+floor. We were told they help to keep the home warm and since they breed them, they'll be sold at the market, for a fate I'm sure I don't need to state.
+
+The following day was very special for us. We met up with Ricardo, Geovanna, and their baby Julian, the brother and family, of Megan's sisters fiance, Carlos. They showed us around Quito and nearby
+attractions like [Mitad del Mundo](http://www.mitaddelmundo.com/en/), a museum at the equator, and
+[Pululahua](https://www.tripadvisor.com/Attraction_Review-g294307-d315630-Reviews-Pululahua-Ecuador.html), an overlook to a small village that lives within the crater of an active volcano. Afterwards
+they treated us to an amazing seafood lunch. It was really great to meet them and share stories about our niece Sofia, who we all miss very much. The end of the day we went for ice cream and then
+took a bit of a break until the evening, when Ricardo and his uncle Fernando took us to the historical center to take a few photos
+--[Fernando is a professional photographer](https://www.facebook.com/fernando.arroba.7/photos_albums)!.
+The entire day was really fulfilling and we couldn't be more grateful to have such great new friends in our lives.
+
+For New Year's Eve we explored a bit of the city on our own. Ricardo and Geovanna invited us to go with them to Ibarra for New Year's, but we needed to stay in Quito as we had early travel plans the
+next day for Cuenca. New Year's in Ecuador is fascinating. They have [años viejos](http://www.life-in-ecuador.com/ecuador-new-years.html), which are dolls in various sizes that they set on fire for
+good luck into the New Year. As we're use to only lighting things on fire that you dislike, it was a novelty to us that they light dolls that look like sports players, famous people, and politicians
+that they do like. On other tradition are the [viudas](http://www.life-in-ecuador.com/ecuador-new-years.html), men dressed as women blocking the streets to ask passerbys (typically cars) for money.
+The viudas are the widows of the años viejos. We had a blast watching them and Markus was a good sport stopping for a glamour shot with a group.
+
+We splurged a bit on dinner and went to [Restarante Achiote](http://achiote.com.ec/home/). We ordered cuy (guinea pig) and we both had very mixed feelings about it. Luckily for Markus he didn't like
+the taste, however Megan loved it and cried with guilt. Shortly after dinner things went south rapidly for Markus, we barely made it home before all of the cuy demanded to come out of him (in all
+possible ways...). Things got worse and as the night went on, we attempted to make our way through the streets filled with men and boys dressed as women, paying them all off searching for a pharmacy
+in vain. Megan found this all hilarious, while Markus was less than thrilled. We planned on leaving for Cuenca the next day but our travel plans were gutted as Markus was still throwing up and
+could barely walk.
+
+{% gallery quito %}
+quito/1.jpg:: Quilotoa
+quito/2.jpg:: Quilotoa
+quito/3.jpg:: Quilotoa
+quito/4.jpg:: Guinea pigs in indigenous home
+quito/5.jpg:: Pululahua
+quito/6.jpg:: Mitad del Mundo
+quito/7.jpg:: Mitad del Mundo
+quito/8.jpg:: Plaza de la Independencia
+quito/9.jpg:: Iglesia de San Francisco with Fernando and Ricardo
+quito/10.jpg:: Basilica del Voto Nacional
+quito/11.jpg:: Viudas
+quito/12.jpg:: Quito Centro Historico
+quito/13.jpg:: Viudas
+{% endgallery %}
