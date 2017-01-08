@@ -219,6 +219,14 @@ $small-nav-height: 70px;
   @media (max-width: $content-width) {
     display: none;
   }
+
+  .fb-page-plugin {
+    margin: 20px 0;
+    padding: 5px;
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    text-align: center;
+  }
 }
 
 .post-list {
@@ -286,7 +294,6 @@ $small-nav-height: 70px;
 
 .post-content {
   border-bottom: 1px solid $border-color;
-  margin-bottom: 15px;
 
   h1 {
     margin-top: 20px;
