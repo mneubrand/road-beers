@@ -19,7 +19,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
-          <img src="{{ src | prepend: site.baseurl | prepend: site.url }}" style="display: block; padding: 4px; margin-bottom: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px;"/>{{ s[0] | strip_html | xml_escape }}<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More...</a>
+          <img src="{{ src | prepend: site.baseurl | prepend: site.url }}" style="display: block; padding: 4px; margin-right: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; float: left"/>{{ s[0] | strip_html | xml_escape }}<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More...</a>
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
