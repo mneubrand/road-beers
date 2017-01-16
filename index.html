@@ -15,7 +15,7 @@ layout: default
             </span>
 
             <h1 class="post-header">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h1>
 
             <div class="post-preview">
@@ -86,7 +86,7 @@ layout: default
         <h1 class="post-title">Recent</h1>
         <ul class="post-list">
             {% for i in (0..10) %}
-            <li style="list-style: none"><a class="post-link" href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title}}</a></li>
+            <li style="list-style: none"><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title}}</a></li>
             {% endfor %}
         </ul>
     </div>

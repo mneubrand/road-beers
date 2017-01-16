@@ -14,7 +14,7 @@ layout: default
                     {% for posts in category %}
                         {% for post in posts reversed %}
                             {% if post.url %}
-                            <li data-lat="{{post.lat}}" data-lng="{{post.lng}}"><a class="post-link" href="{{ post.url }}">{{ post.title | prepend: site.baseurl }}</a></li>
+                            <li data-lat="{{post.lat}}" data-lng="{{post.lng}}"><a href="{{ post.url }}">{{ post.title | prepend: site.baseurl }}</a></li>
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
@@ -55,15 +55,11 @@ layout: default
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 0, lng: 0},
-                zoom: 2,
-                disableDefaultUI: true,
-                draggable: false,
-                disableDoubleClickZoom: true,
-                scrollwheel: false
+                zoom: 2
             });
 
             $('.accordion.active').click();
-        };
+        }
 
         var catChange = function () {
             var newElem = $(this);
@@ -103,7 +99,7 @@ layout: default
 
                     bounds.extend(marker.getPosition());
                     markers.push(marker);
-                };
+                }
             });
             map.fitBounds(bounds);
             map.setZoom(Math.min(map.getZoom(), 5));
@@ -131,12 +127,13 @@ layout: default
             $('#description').text(data[index].description);
         };
 
-        $('.accordion').each(function (index, elem) {
+        var accordion = $('.accordion');
+        accordion.each(function (index, elem) {
             elem = $(elem);
             elem.text(data[elem.attr('data-category')]['name']);
             elem.click(catChange);
 
-            if(index == 0) {
+            if(index == accordion.length - 1) {
                 elem.click();
             }
         });
