@@ -39,11 +39,11 @@ While in Arica, we spent the day enjoying the downtown atmosphere and lounging a
 Chile was also our first stop outside of the US where cars stopped for you if you were in a crosswalk, it felt surreal. In general Chile seems to have much better developed infrastructure than
 the other South American countries we visited before. The downside of this is that everything is also much more expensive here.
 
-{% gallery inca_trail %}
-inca_trail/1.jpg:: Arica
-inca_trail/2.jpg:: Arica
-inca_trail/3.jpg:: Arica
-inca_trail/4.jpg:: Arica
+{% gallery arica %}
+arica/1.jpg:: Arica
+arica/2.jpg:: Arica
+arica/3.jpg:: Arica
+arica/4.jpg:: Arica
 {% endgallery %}
 
 # Iquique
