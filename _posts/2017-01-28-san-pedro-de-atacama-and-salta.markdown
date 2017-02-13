@@ -25,8 +25,9 @@ before we came here.
 Despite being in one of the driest deserts in the world it was raining every day during our stay in San Pedro. While it was nice to experience this rare event, some places in this desert haven't
 seen [rain for hundreds of years](https://en.wikipedia.org/wiki/Atacama_Desert#Aridity), it led to a bunch of logistical difficulties. The two tours we took were cut short because of the weather and
 walking around town was very difficult. Another unfortunate side effect was that the rain caused constant power outages. The power outages themselves were only a small nuisance, but in our hostel they
-also lead to water outages. Water outages and a shared bathroom are an awful combination. Q: How many people does it take before a shared bathroom without water becomes completely disgusting?
-A: One guy with diarrhea... Markus is still upset that he missed the NFC and AFC championship games because of the power outages as well. Tje hostel could have at least provided temporary relief in the form of buckets of water to flush the toilets, but they didn't.
+also led to water outages. Water outages and a shared bathroom are an awful combination. Q: How many people does it take before a shared bathroom without water becomes completely disgusting?
+A: One guy with diarrhea... Markus is still upset that he missed the NFC and AFC championship games because of the power outages as well. The hostel could have at least provided temporary relief in
+the form of buckets of water to flush the toilets, but they didn't.
 
 Though we didn't enjoy San Pedro we had a great time on the tours into the Atacama Desert that we took. On our first day we took a tour to
 [Valle de la Luna](https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)). It is a moon like landscape in the salt range near San Pedro with unique rock formations and caves to walk through.
