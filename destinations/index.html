@@ -24,7 +24,6 @@ layout: default
         </div>
         <div id="left">
             <div id="map"></div>
-            <div id="description"></div>
         </div>
     </div>
 
@@ -32,23 +31,24 @@ layout: default
         var data = {
             'northamerica': {
                 name: 'North America',
-                kml: 'northamerica.kmz',
-                description: ''
+                kml: 'northamerica.kmz'
             },
             'centralamerica': {
                 name: 'Central America',
-                kml: 'centralamerica.kmz',
-                description: ''
+                kml: 'centralamerica.kmz'
             },
             'southamerica': {
                 name: 'South America',
-                description: ''
+                kml: 'southamerica.kmz'
+            },
+            'oceania': {
+                name: 'Oceania'
             }
         };
         var map;
         var markers = [], layer;
 
-        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 60 /* footer */ - 161 /* header */ - 60 /* padding */));
+        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 161 /* header */ - 60 /* padding */));
         $('#left').height(height);
         $('#map').height(height - 70);
 
@@ -122,9 +122,6 @@ layout: default
                 layer = data[index].layer;
                 layer.setMap(map);
             }
-
-            // Update description
-            $('#description').text(data[index].description);
         };
 
         var accordion = $('.accordion');
