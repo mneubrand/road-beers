@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Bali"
+date:   2017-04-02 01:00 +0800
+categories: asia
+lat: -8.7043651
+lng: 115.1674107
+---
+
+We'd heard wonderful things about Bali while we were in South America, including how cheap it is, and thus decided to spend around three weeks here.
+
+<!--more-->
+
+We broke our time down with one week in Legian--a centralized location, one week on Gili Meno--a small island between Bali and Lombok, and one week in lush Ubud. We picked Legian as our first
+destination because of it's access to numerous restaurants and bars, and the fact that we could stay in a legit hotel for $15 a night. However, we quickly decided this was not our favorite location.
+Our first impression of the beach was that we would not return. It was covered in piles of garbage and did not beckon you to want to spend time on it or go for a swim. We learned that they had
+recently had high surf which washed a lot of the garbage onshore. Every day there were efforts to clean it up, so that was promising, but seemed daunting at the same time. It wasn't until the end
+of our week in Legian that the beach resembled a place you would want to spend time at. Also, this beach was much better suited for surfing because of the waves, but not for swimming. We visited
+another beach, Geger, that had an off shore reef making it excellent for swimming and was less populated and more picturesque. Considering the fact that it's located next to the Ritz this makes
+sense.
+
+While we picked Legian for it's proximity to restaurants and the price we were still blown away by just how saturated this location is with tourism. While Legian is it's own town, it's
+amazing how quickly it flows into neigboring towns, Kuta and Seminyak--it all feels like one endless blend of tourism. Walking through the streets you constantly have a sense of déjà vu because all
+of the shops and restaurants essentially look the same as if every couple of blocks they repeat themselves. Despite our initial reactions to Legian, after a few days it does start to charm you.
+One can quickly get into a daily rhythm of relaxing, walking around, and trying out the various restaurants. Megan even had a massage and body scrub for only $13 at a mid-range hotel.
+
+As we approached one of Bali's most important holidays, [Nyepi](https://en.wikipedia.org/wiki/Nyepi), we noticed that the streets became more and more quiet. Nyepi is the Balinese New Year and 
+essentially translates to Day of Silence. As you are confined to your hotel on Nyepi, many tourists avoid the island at this time especially if they are only planning a short vacation. A few days 
+before the holiday, many preparations begin to take place. Each city has its own celebration and will start processions down to the beach to hold purifying rituals where they will even cleanse 
+statues from their temples in the ocean. The night before Nyepi is a huge celebration with each city holding its own parade of Ogoh-ogoh's, statues mainly of demons. They essentially are carried 
+through the parade similar to a float. Witnessing this parade was one of the highlights of our time in Bali. Nyepi starts at 6am the following morning and lives up to its name of Day of Silence. 
+No one is allowed out on the street, so we were confined to our hotel. When we booked our hotel, we had no idea about this holiday and if we were to do it again we would have spent a bit more money 
+to have a hotel with a pool and some outdoor space. While many Balinese also fast during this time, our hotel had a buffet set up for its guests. As you're not supposed to have any light on either,
+in the evening the staff even checked on us to make sure we turned our lights off and had our shades closed tight. It would have been great to have had the outdoor space especially in the evening 
+to stargaze. Instead we watched movies all day--also not so bad.
+
+{% gallery bali %}
+bali/1.jpg:: Tanah Lot
+bali/2.jpg:: Tanah Lot
+bali/3.jpg:: Tanah Lot
+bali/4.jpg:: Geger Beach
+bali/5.jpg:: California Cafe
+bali/6.jpg:: Ogoh Ogoh's
+bali/7.jpg:: Ogoh Ogoh's
+bali/8.jpg:: Hotel entrane on Nyepi
+bali/9.jpg:: Seminyak Beach
+bali/10.jpg:: Entrance to Legian Beach
+{% endgallery %}

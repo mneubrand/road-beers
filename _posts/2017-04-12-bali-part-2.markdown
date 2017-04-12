@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Bali, Part Two"
+date:   2017-04-02 01:00 +0800
+categories: asia
+lat: -8.4961361,-8.350556
+lng: 115.2485299,116.0525333
+---
+
+Our first impressions of Bali were not quite great, but after three weeks here we understand why it's so heavily saturated with tourism. Friendly people, beautiful temples, delicious food, inviting
+beaches, and an uplifting atmosphere that's hard to describe.
+
+<!--more-->
+
+# Gili Meno
+
+The Gili Islands are actually considered part of Lombok, which makes sense as they're only five miles off Lomboks coast, but we're including them under our Bali post as our trip there was in the
+middle of our time in Bali. The most straight forward way to get to the Gili Islands from Bali is to take a boat across the open seas. All over the tourist locations in Bali you can see
+advertisements for boats that go there, however from word of mouth and a lot of research we'd learned that most of these boats are incredibly
+[unsafe](https://coconuts.co/bali/news/spanish-woman-killed-bali-fast-boat-blast-had-been-her-honeymoon/) and more often than not overload. The route to get to the Gili Islands takes you through rough
+water, so you really want to use a company that's reliable and takes precautions. We picked one of the more expensive companies, Australian owned [Gili Getaway](http://giligetaway.com/), which has
+the best reputation. The Gili Islands consist of three islands with Gili Trawangan being the most populated and built up (it also has the reputation of being the party island). Gili Air is the closest
+to Lombok and was hosting a backpacker type of festival at the time we would be visiting. We chose Gili Meno, sandwiched between the other two, for it's tranquility and reputation of having the best
+beaches and snorkeling sites--we were not disappointed. Everything on Gili Meno was much more expensive compared to Bali, which makes sense as they have no dock and everything has to be brought in
+on tiny boats. We decided we might as well up our accommodation budget to get something a bit nicer than we would typically stay in, and booked [Adeng Adeng](http://www.adeng-adeng.com/) at $50/night.
+While not beach front, the bungalows are set within a relaxing garden and feature outdoor bathrooms. We had the most simple bungalow, which we really liked, but the owner upgraded us to an even nicer
+one because they needed to do construction on ours after a few nights. The new one featured a home theater which came in handy as there were torrential showers almost every late afternoon. We spent
+every day on Gili Meno snorkeling and relaxing.  While it wasn't turtle season, we saw huge sea turtles on two of our snorkeling trips. This was certainly a highlight of our time as Markus had us
+snorkel every day last year when we visited Maui in an attempt to see them--to no avail. Luckily for us, we first saw one on the second day. Had that not happened Markus would have snorkelled at least
+3 times a day searching for them as he did on Maui. We were incredibly thankful that we booked the good boat, especially for the ride back. We went at the end of a storm and the water was even rougher
+than its usual awfulness. At least two people vomited on the trip back.
+
+{% gallery gili_meno %}
+gili_meno/1.jpg:: Breakfast
+gili_meno/2.jpg:: Adeng Adeng Bungalow
+gili_meno/3.jpg:: Gili Meno
+gili_meno/4.jpg:: Gili Meno
+gili_meno/5.jpg:: Beachfront Dining
+gili_meno/6.jpg:: Beachfront Dining
+gili_meno/7.jpg:: Gili Trawangan
+{% endgallery %}
+
+# Ubud
+
+The remainder of our time in Bali was spent in luscious green Ubud. The city is surrounded by rolling hills and spectacular rice paddies. It attracts a lot of tourism centered around art,
+spirituality, and yoga. None of which we're particularly interested in. It also draws in the "Eat, Pray, Love" crowd, with many hotels capitalizing off of it with
+[packages](http://www.frommers.com/tips/hotel-news/6-night-eat-pray-love-bali-package-from-1-986)--ugh. Megan LOVES rice paddies and that alone was our main reason for coming here. We stayed at 
+an AirBnB for $15 USD a bit outside of town located amongst the rice paddies and were quite happy with it. Unfortunately, Megan had a migraine for the majority of our time here so we didn't do much.
+We did hire a driver for a day to take us to Ulun Danu Beratan Temple, Taman Ayun Temple, and the Jatiluwih Rice Terraces. The Ulun Danu Beratan temple is stunning. It's located on Lake Beratan making 
+it extremely picturesque. The rice terraces however were the highlight of the day. We also visited the monkey forest which is a short walk from downtown Ubud. We had mixed feelings about visiting the
+ monkey forest as our previous experience with monkeys is that they're thieving assholes. On our trip to India a few years back Markus got into a standoff with a pregnant monkey who stole our bag. 
+ However, these appeared to be the most well behaved (or well fed) monkeys that we've ever encountered. While some monkeys steal things without any provocation, I also imagine that actual attacks 
+ or bites are caused by stupid human behavior, like touching or feeding them. While in Ubud, Markus wanted to try a local dish, suckling pig or babi guling. While the main restaurant for it appears 
+ to be a tourist trap, we managed to find one that had only locals in it. Markus was in pig heaven though he prefers the Puerto Rican version of this dish.
+
+{% gallery ubud %}
+ubud/1.jpg:: Ubud
+ubud/2.jpg:: Pura Taman Saraswati
+ubud/3.jpg:: Ubud
+ubud/4.jpg:: Campuhan Ridge
+ubud/5.jpg:: Ubud
+ubud/6.jpg:: Pura Ulun Danu Beratan
+ubud/7.jpg:: Jatiluwih Rice Terraces
+ubud/8.jpg:: Jatiluwih Rice Terraces
+ubud/9.jpg:: Jatiluwih Rice Terraces
+ubud/10.jpg:: Jatiluwih Rice Terraces
+ubud/11.jpg:: Jatiluwih Rice Terraces
+ubud/12.jpg:: Pura Taman Ayun
+ubud/13.jpg:: Babi Guling
+ubud/14.jpg:: Monkey Forest
+ubud/15.jpg:: Monkey Forest
+ubud/16.jpg:: Monkey Forest
+{% endgallery %}
