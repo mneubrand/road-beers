@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bali, Part Two"
-date:   2017-04-02 01:00 +0800
+date:   2017-04-12 01:00 +0800
 categories: asia
 lat: -8.4961361,-8.350556
 lng: 115.2485299,116.0525333

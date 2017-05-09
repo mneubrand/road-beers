@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Macau"
+date:   2017-05-09 01:00 +0800
+categories: asia
+lat: 11.9692826,14.5964957
+lng: 121.9097195,120.9444432
+---
+
+Macau, the Vegas of Asia, without all of the booze, merriment, and amazing people watching.
+
+<!--more-->
+
+Macau would serve as our first introduction to China. It's an autonomous territory, a short one hour ferry ride away from the most famous autonomous territory of China, Hong Kong. It has a large
+Portuguese influence as it was the last European colony in Asia, handing over power in 1999 after over 400 years of Portuguese settlement. While many affluent Chinese are drawn to Macau for
+gambling in luxury, we found that the greatest allure of Macau is the historic center where you can find a beautiful blend of Portugese and Chinese history. While you will see this all over the
+city, especially with regards to food, the architecture in the historic center is not to be missed. A few of the highlights here include the ruins of St. Dominic's Church, Senado Square, and
+St. Dominic's Church and Square. We went for one of the most famous snacks in Macau, a pork chop bun, and enjoyed it in St. Dominic's Square. Megan also became obsessed with one of Macau's most
+popular desserts, egg tarts, and
+lost count as to how many she had eaten by the time we left. It quickly became obvious that Macau is a foodie mecca.
+
+As stated previously, despite all of Macau's cultural and historical lure, one of the main drives of tourism is gambling. There are two distinct locations in Macau in regards to the casinos.
+There's the waterfront on mainland Macau, a short walk from the historic center, where the older casinos are and then there are the mega-casinos in Cotai. These distinct locations are connected
+with bridges and many of the casinos offer free shuttles between them that take about 15-20 minutes. For us, the section of casinos on mainland Macau reminded us of Fremont Street (old-school Vegas),
+and the mega-casinos that line the Cotai Strip, are similar to the Vegas Strip just even more opulent. Interesting fact, there is a Wynn and MGM on mainland Macau, however, once they realized they could go
+BIG on the island, they built ones there as well. The new larger MGM is still under construction and is almost near completion.
+
+While the Cotai Strip is beginning to look impressive, there is still a lot of construction going on with many large casinos and a light rail system currently in the works. Many more have also only
+recently opened. For example, Studio City, a hectic combination of an interpretation of LA and NYC, opened toward the end of 2015, the Parisian only opened in the middle of 2016. We LOVE Vegas,
+therefore we were super excited to run amok in Macau, however we were quickly disappointed. While Vegas has a diverse clientele from the mega-rich to the average Joe, Macau appears to only cater to
+the wealthy and focuses purely on gambling and much less on entertainment, partying and alcohol. Table games (most of them Baccarat tables) mostly start at insane minimums of 1000 HKD (~130 USD).
+In its record year in 2013 Macau made a staggering [45 billion USD](http://money.cnn.com/2014/01/06/news/macau-casino-gambling/) in gaming revenue compared to the meager 6.5 billion that Vegas made.
+Since then revenue declined in part because of President Xi Jinping’s corruption crackdown in China so one can make a guess where a lot of that gambling money came from... Casinos in Cotai also
+tend to be quite a bit larger than their Vegas counterparts. For example the [Venetian in Macau](https://en.wikipedia.org/wiki/The_Venetian_Macao) is the largest casino in the world with 5 times
+the casino size of its Vegas sibling and is the seventh-largest building in the world by floor area with a mind boggling 10,500,000 sq ft (980,000 m2).
+
+In Vegas we would get dressed up, put a $20 in a slot machine, order complimentary drinks from the waitresses, and then pick up some Bud Lights to people watch on the Strip. In Macao, dressing up is
+wearing a designer track suit paired with bedazzled loafers, you put at least 1000 HKD in the slot machine, you order a tea from the waitress, and there is no such thing as a road beer while people
+watching. As a matter of fact we haven't seen a single person with a beer inside one of the casinos. Another area where Vegas is still ahead in our mind is entertainment. While the flagship casinos
+in Macau are offering some shows there is much more availability and variety in Vegas. On one of our nights we went to one of the most famous shows in Macau:
+[The House of Dancing Water](http://www.thehouseofdancingwater.com/). The show was created by Franco Dragone who previously worked with Cirque du Soleil and did shows in Vegas. Its venue is another
+Macau superlative, [a custom 2000 seat theater with a 3.7 million-gallon pool](http://travel.cnn.com/beneath-house-dancing-water-worlds-biggest-water-show-208106/) at its center that cost 250
+million USD to build. The show itself was incredible and we probably enjoyed it even more than some of the Cirque du Soleil shows we saw in Vegas.
+
+{% gallery macau %}
+macau/1.jpg:: Macau
+macau/2.jpg:: Grand Lisboa
+macau/3.jpg:: Beer Temple
+macau/4.jpg:: Ruins of St. Paul's
+macau/5.jpg:: Senoda Square
+macau/6.jpg:: Pork Chop Buns
+macau/7.jpg:: The Venetian
+macau/8.jpg:: The Venetian
+macau/9.jpg:: The Parisian
+macau/10.jpg:: The Parisian
+macau/11.jpg:: Studio City
+macau/12.jpg:: Eiffel Tower
+macau/13.jpg:: The House of Dancing Water
+macau/14.jpg:: The House of Dancing Water
+macau/15.jpg:: Wynn Palace
+macau/16.jpg:: Wynn Palace
+macau/17.jpg:: The Venetian
+macau/18.jpg:: The Parisian
+macau/19.jpg:: Studio City
+macau/20.jpg:: The Parisian
+{% endgallery %}
