@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Hong Kong"
+date:   2017-05-09 01:00 +0800
+categories: china
+lat: 22.267055
+lng: 114.165818
+---
+
+Megan fell in love with the hustle and bustle of Hong Kong years ago and was excited to explore it again with Markus.
+
+<!--more-->
+
+We arrived in Kowloon, Hong Kong after a short one hour ferry ride from Macau. We chose to stay on the other side of Victoria Harbor, opposite of central Hong Kong primarily because of expense,
+but also because Kowloon is a lively location of Hong Kong and offers dramatic views overlooking the city's skyline. The first time Megan stayed here she stayed in the infamous
+[Chungking Mansions](https://en.wikipedia.org/wiki/Chungking_Mansions). This time, we stayed a few doors down in the Mirador Mansions. They are both essentially huge concrete buildings with an open
+center, with each floor winding around it. The first floor houses multiple restaurants and various shopping stalls. In true Hong Kong fashion, our room was TINY, we couldn't even put both of our bags
+on the floor simultaneously, however we loved it. It was on the 16th floor and thus provided us solitude from the chaotic streets below. One of the major downsides of staying in this location is
+walking through a plethora of men selling fake Rolexes and handbags. They can be quite annoying when you're already trying to navigate the busy streets and they then block your path. Megan thought
+it would be a great business plan for one of the local vendors to sell shirts and hats with a picture of a Rolex with an x through it.
+
+We had important business to attend to on our first day, we had to apply for our Chinese visas. We chose to use an agency, [Forever Bright](http://www.fbt-chinavisa.com.hk/), instead of trying to go
+to the consulate ourselves. Unfortunately China charges ridiculous amounts for American citizens. Megan ended up getting a 10-year multi entry visa for ~200 USD because it basically cost the same as
+a 30-day single entry one. For the most part, the process was very straight forward, however there were a few annoyances.  They wouldn't accept the pictures Megan had for it because she was wearing
+small stud earrings and they wouldn't accept Markus' signature on the application because it didn't perfectly match the one on his passport. Once these things were taken care of, we were in and out
+with the promise that we could pick up our visas in 4 days (one day before our planned departure).
+
+In the evening we headed down to the Kowloon Public Pier to enjoy the skyline lit up. We made it just in time for the evening light show
+["A Symphony of Light"](http://www.tourism.gov.hk/symphony/english/details/details.html). While we appreciated this nightly event (especially since it's free), it's not as spectacular as one may
+imagine and could use a more updated playlist to accompany the show.
+
+The next morning we took the MTR (subway) to Hong Kong central to explore the other side of the bay a bit. We meandered through the streets and enjoyed using their outdoor escalator to help you
+climb the hills. This side of the entire city feels like it's layers of streets snaking up the side of a mountain. Hong Kong has many wonderful parks and we enjoyed visiting the
+[Hong Kong Zoological and Botanical Gardens](https://en.wikipedia.org/wiki/Hong_Kong_Zoological_and_Botanical_Gardens).
+
+The next day we ventured further out and hiked [Dragon's Back](https://www.tripadvisor.com/Attraction_Review-g294217-d307766-Reviews-Dragon_s_Back-Hong_Kong.html). This hike is really easy to reach
+with public transportation. We were able to take the MTR and then switch to a bus that drops you off right at the start of the hike. It ends at Big Wave Bay Beach where we took a bit of a break
+before taking the bus back to the MTR station. We hadn't been hiking in quite sometime, so this was really enjoyable. The downside though was that the weather was really muggy which hindered the
+views and also made the hike less enjoyable. In the evening we went to a favorite past time in Hong Kong, Wednesday night horse racing at
+[Happy Valley Racecourse](http://www.happyvalleyracecourse.com/). You can access the ground level, also known as the Beer Garden, right on the field for a bit over $1. The atmosphere is amazing and
+it offers really great views not only of the field, but of the city in the background. After studying up a bit on racehorse gambling, which has a lot of strange vocabulary like Show, Quinella or
+Exacta, we placed a few bets and had a great time.
+
+The next day we woke up fairly late since we took full advantage of the Beer Garden at Happy Valley Racecourse the evening before. We went for dim sum at a restaurant nearby (a must do while in
+Hong Kong). Markus complained that it wasn't proper hangover food, but Megan enjoyed it. After wondering around the city in the afternoon we went up to
+[Victoria Peak](https://en.wikipedia.org/wiki/Victoria_Peak) just before the sun began to set. Most people get up to Victoria Peak by taking the Peak Tram combo ticket with entry to the Skydeck
+for $10 USD one way or $15 USD to return. Instead, we went cheap and took the #15 (you can also take #1) bus to Victoria Peak for $1.20 USD and found our own views near the tourist trap Skydeck.
+
+{% gallery hong_kong %}
+hong_kong/1.jpg:: Tsim Sha Tsui
+hong_kong/2.jpg:: Kowloon Park
+hong_kong/3.jpg:: Victoria Harbour
+hong_kong/4.jpg:: Victoria Harbour
+hong_kong/5.jpg:: Victoria Harbour
+hong_kong/6.jpg:: Mid-Levels Escalator
+hong_kong/7.jpg:: Dragon's Back
+hong_kong/8.jpg:: Dragon's Back
+hong_kong/9.jpg:: Dragon's Back
+hong_kong/10.jpg:: Happy Valley Racecourse
+hong_kong/11.jpg:: Happy Valley Racecourse
+hong_kong/12.jpg:: Dim Sum
+hong_kong/13.jpg:: Hong Kong
+hong_kong/14.jpg:: Victoria Peak
+hong_kong/15.jpg:: Victoria Peak
+hong_kong/16.jpg:: Victoria Peak
+hong_kong/17.jpg:: Nan Lian Garden
+hong_kong/18.jpg:: Chi Lin Nunnery
+{% endgallery %}
