@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Shanghai and Nanjing"
+date:   2017-05-31 01:00 +0800
+categories: china
+lat: 31.2240453,32.0989607
+lng: 121.1965718,118.45757
+---
+
+We parted ways with Damaris and Mark at the airport as they flew back to the states and we continued on to Shanghai to meet our friend Miha.
+
+<!--more-->
+
+Immediately as we arrived in Shanghai our first impression was 'wow, so many white people!' Compared to everywhere else we'd traveled in China, Shanghai felt like it had many more Westerners and a
+lot more locals that could speak English. The general feel of Shanghai is that of an expat city, there are whole city streets that look like they could be anywhere in Europe, including the prices.
+
+We spent one full day here at [Disneyland](https://www.shanghaidisneyresort.com/en/), which only opened roughly a year ago. We'd read some pretty scary things about the lines at this Disneyland, and
+while they were all true, we still had a great time. It took us an hour just to get into the park. First we had to go through security (which is thorough) we then had to buy our tickets, this was
+quick, but then the line to check tickets was a mess. As stated in a previous post, the Chinese check ID for virtually everything. Most of the people entering the park had purchased their tickets
+online, so they needed to have their ID scanned/entered as they entered the park with their tickets--it's quite the process. Another major difference with this park is that it felt like their weren't
+as many rides, making the lines fill up quicker. There were also 40 minute lines to just get a fast pass, which made sense as they all were no longer available by noon. For an additional cost, one can
+purchase Disney Premier Access, essentially a paid fast pass for $20 USD per ride--in true capitalism style. When in any line in China, one must never leave space between yourself and the person in
+front of you. Cutting in line is an epidemic that for some reason is completely tolerated. The only people we witnessed say anything to the line jumpers were the Disneyland employees paid to keep
+order. Despite, the crowds and lines, we were still in Disneyland and loved it.
+
+Our good friend Miha lives in Beijing and he came down for the weekend with us in Shanghai before we continued on to our last stop in China, Beijing. We enjoyed a day meandering around Shanghai
+and visiting the [Propaganda Poster Art Centre](http://www.shanghaipropagandaart.com/)--tucked away in a discreet residential apartment block. As we looked confused standing outside the apartment
+block, a guard smiled at us and handed us a card with the specific address on it and welcomed us in. Here one can find some of the last remaining original posters under the Maoist age. In the evening
+we strolled around the Bund Promenade, taking in the lights of the city skyline and enjoying some road beers.
+
+We decided to do a day trip to Nanjing, also known as Nanking. The city of Nanjing is filled with history and has been the epicenter for many Chinese Dynasties and governments. It is also well known
+for the World War II atrocities that took place, The Nanking Massacre or Rape of Nanking. The first thing that we did when we arrived was visit the Nanjing Massacre Memorial Hall. The hall and museum
+are located at one of the mass grave sites, which they include as part of the visit. The memorial hall is free and one could easily spend a good potion of the day here, we strongly recommend this as
+a compulsory trip if near Shanghai and also recommend the book [Rape of Nanking](https://en.wikipedia.org/wiki/The_Rape_of_Nanking_(book)). Afterwards we visited the Presidential Palace and
+Sun Yat-sen's Mausoleum before heading back to Shanghai. It was interesting to see a lot of the places in which very important events in Chinese history took place firsthand.
+
+{% gallery shanghai %}
+shanghai/1.jpg:: Disneyland
+shanghai/2.jpg:: Disneyland
+shanghai/3.jpg:: Disneyland
+shanghai/4.jpg:: Jing'an Temple
+shanghai/5.jpg:: Jing'an Temple
+shanghai/6.jpg:: Propaganda Poster Museum
+shanghai/7.jpg:: Propaganda Poster Museum
+shanghai/8.jpg:: Shanghai
+shanghai/9.jpg:: Shanghai
+shanghai/10.jpg:: Shanghai
+shanghai/11.jpg:: Nanjing Massacre Museum
+shanghai/12.jpg:: Nanjing Massacre Museum
+shanghai/13.jpg:: Presidential Palace
+shanghai/15.jpg:: Sun Yat-sen's Mausoleum
+shanghai/16.jpg:: Sun Yat-sen's Mausoleum
+{% endgallery %}

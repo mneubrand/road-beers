@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Chengdu and surroundings"
+date:   2017-05-28 01:00 +0800
+categories: china
+lat: 30.6584534
+lng: 103.9354632
+---
+
+From Changsha we flew to Chengdu for the second portion of our Southern China trip with Mark and Damaris.
+
+<!--more-->
+
+When we reached Chengdu we were reunited with Damaris and Mark and received great news--they would be able to pick up the replacement Visa the day before their departure. We decided that since
+most of what we wanted to see in this region is located only a few train or bus rides away, we would make Chengdu our base for the duration of our stay. We spent one full day exploring Chengdu
+visiting Jinli Ancient Street and Wenshu Monastery. Jinli was beautiful, but a bit commercialized and over-crowded for our liking. We enjoyed meandering around the monastery and in particular
+visiting the tea house located beside it. Drinking tea with friends is a must do in China, and is especially beloved in Chengdu. However, we quickly realized that it is also a lot of work. You
+place the loose leaf tea in a cup, pour hot water over it, wait just a few seconds, then pour it into the individual cups to drink. This provides you with basically two gulps and then you repeat
+the process. Similar to our time in Hunan, Sichuan is a place to eat. Eating became a focal point for our day and we were hard pressed to find anything we didn't like. In Sichuan, one of the
+favorite dishes is Kung Pao Chicken or Gong Bao--delicious. There are also hot pot restaurants all over the city, in fact at times it appears there are mainly hot pot restaurants in the city.
+While the idea seemed daunting to us, we gave it a go and enjoyed the experience. Since we had no idea what we were doing, the waitress was incredibly patient and essentially treated us like
+children and did most of the work for us, dropping pieces of meat into the bubbling pot and retrieving them for us.
+
+One of the main reasons to visit Chengdu is to explore the many panda reserves in the region. We took a train to Dujiangyan to visit the Dujiangyan Panda Base. We bought the general tickets for
+60 CNY, which essentially allows you to walk through the panda base and enjoy the pandas, much like a panda zoo. One of the main draws for many foreigners to this base it to "volunteer" where you
+pay to get more of a behind the scenes experience. You can also add ~$300 USD to hold a panda for 20 seconds and have your photo taken with it. For numerous reasons, we were all pleased to just
+walk around and enjoy watching the pandas. In the afternoon we went to [Mount Qingcheng](https://www.travelchinaguide.com/attraction/sichuan/chengdu/mt_qingcheng.htm), also located in the same
+city and considered one of the most important places in China for Taoism. While there is a cable car to take you up a significant portion of the mountain, we decided to hike it instead. It was an
+exhausting climb, but the experience in the end felt like we had deserved it. While Mount Qingcheng is a spiritual place, we couldn't help but notice some locations felt
+[familiar](http://www.telegraph.co.uk/sponsored/china-watch/12166437/qingcheng-mountain-in-kung-fu-panda-3.html) to us. We took another day trip to
+[Bifengxia Panda Base](https://www.travelchinaguide.com/attraction/sichuan/chengdu/bifengxia-panda-base.htm) as well where they had some baby pandas.
+
+We also spent quite a bit of time relaxing and simply enjoying Chengdu. We bar hopped a bit one day and were delighted to find some delicious craft brew. We were ecstatic to have friends to travel
+with in China and share these experiences with. As much as this journey has been amazing with just each other, it's good to also have friends to share some pieces of it with.
+
+{% gallery chengdu %}
+chengdu/1.jpg:: Jinli Street
+chengdu/2.jpg:: Wenshu Monastery
+chengdu/3.jpg:: Dujiangyan Panda Base
+chengdu/4.jpg:: Dujiangyan Panda Base
+chengdu/5.jpg:: Dujiangyan Panda Base
+chengdu/6.jpg:: Dujiangyan Panda Base
+chengdu/7.jpg:: Dujiangyan Panda Base
+chengdu/8.jpg:: Mount Qingcheng
+chengdu/9.jpg:: Mount Qingcheng
+chengdu/10.jpg:: Mount Qingcheng
+chengdu/11.jpg:: Mount Qingcheng
+chengdu/12.jpg:: Bifengxia Panda Base
+chengdu/13.jpg:: Bifengxia Panda Base
+chengdu/14.jpg:: Bifengxia Panda Base
+chengdu/15.jpg:: Bifengxia Panda Base
+chengdu/16.jpg:: Bifengxia Panda Base
+{% endgallery %}

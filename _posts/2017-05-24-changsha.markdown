@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "Changsha, Fenghuang, and Wulingyuan"
+date:   2017-05-24 01:00 +0800
+categories: china
+lat: 28.1760581,28.0182656,29.3338608
+lng: 112.8845139,109.2711185,110.431783
+---
+
+After Hong Kong Changsha would be our first stop in mainland China where we would meet our friends Damaris and Mark.
+
+<!--more-->
+
+We entered mainland China through Shenzen, a city known for manufacturing electronics. From Shenzen we boarded a high speed train that took us roughly the distance of San Francisco to Los Angeles
+in 3 hours at a speed of over 300km/h--what a concept. In Changsha we stayed at a Jinjiang Inn, also known as the Motel 6 chain of China. We met our friends Damaris and Mark here to begin our
+Chinese Adventure. Unfortunately, Damaris' passport was lost somewhere between their travel from Beijing to Changsha. While losing a passport anywhere is frustrating, losing one in China is probably
+one of the worst countries to have this happen in. The Chinese check ID everywhere, including purchasing and boarding buses and trains and checking into hotels, leaving travel for us daunting. They
+even check ID in order to access many museums and monuments. The first hurdle was to gain an official letter from their Exit and Entry Bureau stating the passport was lost, that accompanied by a
+copy of the passport should allow you to do all of the aforementioned items, although it's not guaranteed. Without going into details, getting this paper was at best, an insight into Chinese
+bureaucracy and patience.
+
+From Changsha we took a day trip 1.5 hours away to the town where Mao Zedong was born and raised, [Shaoshan](http://www.chinahighlights.com/shaoshan/). Without discussing Chinese politics, it is
+worth noting that for many Chinese, visiting this location and the many sites dedicated to Chairman Mao is an act of homage. Here we visited a relative of Mao's home, which has been turned into
+a museum. The home itself is lovely, but they do not allow you to take photos inside. We went through numerous rooms with pictures of Mao and his family and many opportunities to buy Mao and
+communist related memorabilia. The tour was finished with a true highlight, a room where a Mao impersonator sits behind a desk chainsmoking and for the small amount of $1.40 USD he will sign
+your name. After the museum we visited a giant Mao Bronze statue where true Mao lovers can lay wreaths in front of. Our last Mao related visit took us to his former home. We decided we didn't
+want to pay to go in (plus they checked ID) and instead opted to view the house from the outside and people watch. All in all, it was a most interesting experience.
+
+After Changsha we took a 5.5 hour bus ride to the historic city of [Fenghuang](https://www.tripadvisor.co.nz/Attraction_Review-g660726-d505448-Reviews-Phoenix_Ancient_Town-Fenghuang_County_Hunan.html).
+While this city is flooded with domestic tourism, it still manages to hold on to it's charm and we all quickly fell in love with it. We paid for a ticket that allowed us entry into all of the sites
+plus a boat ride. This quickly became a scavenger hunt as the map provided to us was useless to find our destinations and there was no clear indicator to locate them. One can easily spend a full
+day meandering around this city simply enjoying the atmosphere. In the evening we watched a show based on "The Border Town" by Shen Congwen a famous local writer. We were impressed by the stage and
+amount of detail that went into the show.
+
+From Fenghuang we took a four hour bus to Wulingyuan. Here, we unfortunately had to temporarily say goodbye to Damaris and Mark as they needed to make their
+way to our next destination of Chengdu two nights earlier than our scheduled flight in order to deal with getting Damaris a passport from the American Consulate and the worst part, a replacement
+Chinese Visa. As the visa processing time takes 5-7 days, it was imperative that they get it started in time to make their flights home.
+[Wulingyuan Scenic Area](http://whc.unesco.org/en/list/640) feels out of this world, which explains why the blockbuster hit Avatar used it as inspiration
+for the world of Pandora. A ticket into the park costs ~$40 USD and includes four days of entry. There is no option to purchase a daily pass at a discounted rate. There are two main places people
+stay to access the park, the larger city of Zhangjiajie or the smaller city of Wulingyuan. We stayed in Wulingyuan, only a 10 minute walk to the park entrance. Once inside the park, your ticket
+gains you entry onto their bus system inside the park. We spent the first day hiking a trail that takes you along a river. This was a great introduction to the park and allows you to admire the
+many sandstone pillars from the floor. While, the park itself is amazing, it can be difficult to navigate around all of the people. Boarding the bus at the main locations required a lot of jostling
+and running, at times it felt like we were in the Hunger Games. Every time the bus stopped, Markus would yell "charge" and this was a wildly accurate depiction of the scene. However, as most people
+only get off the bus and walk to the closest viewpoint, we had the actual hiking trails virtually to ourselves. Stairs or people, your choice. Every trail is an
+endless up and down staircase and by the end of the day we were in pain. During one of these trails we came upon a mother, daughter, and a monkey blocking their path. While we've had plenty of 
+experience with thieving monkeys, we've never met one as mean spirited as this one. I asked the woman if they tried to go around him and they said he attacks each time, so I tried to pick up a
+stick to scare him and instead he scared the hell out of me as he lunged with his fangs out--he clearly meant business. As much as we hate feeding wild animals, we felt like we were left with 
+no choice. Markus attempted to lure him away with food by quickly showing it to him and tossing it off the path. The first few tries didn't work, but finally we had success. There are numerous 
+reasons not to feed wild animals, including the fact that you may be creating a terror just like this highway robber. One of the highlights of the day was a popular tourist destination, but 
+completely worth it, named after the mountains in Avatar: Hallelujah Mountain. We came upon monkeys again on another trail, these were less threatening as our other experience and a man basically 
+scared them off with a selfie stick so we could all pass. 
+
+{% gallery changsha %}
+changsha/1.jpg:: Shaoshan
+changsha/2.jpg:: Shaoshan
+changsha/3.jpg:: Changsha
+changsha/4.jpg:: Fenghuang
+changsha/5.jpg:: Fenghuang
+changsha/6.jpg:: Fenghuang
+changsha/7.jpg:: Fenghuang
+changsha/8.jpg:: Fenghuang
+changsha/9.jpg:: Fenghuang Show
+changsha/10.jpg:: Fenghuang Show
+changsha/11.jpg:: Wulingyuan
+changsha/12.jpg:: Wulingyuan
+changsha/13.jpg:: Wulingyuan
+changsha/14.jpg:: Wulingyuan
+changsha/15.jpg:: Wulingyuan
+changsha/16.jpg:: Sedan chairs
+changsha/17.jpg:: Wulingyuan
+changsha/18.jpg:: Hallelujah Mountain
+{% endgallery %}
