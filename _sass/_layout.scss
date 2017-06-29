@@ -71,15 +71,6 @@ $nav-height: 140px;
 			}
 		}
 
-		#current-location {
-
-			br {
-				@media screen and (max-width: $content-width-small - 1) {
-					display: none;
-				}
-			}
-		}
-
 		.social-icons {
 			text-align: center;
 			display: flex;
@@ -140,6 +131,15 @@ $nav-height: 140px;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+
+			@media screen and (max-width: $content-width - 1) {
+				max-width: $content-width-small;
+			}
+
+			@media screen and (max-width: $content-width-small - 1) {
+				max-width: 100%;
+			}
+
 		}
 	}
 
