@@ -131,10 +131,16 @@ module Jekyll
 	 			if !File.basename(file).include? "-thumb"
 	 				name = File.basename(file).sub(File.extname(file), "-thumb#{File.extname(file)}")
 	 				thumbname = File.join(@gallery_dest, File.basename(File.dirname(file)), name)
+	 				retina = thumbname.sub(/\.jpg/, '@2x.jpg');
+
 	                # Keep the thumb files from being cleaned by Jekyll
 	                dir = File.join(@config['dir'], File.basename(File.dirname(file)))
 	                site.static_files << GalleryFile.new(site, site.source, dir, name )
+	                site.static_files << GalleryFile.new(site, site.source, dir, name.sub(/\.jpg/, '@2x.jpg') )
+
 	 				if !File.exists?(thumbname)
+	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
+	 				elsif !File.exists?(retina)
 	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
 	 				end
 	 			end
