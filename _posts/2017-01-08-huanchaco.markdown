@@ -5,6 +5,7 @@ date:   2017-01-08 01:00 -0800
 categories: southamerica
 lat: -8.0981228,-12.0553028
 lng: -79.1082092,-77.0627323
+preview: lima/5.jpg
 ---
 
 The following day, with Markus feeling much better, we boarded a bus to start our journey to Peru. Because we lost a day to sickness we had to skip our last destination in Ecuador: Cuenca.

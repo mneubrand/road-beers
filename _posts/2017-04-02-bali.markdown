@@ -5,6 +5,7 @@ date:   2017-04-02 01:00 +0800
 categories: asia
 lat: -8.7043651
 lng: 115.1674107
+preview: bali/1.jpg
 ---
 
 We'd heard wonderful things about Bali while we were in South America, including how cheap it is, and thus decided to spend around three weeks here.

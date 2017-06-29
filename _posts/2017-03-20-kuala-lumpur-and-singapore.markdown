@@ -5,6 +5,7 @@ date:   2017-03-20 01:00 +0800
 categories: asia
 lat: 3.1385036,1.3147298
 lng: 101.6169495,103.7769791
+preview: kuala_lumpur/3.jpg
 ---
 
 Heat. Humid, sweltering, suffocating heat. We have arrived in Southeast Asia, and it is only 4am, but the first description is mind-blowingly accurate.

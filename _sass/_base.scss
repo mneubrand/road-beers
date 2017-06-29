@@ -17,7 +17,7 @@ html {
  */
 body {
     height: 100%;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $base-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -29,7 +29,7 @@ body {
 }
 
 p {
-    font: $base-font-weight #{$text-font-size}/#{$text-line-height} $text-font-family;
+    font: #{$text-font-size}/#{$text-line-height} $text-font-family;
     color: $text-color;
 }
 
@@ -66,23 +66,12 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
-
-
-
 /**
  * Links
  */
 a {
     color: $brand-color;
     text-decoration: none;
-    font-weight: bold;
 
     &:hover {
         color: $text-color;
@@ -141,24 +130,18 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    width: $content-width;
+    margin: 30px auto 0 auto;
     @extend %clearfix;
 
-    &.wide {
-        max-width: $content-width-wide;
+    @media screen and (max-width: $content-width - 1) {
+        width: $content-width-small;
     }
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width: calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+    @media screen and (max-width: $content-width-small - 1) {
+        margin: 0;
+        width: 100%;
     }
-
 }
 
 
@@ -175,21 +158,13 @@ pre {
     }
 }
 
-
+.clear {
+    @extend %clearfix;
+}
 
 /**
- * Icons
+ * Center
  */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+.center {
+    text-align: center;
 }

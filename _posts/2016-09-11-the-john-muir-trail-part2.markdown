@@ -5,6 +5,7 @@ date:   2016-09-11 13:00 -0800
 categories: northamerica
 lat: 36.6537429
 lng: -118.4734215
+preview: jmt_day21/1.jpg
 ---
 
 Almost half of the trail is behind us, but all the big passes and Mount Whitney are still waiting and there is no more resupply until the end.

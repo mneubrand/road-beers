@@ -5,13 +5,15 @@
 
   <body>
 
-    <div class="page-content">
-      {% include header.html %}
+    <div class="wrapper">
+    {% include header.html %}
 
-      {{ content }}
+    <div class="page-content">
+    {{ content }}
     </div>
 
     {% include footer.html %}
+    </div>
 
     <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
     <script>

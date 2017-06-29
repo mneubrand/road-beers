@@ -5,6 +5,7 @@ date:   2016-11-10 01:00 -0800
 categories: centralamerica
 lat: 14.8374809
 lng: -91.5584712
+preview: xela/7.jpg
 ---
 
 Quetzaltenango, often referred to as Xela, is Guatemala's second largest city. We chose Xela as our home to take Spanish lessons in for three weeks prior to traveling further in Central

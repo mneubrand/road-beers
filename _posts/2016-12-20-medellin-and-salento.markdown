@@ -5,6 +5,7 @@ date:   2016-12-20 01:00 -0800
 categories: southamerica
 lat: 6.2442023,4.5941106
 lng: -75.616231,-75.582973
+preview: medellin/2.jpg
 ---
 
 We continued our trip in Colombia through Medellín, the second-largest city in Colombia, and afterwards headed to a small town in the middle of Colombia's coffee region.

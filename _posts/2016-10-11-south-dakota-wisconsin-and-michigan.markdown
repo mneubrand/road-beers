@@ -5,6 +5,7 @@ date:   2016-10-11 01:00 -0800
 categories: northamerica
 lat: 42.7297381,44.3792391,42.5388162
 lng: -87.8580762,-103.7409471,-82.967164
+preview: wisconsin/4.jpg
 ---
 
 After Yellowstone we started the long drive to Racine, WI with a few stops in between including Deadwood, SD. 

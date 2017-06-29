@@ -5,6 +5,7 @@ date:   2017-05-24 01:00 +0800
 categories: china
 lat: 28.1760581,28.0182656,29.3338608
 lng: 112.8845139,109.2711185,110.431783
+preview: changsha/7.jpg
 ---
 
 After Hong Kong Changsha would be our first stop in mainland China where we would meet our friends Damaris and Mark.

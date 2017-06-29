@@ -1,51 +1,26 @@
 <header class="site-header">
 
-    <nav class="site-nav navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="/">
-                    <div class="site-title">
-                        <h1 class="left">Road</h1>
-                        {% include logo.svg %}
-                        <h1 class="right">Beers</h1>
-                    </div>
-                </a>
-            </div>
+    <div class="site-title">
+        <a href="/">
+            {% include small_logo.svg %}
+            <h1>Road Beers</h1>
+        </a>
+    </div>
 
-            <div class="navbar-content">
-                <ul class="nav navbar-nav">
-                    <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
-                    <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
-                    <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
-                </ul>
-                <div class="site-location">
-                    <div id="current-location"></div>
-                </div>
+    <ul class="nav">
+        <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
+        <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
+        <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
+        <li><div id="current-location"></div></li>
+        <li>
+            <div class="social-icons">
+                <div class="social-icon"><a href="/feed.xml"><img src="{{ site.baseurl }}/images/rss_feed.svg" alt="feed icon" /></a></div>
+                <div class="social-icon"><a href="https://www.facebook.com/wwwroadbeerscom/">f</a></div>
             </div>
-        </div>
-    </nav>
+        </li>
+    </ul>
 
-    <nav class="site-nav-mobile navbar">
-        <div class="container-fluid">
-            <a href="/">
-                <div class="site-title">
-                    {% include small_logo.svg %}
-                </div>
-            </a>
-
-            <div class="navbar-content">
-                <ul class="nav navbar-nav">
-                    <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
-                    <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
-                    <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
-                </ul>
-            </div>
-
-            <div class="site-location">
-                <div id="current-location-small"></div>
-            </div>
-        </div>
-    </nav>
+    <div class="clear"></div>
 
     <script src="{{ "/js/location.js" | prepend: site.baseurl }}"></script>
 

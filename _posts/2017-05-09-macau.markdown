@@ -5,6 +5,7 @@ date:   2017-05-09 01:00 +0800
 categories: china
 lat: 22.164654
 lng: 113.552905
+preview: macau/5.jpg
 ---
 
 Macau, the Vegas of Asia, without all of the booze, merriment, and amazing people watching.

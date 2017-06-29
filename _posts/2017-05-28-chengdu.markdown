@@ -5,6 +5,7 @@ date:   2017-05-28 01:00 +0800
 categories: china
 lat: 30.6584534
 lng: 103.9354632
+preview: chengdu/12.jpg
 ---
 
 From Changsha we flew to Chengdu for the second portion of our Southern China trip with Mark and Damaris.

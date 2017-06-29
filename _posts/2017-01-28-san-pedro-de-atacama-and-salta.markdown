@@ -5,6 +5,7 @@ date:   2017-01-28 01:00 -0800
 categories: southamerica
 lat: -22.914014,-24.7960685
 lng: -68.2074194,-65.5006684
+preview: atacama/7.jpg
 ---
 
 After spending some time on the beach in Chile we headed for the middle of the desert to San Pedro de Atacama before making our way into Argentina.

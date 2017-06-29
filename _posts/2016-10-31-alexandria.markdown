@@ -5,6 +5,7 @@ date:   2016-10-31 01:00 -0800
 categories: northamerica
 lat: 38.8174549
 lng: -77.1083605
+preview: alexandria/1.jpg
 ---
 
 The last leg of our US road trip ended outside Washington, DC in Alexandria, VA. We stayed with our friends Damaris and Mark. Steph and Brandon also joined us from Detroit. It was a mini

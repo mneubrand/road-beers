@@ -5,6 +5,7 @@ date:   2017-01-22 01:00 -0800
 categories: southamerica
 lat: -15.8468537,-18.4724735,-20.2448127
 lng: -70.0533265,-70.3241671,-70.1738686
+preview: iquique/1.jpg
 ---
 
 The Inca Trail was a huge moment for us in our trip, which made it difficult to say goodbye and move on. We had one more stop in Peru before moving on to Chile.

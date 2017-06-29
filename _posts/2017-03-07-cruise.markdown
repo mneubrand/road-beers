@@ -5,6 +5,7 @@ date:   2017-03-07 01:00 -0800
 categories: oceania
 lat: -27.1259756,-25.0696502,-17.6867285,-21.2581724
 lng: -109.3738341,-130.1142148,-149.5129087,-175.2686307
+preview: cruise/18.jpg
 ---
 
 Although we were sad to say goodbye to Latin America, we were excited to have a break from backpacking and enjoy the open seas.

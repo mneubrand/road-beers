@@ -5,6 +5,7 @@ date:   2017-01-01 01:00 -0800
 categories: southamerica
 lat: -0.1862504
 lng: -78.5709669
+preview: quito/3.jpg
 ---
 From Otavalo it was a short two hour bus ride to our second stop in Ecuador, Quito, where we would spend New Year's Eve.
 

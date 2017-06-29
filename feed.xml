@@ -12,14 +12,13 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:10 %}
-      {% assign src = post.content | split: 'noscript' %}
-      {% assign src = src[1] | split: 'src="' %}
-      {% assign src = src[1] | split: '"' | first %}
       {% assign s = post.content | split:"<!--more-->" %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
-          <img src="{{ src | prepend: site.baseurl | prepend: site.url }}" style="display: block; padding: 4px; margin-right: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; float: left"/>{{ s[0] | strip_html | xml_escape }}<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More...</a>
+          <img src="{{ post.preview | prepend: '/photos/' | prepend: site.baseurl | prepend: site.url }}"/>
+          {{ s[0] | strip_html | xml_escape }}
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More...</a>
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>

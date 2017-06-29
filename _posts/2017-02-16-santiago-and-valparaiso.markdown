@@ -5,6 +5,7 @@ date:   2017-02-16 01:00 -0800
 categories: southamerica
 lat: -33.4724224,-33.046204
 lng: -70.7702583,-71.606856
+preview: santiago/5.jpg
 ---
 
 Santiago and Valparaiso marked the end of our time in Latin America. While we're sad to leave we're looking forward to the new adventures that await us. Due to the exorbitant price of flying from South America to Asia,

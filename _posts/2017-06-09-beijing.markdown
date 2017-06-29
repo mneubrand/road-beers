@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Beijing"
+date:   2017-06-09 01:00 +0800
+categories: china
+lat: 39.9390715
+lng: 116.1165897
+preview: beijing/10.jpg
+---
+
+Beijing marked the end of our time in China and we couldn't think of a better send off than to stay with friends.
+
+<!--more-->
+
+We took a high speed train from Shanghai to Beijing, a total of ~740 miles in roughly six hours. Our friend Miha, who met us in Shanghai, has been living in Beijing now for about 4 months. Our
+visit happened to correspond with his girlfriend, Wei Jun, moving in with him and she also arrived in Beijing at the same time as us. We couldn't help but
+feel a bit guilty that our visit landed on a very important time for them, it also didn't help that Megan arrived with a cold. However, they were both so hospitable and reassured us that it was
+fine and they were happy to have us.
+
+For us, this stay was really needed, it was the first time since we began traveling where we really felt like we were at home. While we've stayed with very hospitable strangers before, it's not the
+same as staying with a friend, especially if you're not feeling well. The first two days we mainly relaxed at their place, Markus cooked breakfast burritos one night and Megan recuperated on the
+couch. Wei Jun also went above and beyond and cooked us all a very special multi-course meal--delicious.
+
+Once Megan was feeling a bit better we visited the top must do's in the city, Tiananmen Square and the Forbidden City. The most impressive part of Tiananmen Square is imagining what it must have
+felt like during the Tiananmen Square protests of 1989. The Forbidden City has large squares that seemingly go on forever. We also visited the Temple of Heaven, where dynasties held prayers for a good harvest. The park surrounding the Temple of Heaven is gorgeous and it was nice to see families enjoying the nice summer day. One can't help but notice that there isn't much of a skyline in Beijing, it's
+really more like large streets with even larger buildings in all directions. Honestly, not our favorite city in China, but there are gems within it.
+
+On Sunday we visited the [Simatai section of the Great Wall](https://www.travelchinaguide.com/china_great_wall/scene/beijing/simatai.htm). We chose this
+section as it is a bit further out and promised less crowds than the sections closest to Beijing, Badaling. We were not disappointed. This location starts with a tourist town at the base called
+Gubei Water Town. While it's beautiful, it's clearly only been built to bring in tourism. This section of the wall has only been partially restored, lending to it's beauty and atmosphere. At certain
+sections you can see the wall winding in the distance over the hilltops--breathtaking. We hired a private driver for the day for $100 USD, with four people this is a great price as the advertised shuttles for the same thing cost $55 USD each. The cost included the trip back, so we
+didn't have to negotiate with another driver for the return. While 2 hours may seem like a long day trip, many places in Beijing can take 1.5 hours to reach on the MTR--the city is truly huge.
+
+We spent what we thought was our last day in Beijing at the Summer Palace. We preferred this by far over the Forbidden City and Tiananmen Square. The gardens and architecture here are stunning and
+the lake views and a special touch, also, since we visited during Summer, the lake still serves the same purpose it did when they first built the Palace--the temperatures are much cooler
+compared to the rest of the city. We also meandered through the hipster neighborhood, 798 Art Zone. It's worth a visit as you have access to many free art galleries. It did however feel a bit like a government planned neighborhood. We met Miha and Wei Jun in the evening on a street known for spicy crayfish, Ghost Street. Here we had a variety of spicy crayfish, frogs, and beef, with beer to
+wash it all down. It was during this final meal that we realized we made a huge mistake, we'd confused our travel date and missed our flight to Ho Chi Minh City, Vietnam. Luckily, we managed to book
+a flight out very early the next day, but it was certainly painful for our budget. It was hard to say goodbye to Miha and Wei Jun and we couldn't be more thankful for the hospitality they'd shown us.
+
+{% gallery beijing %}
+beijing/1.jpg:: Forbidden City
+beijing/2.jpg:: Forbidden City
+beijing/3.jpg:: Forbidden City
+beijing/4.jpg:: Tiananmen Square
+beijing/5.jpg:: Temple of Heaven
+beijing/6.jpg:: Brewery dinner
+beijing/7.jpg:: Home cooked dinner
+beijing/8.jpg:: Great Wall
+beijing/9.jpg:: Great Wall
+beijing/10.jpg:: Great Wall
+beijing/11.jpg:: Great Wall
+beijing/12.jpg:: Summer Palace
+beijing/13.jpg:: Summer Palace
+beijing/15.jpg:: Summer Palace
+beijing/16.jpg:: Summer Palace
+beijing/17.jpg:: Summer Palace
+beijing/18.jpg:: 798 Art Zone
+beijing/19.jpg:: 798 Art Zone
+beijing/20.jpg:: Last dinner
+{% endgallery %}

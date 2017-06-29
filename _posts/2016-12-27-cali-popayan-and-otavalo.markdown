@@ -5,6 +5,7 @@ date:   2016-12-27 01:00 -0800
 categories: southamerica
 lat: 2.4776955,3.410592,0.23333
 lng: -76.5959935,-76.6531621,-78.268919
+preview: cali/7.jpg
 ---
 
 After Salento we made two more stops in Colombia, Cali and Popayán, where we spent Christmas. Afterwards we moved on to Ecuador.

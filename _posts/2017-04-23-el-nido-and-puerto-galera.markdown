@@ -5,6 +5,7 @@ date:   2017-04-23 01:00 +0800
 categories: asia
 lat: 11.2050869,13.381035
 lng: 119.2659988,120.8172321
+preview: el_nido/0.jpg
 ---
 
 Despite getting food poisoning and having a few bad experiences, the Phillipines is quickly becoming one of our favorite destinations.

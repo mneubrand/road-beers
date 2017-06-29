@@ -5,6 +5,7 @@ date:   2017-04-12 01:00 +0800
 categories: asia
 lat: -8.4961361,-8.350556
 lng: 115.2485299,116.0525333
+preview: gili_meno/5.jpg
 ---
 
 Our first impressions of Bali were not quite great, but after three weeks here we understand why it's so heavily saturated with tourism. Friendly people, beautiful temples, delicious food, inviting

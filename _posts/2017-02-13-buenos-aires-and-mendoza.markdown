@@ -5,6 +5,7 @@ date:   2017-02-13 01:00 -0800
 categories: southamerica
 lat: -34.6157142,-32.883334
 lng: -58.5033599,-68.8760287
+preview: mendoza/6.jpg
 ---
 
 After Iguazu Falls we had two more destinations in Argentina to enjoy, the countdown to the end of our Latin America trip has begun.

@@ -5,6 +5,7 @@ date:   2016-10-02 01:00 -0800
 categories: northamerica
 lat: 37.24284,36.9810823
 lng: -108.5354964,-110.2289944
+preview: monument_valley/8.jpg
 ---
 
 The next stop on our itinerary was Mesa Verde where we would be staying in the Lodge directly in the park. On the way there we made a little detour to drive through Monument Valley as well.

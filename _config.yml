@@ -12,8 +12,8 @@ email: us@road-beers.com
 gallerytag:
     dir: photos
     url: /photos
-    thumb_width: 150
-    thumb_height: 150
+    thumb_width: 300
+    thumb_height: 300
     columns: 4
 
 paginate: 5

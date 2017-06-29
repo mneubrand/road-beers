@@ -32,17 +32,17 @@ module Jekyll
 
 			images_html = ""
 			images.each_with_index do |image, key|
-				images_html << "<dl class=\"gallery-item\">\n"
-				images_html << "<dt class=\"gallery-icon\">\n"
+			    retina = image['thumbnail'].to_s().sub(/\.jpg/, '@2x.jpg')
+
+				images_html << "<div class=\"gallery-item\">"
 				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
-				images_html << "<img src=\"/images/loading.gif\" data-src=\"#{image['thumbnail']}\" class=\"lazy\" />\n"
-				images_html << "<noscript><img src=\"#{image['thumbnail']}\" /></noscript>\n"
-				images_html << "</a>\n"
-				images_html << "</dt>\n"
-				images_html << "<dd class=\"gallery-caption\">#{image['caption']}</dd>"
-				images_html << "</dl>\n\n"
+				images_html << "<img src=\"/images/loading.gif\" data-src=\"#{image['thumbnail']}\" class=\"lazy\" data-srcset=\"#{retina} 2x\" />"
+				images_html << "<noscript><img src=\"#{image['thumbnail']}\" /></noscript>"
+				images_html << "</a>"
+				images_html << "<div class=\"gallery-caption\">#{image['caption']}</div>"
+				images_html << "</div>"
 			end
-			gallery_html = "<div class=\"gallery\">\n\n#{images_html}\n\n</div><div style=\"clear: both;\"></div>\n"
+			gallery_html = "<div class=\"gallery\">\n#{images_html}\n</div><div class=\"clear\"></div>\n"
 
 			return gallery_html
 
@@ -149,14 +149,23 @@ module Jekyll
 	 		if items.count > 0
 		 		items.each do |item|
 		 		    if !File.exists?(item['thumbname'])
-                        img = Magick::Image.read(item['file']).first
-                        thumb = img.resize_to_fill!(@config['thumb_width'], @config['thumb_height'])
                         dir = File.dirname(item['thumbname'])
                         if !File.exists?(dir)
                             FileUtils.mkdir_p(dir)
                         end
+
+                        img = Magick::Image.read(item['file']).first
+                        thumb = img.resize_to_fill!(@config['thumb_width'], @config['thumb_height'])
                         thumb.write(item['thumbname'])
                         thumb.destroy!
+                    end
+
+                    retina = item['thumbname'].sub(/\.jpg/, '@2x.jpg');
+                    if !File.exists?(retina)
+                        img = Magick::Image.read(item['file']).first
+                        thumb_retina = img.resize_to_fill!(@config['thumb_width'] * 2, @config['thumb_height'] * 2)
+                        thumb_retina.write(retina)
+                        thumb_retina.destroy!
                     end
 		 		end
 	 		end

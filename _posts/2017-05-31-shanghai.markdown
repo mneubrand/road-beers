@@ -5,6 +5,7 @@ date:   2017-05-31 01:00 +0800
 categories: china
 lat: 31.2240453,32.0989607
 lng: 121.1965718,118.45757
+preview: shanghai/10.jpg
 ---
 
 We parted ways with Damaris and Mark at the airport as they flew back to the states and we continued on to Shanghai to meet our friend Miha.

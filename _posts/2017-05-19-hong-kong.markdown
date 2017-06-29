@@ -5,6 +5,7 @@ date:   2017-05-09 01:00 +0800
 categories: china
 lat: 22.267055
 lng: 114.165818
+preview: hong_kong/14.jpg
 ---
 
 Megan fell in love with the hustle and bustle of Hong Kong years ago and was excited to explore it again with Markus.

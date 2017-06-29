@@ -5,6 +5,7 @@ date:   2016-11-23 01:00 -0800
 categories: centralamerica
 lat: 14.5591436
 lng: -90.7513298
+preview: antigua/9.jpg
 ---
 
 We spent 2 more weeks in Xela taking Spanish lessons and doing small trips in its surroundings. Afterwards we headed to Antigua to begin our trip through the rest of Guatemala and Central America.

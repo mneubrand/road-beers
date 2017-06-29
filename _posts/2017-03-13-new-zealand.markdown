@@ -5,6 +5,7 @@ date:   2017-03-13 01:00 -0800
 categories: oceania
 lat: -36.8629409,-39.0995423,-45.4579062,-43.5949749
 lng: 174.7253868,175.645957,167.1485378,170.1395996
+preview: new_zealand/13.jpg
 ---
 
 With only 9 days in New Zealand, we squeezed in as much as could before embarking on our journey to Southeast Asia.

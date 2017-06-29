@@ -5,6 +5,7 @@ date:   2017-01-15 01:00 -0800
 categories: southamerica
 lat: -13.5300169,-13.163654
 lng: -71.9742685,-72.5439759
+preview: inca_trail/20.jpg
 ---
 
 We left Lima early in the morning for a quick one hour flight to Cusco. For most people (us included) the main reason to visit Cusco is that it's the gateway to visiting Machu Picchu.

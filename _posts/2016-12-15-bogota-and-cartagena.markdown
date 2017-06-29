@@ -5,6 +5,7 @@ date:   2016-12-15 01:00 -0800
 categories: southamerica
 lat: 4.6482837,10.4001787
 lng: -74.2478914,-75.5434446
+preview: bogota/2.jpg
 ---
 
 After about one month and a week in Central America we made one last quick stop in Costa Rica and were on our way to Colombia where we'll be until after Christmas.

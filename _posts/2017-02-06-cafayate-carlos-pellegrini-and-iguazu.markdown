@@ -5,6 +5,7 @@ date:   2017-02-06 01:00 -0800
 categories: southamerica
 lat: -26.0695348,-28.5333262,-25.6952541
 lng: -65.9841508,-57.1688605,-54.4388549
+preview: cafayate/8.jpg
 ---
 
 After Salta our next stop in Argentina was Cafayate. Cafayate is considered the second largest wine producing region in Argentina, after the more widely known Mendoza.

@@ -5,6 +5,7 @@ date:   2017-05-03 01:00 +0800
 categories: asia
 lat: 11.9692826,14.5964957
 lng: 121.9097195,120.9444432
+preview: boracay/1.jpg
 ---
 
 From the White Beach of Boracay to the smoldering smog congested city streets of Manila.
