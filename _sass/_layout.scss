@@ -131,6 +131,7 @@ $nav-height: 140px;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			transition: opacity 400ms;
 
 			@media screen and (max-width: $content-width - 1) {
 				max-width: $content-width-small;
@@ -138,6 +139,10 @@ $nav-height: 140px;
 
 			@media screen and (max-width: $content-width-small - 1) {
 				max-width: 100%;
+			}
+
+			&.lqip {
+				width: 100%;
 			}
 
 		}
@@ -254,27 +259,23 @@ $nav-height: 140px;
 		margin: 0;
 		height: 300px;
 		width: 300px;
-
-		.lazy {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			max-width: 300px;
-			max-height: 300px;
-			margin: auto;
-		}
+		overflow: hidden;
 
 		img {
 			border: 0;
 			margin: 0;
 			padding: 0;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 300px;
+			width: 300px;
+			transition: opacity 400ms;
 		}
 
 		.gallery-caption {
 			background-color: rgba(0, 0, 0, 0.4);
-			color: #fff;
+			color: #f7f7f7;
 			width: 100%;
 			padding: 5px 0;
 			text-align: center;
@@ -437,4 +438,16 @@ $nav-height: 140px;
 	padding: 5px;
 	width: 350px;
 	background-color: #fff;
+}
+
+img.blur {
+	filter: blur(10px);
+}
+
+img.lazyload, img.lazyloading, img.lazyerror {
+	opacity: 0;
+}
+
+img.lazyloaded {
+	opacity: 1;
 }

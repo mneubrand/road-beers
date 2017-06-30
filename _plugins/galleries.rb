@@ -32,11 +32,13 @@ module Jekyll
 
 			images_html = ""
 			images.each_with_index do |image, key|
+			    lqip = image['thumbnail'].to_s().sub(/\.jpg/, '@lqip.jpg')
 			    retina = image['thumbnail'].to_s().sub(/\.jpg/, '@2x.jpg')
 
 				images_html << "<div class=\"gallery-item\">"
 				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
-				images_html << "<img src=\"/images/loading.gif\" data-src=\"#{image['thumbnail']}\" class=\"lazy\" data-srcset=\"#{retina} 2x\" />"
+				images_html << "<img src=\"#{lqip}\" class=\"blur\" />"
+				images_html << "<img data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" />"
 				images_html << "<noscript><img src=\"#{image['thumbnail']}\" /></noscript>"
 				images_html << "</a>"
 				images_html << "<div class=\"gallery-caption\">#{image['caption']}</div>"
@@ -131,17 +133,27 @@ module Jekyll
 	 			if !File.basename(file).include? "-thumb"
 	 				name = File.basename(file).sub(File.extname(file), "-thumb#{File.extname(file)}")
 	 				thumbname = File.join(@gallery_dest, File.basename(File.dirname(file)), name)
-	 				retina = thumbname.sub(/\.jpg/, '@2x.jpg');
+	 				retina = thumbname.sub(/\.jpg/, '@2x.jpg')
+	 				lqip = thumbname.sub(/\.jpg/, '@lqip.jpg')
+
+	 				name_lqip = File.basename(file).sub(File.extname(file), "@lqip#{File.extname(file)}")
+	 				lqip_full = File.join(@gallery_dest, File.basename(File.dirname(file)), name_lqip)
 
 	                # Keep the thumb files from being cleaned by Jekyll
 	                dir = File.join(@config['dir'], File.basename(File.dirname(file)))
 	                site.static_files << GalleryFile.new(site, site.source, dir, name )
 	                site.static_files << GalleryFile.new(site, site.source, dir, name.sub(/\.jpg/, '@2x.jpg') )
+	                site.static_files << GalleryFile.new(site, site.source, dir, name.sub(/\.jpg/, '@lqip.jpg') )
+	                site.static_files << GalleryFile.new(site, site.source, dir, name_lqip )
 
 	 				if !File.exists?(thumbname)
 	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
 	 				elsif !File.exists?(retina)
 	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
+                    elsif !File.exists?(lqip)
+                        to_resize.push({ "file" => file, "thumbname" => thumbname })
+                     elsif !File.exists?(lqip_full)
+                        to_resize.push({ "file" => file, "thumbname" => thumbname })
 	 				end
 	 			end
 	 		end
@@ -172,6 +184,22 @@ module Jekyll
                         thumb_retina = img.resize_to_fill!(@config['thumb_width'] * 2, @config['thumb_height'] * 2)
                         thumb_retina.write(retina)
                         thumb_retina.destroy!
+                    end
+
+                    lqip = item['thumbname'].sub(/\.jpg/, '@lqip.jpg');
+                    if !File.exists?(lqip)
+                        img = Magick::Image.read(item['file']).first
+                        thumb_lqip = img.resize_to_fill!(@config['thumb_width'] * 0.2, @config['thumb_height'] * 0.2)
+                        thumb_lqip.write(lqip)
+                        thumb_lqip.destroy!
+                    end
+
+                    lqip_full = item['thumbname'].sub(/-thumb\.jpg/, '@lqip.jpg');
+                    if !File.exists?(lqip_full)
+                        img = Magick::Image.read(item['file']).first
+                        thumb_lqip = img.resize(0.1)
+                        thumb_lqip.write(lqip_full)
+                        thumb_lqip.destroy!
                     end
 		 		end
 	 		end
