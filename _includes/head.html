@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="fb:app_id" content="1855600601326314" />
 
-  <title>Road Beers</title>
+  <title>Road Beers{% if page.title %} - {{ page.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
