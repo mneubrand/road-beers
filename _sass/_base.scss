@@ -131,7 +131,7 @@ pre {
  */
 .wrapper {
     width: $content-width;
-    margin: 30px auto 0 auto;
+    margin: $spacing-unit/2 auto 0 auto;
     @extend %clearfix;
 
     @media screen and (max-width: $content-width - 1) {

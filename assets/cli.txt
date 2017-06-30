@@ -1,4 +1,5 @@
 Sync folder:
+aws s3 sync . s3://road-beers.com --dryrun
 aws s3 sync . s3://road-beers.com
 
 Prep photos:

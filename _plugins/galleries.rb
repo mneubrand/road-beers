@@ -24,10 +24,13 @@ module Jekyll
 
 
 		def render(context)
+		    contents = super
 
 			@config = context.registers[:site].config['gallerytag']
 			columns = (@config['columns'] != nil) ? @config['columns'] : 4
-			images = gallery_images
+
+			images = gallery_images(contents)
+
             site_url = context['site']['url']
 
 			images_html = ""
@@ -51,8 +54,8 @@ module Jekyll
 		end
 
 
-		def gallery_images
-			input_data = block_contents
+		def gallery_images(contents)
+			input_data = block_contents(contents)
 			gallery_data = []
 			input_data.each do |item|
 				hsh = {
@@ -66,8 +69,8 @@ module Jekyll
 		end
 
 
-		def block_contents
-			text = @nodelist[0]
+		def block_contents(contents)
+			text = contents
 			lines = text.split(/\n/).map {|x| x.strip }.reject {|x| x.empty? }
 			lines = lines.map { |line|
 				line.split(/\s*::\s*/).map(&:strip)
@@ -211,7 +214,5 @@ module Jekyll
 
 
 end
-
-
 
 Liquid::Template.register_tag('gallery', Jekyll::GalleryTag)
