@@ -366,15 +366,15 @@
 
 		var throttledCheckElements = throttle(checkElements);
 
-		var switchLoadingClass = function(e){
-			addClass(e.target, e.type === 'load' ? lazySizesConfig.loadedClass : lazySizesConfig.errorClass);
+		var switchLoadingClass = function(e, error){
+			addClass(e.target, !error ? lazySizesConfig.loadedClass : lazySizesConfig.errorClass);
 			removeClass(e.target, lazySizesConfig.loadingClass);
 			addRemoveLoadEvents(e.target, rafSwitchLoadingClass);
 			triggerEvent(e.target, 'lazyloaded');
 		};
 		var rafedSwitchLoadingClass = rAFIt(switchLoadingClass);
 		var rafSwitchLoadingClass = function(e){
-			rafedSwitchLoadingClass({target: e.target, type: e.type});
+			rafedSwitchLoadingClass({target: e.target}, e.type !== 'load');
 		};
 
 		var changeIframeSrc = function(elem, src){

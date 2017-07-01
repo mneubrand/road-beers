@@ -1,11 +1,13 @@
-$nav-height: 120px;
-
 .site-header {
 	min-height: $nav-height;
 	position: relative;
 	margin-bottom: $spacing-unit/2;
 	padding: 0 $spacing-unit;
 	background-color: $inner-background-color;
+
+	@media screen and (max-width: $content-width-small - 1) {
+		padding: $spacing-unit/2;
+	}
 
 	.site-title {
 		float: left;
@@ -106,6 +108,10 @@ $nav-height: 120px;
 .page-content {
 	background-color: $inner-background-color;
 	padding: $spacing-unit;
+
+	@media screen and (max-width: $content-width-small - 1) {
+		padding: $spacing-unit/2;
+	}
 }
 
 .post {
@@ -125,7 +131,7 @@ $nav-height: 120px;
 			height: 300px;
 		}
 
-		img {
+		> * {
 			width: 100%;
 			height: auto;
 			position: absolute;
@@ -134,6 +140,16 @@ $nav-height: 120px;
 			transform: translate(-50%, -50%);
 			transition: opacity 400ms;
 		}
+
+		.blur-container {
+			overflow: hidden;
+
+			* {
+				width: 100%;
+			}
+
+		}
+
 	}
 
 	.post-preview {
@@ -429,7 +445,7 @@ $nav-height: 120px;
 }
 
 img.blur {
-	filter: blur(10px);
+	filter: blur($blur);
 }
 
 img.lazyload, img.lazyloading, img.lazyerror {

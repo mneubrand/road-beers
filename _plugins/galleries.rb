@@ -31,8 +31,6 @@ module Jekyll
 
 			images = gallery_images(contents)
 
-            site_url = context['site']['url']
-
 			images_html = ""
 			images.each_with_index do |image, key|
 			    lqip = image['thumbnail'].to_s().sub(/\.jpg/, '@lqip.jpg')
