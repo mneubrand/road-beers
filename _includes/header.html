@@ -11,7 +11,7 @@
         <li><a class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}" href="/">Home</a></li>
         <li><a class="{% if page.url contains '/destinations' %}active{% endif %}" href="/destinations">Destinations</a></li>
         <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
-        <li><div id="current-location"></div></li>
+        <li><div id="current-location">Currently in<br/>Hanoi, Vietnam</div></li>
         <li>
             <div class="social-icons">
                 <div class="social-icon"><a href="/feed.xml"><img src="{{ site.baseurl }}/images/rss_feed.svg" alt="feed icon" /></a></div>
@@ -21,7 +21,5 @@
     </ul>
 
     <div class="clear"></div>
-
-    <script src="{{ "/js/location.js" | prepend: site.baseurl }}"></script>
 
 </header>

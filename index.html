@@ -6,8 +6,10 @@ layout: default
 <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="post-image">
-            <div class="blur-container"><img src="{{site.gallerytag.url}}/{{ post.preview | replace: '.jpg', '@lqip.jpg' }}" class="blur"/></div>
-            <img data-src="{{site.gallerytag.url}}/{{ post.preview }}" class="lazyload"/>
+            {% capture lqip_path %}{{site.gallerytag.url | remove_first: '/' }}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}{% endcapture %}
+            <!-- {{ lqip_path }} -->
+            <div class="blur-container"><img src="{% base64 %}{{lqip_path}}{% endbase64 %}" class="blur"/></div>
+            <img data-sizes="auto" data-srcset="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-900.jpg'}} 900w, {{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}} 1200w" class="lazyload"/>
             <noscript><img src="{{site.gallerytag.url}}/{{ post.preview }}"/></noscript>
         </div>
     </a>

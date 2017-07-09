@@ -119,12 +119,12 @@
 
 	.post-image {
 		width: 100%;
-		height: ($content-width / 2) - 50;
+		height: 580px;
 		overflow: hidden;
 		position: relative;
 
 		@media screen and (max-width: $content-width - 1) {
-			height: $content-width-small / 2;
+			height: 435px;
 		}
 
 		@media screen and (max-width: $content-width-small - 1) {
@@ -149,7 +149,6 @@
 			}
 
 		}
-
 	}
 
 	.post-preview {
@@ -193,255 +192,8 @@
 			background: $base-color;
 			margin: $spacing-unit auto;
 		}
-
 	}
 
-	.post-content {
-
-		h1, h2, h3, h4 {
-			margin: 20px auto 15px auto;
-		}
-
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-
-		blockquote {
-			background: #f9f9f9;
-			border-left: 10px solid #ccc;
-			margin: 1.5em 10px;
-			padding: 0.5em 10px;
-			quotes: "\201C""\201D""\2018""\2019";
-		}
-
-		blockquote:before {
-			color: #ccc;
-			content: open-quote;
-			font-size: 4em;
-			line-height: 0.1em;
-			margin-right: 0.25em;
-			vertical-align: -0.3em;
-		}
-
-		blockquote p {
-			display: inline;
-		}
-
-		.youtube {
-			margin: 20px auto;
-
-			.embed-responsive {
-				position: relative;
-				display: block;
-				height: 0;
-				padding: 0 0 56.25% 0;
-				overflow: hidden;
-
-				.embed-responsive-item {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					border: 0;
-				}
-			}
-		}
-
-	}
-}
-
-.gallery {
-	margin: 0 auto;
-	text-align: center;
-
-	.gallery-item {
-		position: relative;
-		display: inline-block;
-		margin: 0;
-		height: 300px;
-		width: 300px;
-		overflow: hidden;
-
-		img {
-			border: 0;
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			height: 300px;
-			width: 300px;
-			transition: opacity 400ms;
-		}
-
-		.gallery-caption {
-			background-color: rgba(0, 0, 0, 0.4);
-			color: #f7f7f7;
-			width: 100%;
-			padding: 5px 0;
-			text-align: center;
-			position: absolute;
-			bottom: 0;
-		}
-	}
-
-}
-
-%button {
-	border: 3px solid $base-color;
-	color: $base-color;
-	text-transform: uppercase;
-}
-
-.pagination {
-	display: inline-block;
-	line-height: 3em;
-
-	> span {
-		margin: 0 $spacing-unit/2;
-
-		a {
-			border: 3px solid transparent;
-			padding: $spacing-unit/2;
-		}
-
-		a:hover, a.active {
-			@extend %button;
-		}
-
-	}
-}
-
-.site-footer {
-	margin-top: $spacing-unit/2;
-	background-color: $inner-background-color;
-	padding: $spacing-unit/2;
-	text-align: center;
-}
-
-
-.destinations {
-
-	#left {
-		width: 100%;
-
-		@media (min-width: $content-width) {
-			float: left;
-			width: 930px;
-		}
-
-		#map {
-			width: 100%;
-
-			@media (min-width: $content-width) {
-				width: 930px;
-			}
-		}
-
-		#description {
-			margin-top: 10px;
-		}
-	}
-
-	#right {
-		width: 100%;
-		margin-bottom: 10px;
-
-		@media (min-width: $content-width) {
-			float: right;
-			width: 250px;
-		}
-	}
-
-	button.accordion {
-		background-color: #eee;
-		color: #444;
-		cursor: pointer;
-		padding: $spacing-unit / 2;
-		font-size: 1.2em;
-		width: 100%;
-		text-align: left;
-		border: none;
-		outline: none;
-		transition: 0.4s;
-
-		&.active, &:hover {
-			background-color: #ddd;
-		}
-
-		&:after {
-			content: "+";
-			float: right;
-			margin-left: 5px;
-		}
-
-		&.active:after {
-			content: "";
-		}
-	}
-
-	div.accordionPanel {
-		padding: 0 10px 0 25px;
-		background-color: white;
-		max-height: 0;
-		overflow: hidden;
-		transition: 0.3s ease-in-out;
-		opacity: 0;
-
-		ol {
-			margin: $spacing-unit/2 0px;
-		}
-
-		&.show {
-			max-height: 680px;
-			opacity: 1;
-		}
-	}
-}
-
-
-.lb-data .lb-details .lb-caption {
-	font-size: 1.2em;
-}
-
-.lb-container {
-	padding: 0 !important;
-}
-
-.lb-outerContainer, .lb-image {
-	border-radius: 0px !important;
-}
-
-
-.jmt-days {
-	font-size: 24px;
-
-	li {
-		margin-bottom: 10px;
-		list-style: none;
-	}
-
-	li.active {
-
-		a {
-			font-weight: bold;
-			text-decoration: underline;
-		}
-
-	}
-}
-
-.jmt-map {
-	height: 500px;
-}
-
-.jmt-container {
-	padding: 5px;
-	width: 350px;
-	background-color: #fff;
 }
 
 img.blur {

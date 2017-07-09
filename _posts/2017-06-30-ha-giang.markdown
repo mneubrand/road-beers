@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Ha Giang"
+date:   2017-06-30 01:00 +0800
+categories: asia2
+lat: 22.7667785
+lng: 105.0206429
+preview: ha_giang/20.jpg
+---
+
+After enjoying a few days in bustling Hanoi we headed out to Vietnam's northernmost province: Ha Giang. We rented a motorcycle for a few days to explore the winding roads and beautiful landscape
+of this area.
+
+<!--more-->
+
+To get to Ha Giang we took a day bus from Hanoi's My Dinh bus station for ~10 USD. There were night buses available as well but we didn't think we'd get a good nights sleep on those curvy mountain
+roads anyways. We arrived in Ha Giang in the late afternoon and spent the night at [QT Hostel](http://qthostel.com.vn/) whose owner also runs the
+[motorcycle rental company](http://qtmotorbikesandtours.com.vn/) which we rented from. They also helped us plan our route for the next days and gave us great recommendations for where to stop
+and places to stay.
+
+The next morning we rented a 125cc semi-automatic Honda Future and we were off. Uphill the motorcycle was struggling quite a bit with our combined weight, but on Ha Giang's curvy mountain
+roads it's hard to go more than 40 kmh anyways so this wasn't too much of a problem. We passed through the "Heaven Gate" mountain pass, which offered spectacular views and stopped for lunch
+in Tam Son on the other side. Shortly after lunch we had some bad luck and had a flat rear tire. Fortunately we were really close to a small village with a mechanic and could just push the motorcycle
+there. It turns out that motorcycle repair in Vietnam is ridiculously cheap. It only cost ~3 USD total (labor + parts) to have the inner tube replaced. You can't even get a mechanic to say hi to you
+for that in the US.
+
+The rest of the day we were on a smaller road to reach our goal for the night: Du Gia, a small village off the beaten path. Unfortunately conditions got a lot worse once we were off the main road.
+It's rainy season in Northern Vietnam right now and entire road sections were washed out. There was also a lot of debris on the road from small landslides and rockfalls but at least the scenery was
+spectacular. Though it was only a little over 100km it took us all day to get to Du Gia because of our frequent stops and the flat tire. We stayed in a family run wooden guesthouse on pillars which
+is typical architecture for the region. The family was harvesting grain that day and invited us to watch and even try it ourselves. They still harvest manually and cut each bushel bending down with
+a sickle. In the evening we enjoyed a delicious home cooked dinner at the guest house paired with some homemade corn wine.
+
+The next day we headed 100km north to Dong Van. Road conditions got a lot better again after the first 20km and the scenery along this section was our favorite of the entire trip. Especially Ma Pi
+Leng pass between Meo Vac and Dong Van is breathtaking. In the afternoon we got hit by a thunderstorm but luckily we found some shelter shortly after it started where we could wait out the rest of
+it. Seeing how we drove by the debris of so many mudslides and rock falls we really didn't feel comfortable driving through a storm. After renting a room in Dong Van for the night we made a side
+trip in the afternoon to Lung Cu, the northernmost place in Vietnam, to visit the flag tower there.
+
+We were back on the main road of the region the next day to finish up our loop. It was nice to drive on a better road but the drawback is that there are a lot of trucks and buses on it. Megan didn't
+feel very well so we decided to try and make it to Tam Son, our destination for the night, quickly to be able to relax in the afternoon. The only stop we made was at the King Palace of the Hmong,
+an ethnic minority group in this region. The palace is also nicknamed "Opium Palace" because the whole place has engravings of poppy flowers all over it and it was used to store opium in its cellars.
+
+On our last day it only took us 2 hours to get back to Ha Giang and return our motorcycle. We needed to arrive early because there are only 2 buses per day to Lao Cai, our next destination, and the
+last one leaves at 11am.
+
+{% gallery ha_giang %}
+ha_giang/1.jpg:: Ha Giang
+ha_giang/2.jpg:: Ha Giang
+ha_giang/3.jpg:: Ha Giang
+ha_giang/4.jpg:: Ha Giang
+ha_giang/5.jpg:: Flat tire
+ha_giang/6.jpg:: Ha Giang
+ha_giang/7.jpg:: Ha Giang
+ha_giang/8.jpg:: Ha Giang
+ha_giang/9.jpg:: Ha Giang
+ha_giang/10.jpg:: Washed out road
+ha_giang/11.jpg:: Ha Giang
+ha_giang/12.jpg:: Harvest
+ha_giang/13.jpg:: Harvest
+ha_giang/14.jpg:: Harvest
+ha_giang/15.jpg:: Du Gia
+ha_giang/16.jpg:: Du Gia
+ha_giang/17.jpg:: Home cooked meal
+ha_giang/18.jpg:: Ha Giang
+ha_giang/19.jpg:: Ha Giang
+ha_giang/20.jpg:: Ma Pi Leng pass
+ha_giang/21.jpg:: Dong Van
+ha_giang/22.jpg:: Lung Cu
+ha_giang/23.jpg:: Lung Cu
+ha_giang/24.jpg:: Frontier Area
+{% endgallery %}

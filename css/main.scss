@@ -3,69 +3,9 @@
 ---
 @charset "utf-8";
 
-/* martel-300 - latin */
-@font-face {
-  font-family: 'Martel';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/martel-v1-latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Martel Light'), local('Martel-Light'),
-  url('../fonts/martel-v1-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/martel-v1-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/martel-v1-latin-300.woff') format('woff'), /* Modern Browsers */
-  url('../fonts/martel-v1-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/martel-v1-latin-300.svg#Martel') format('svg'); /* Legacy iOS */
-}
-
-/* raleway-regular - latin */
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/raleway-v11-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Raleway'), local('Raleway-Regular'),
-    url('../fonts/raleway-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/raleway-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/raleway-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/raleway-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/raleway-v11-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
-}
-
-// Our variables
-$base-font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-$base-font-size:   18px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$text-font-family: 'Martel',Georgia,Cambria,'Times New Roman',Times,serif;
-$text-font-size:   16px;
-$text-line-height: 1.8;
-
-$spacing-unit:     30px;
-
-$text-color:       #333;
-$background-color: #f4f4f4;
-
-$inner-background-color: #ffffff;
-
-$base-color:      #143856;
-$highlight-color: #888;
-
-$grey-color:       #888;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    1260px;
-$content-width-small:    960px;
-
-$footer-height:    60px;
-
-$nav-height:       120px;
-$blur:             10px;
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "variables",
         "base",
         "layout"
 ;

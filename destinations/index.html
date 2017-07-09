@@ -27,121 +27,127 @@ layout: default
 </div>
 
 <script>
-    var data = {
-        'northamerica': {
-            name: 'North America',
-            kml: 'northamerica.kmz'
-        },
-        'centralamerica': {
-            name: 'Central America',
-            kml: 'centralamerica.kmz'
-        },
-        'southamerica': {
-            name: 'South America',
-            kml: 'southamerica.kmz'
-        },
-        'oceania': {
-            name: 'Oceania'
-        },
-        'asia': {
-            name: 'Southeast Asia'
-        },
-        'china': {
-            name: 'China'
-        },
-        'asia2': {
-            name: 'Southeast Asia #2'
-        }
+    window.onScriptLoad = function() {
+        var data = {
+            'northamerica': {
+                name: 'North America',
+                kml: 'northamerica.kmz'
+            },
+            'centralamerica': {
+                name: 'Central America',
+                kml: 'centralamerica.kmz'
+            },
+            'southamerica': {
+                name: 'South America',
+                kml: 'southamerica.kmz'
+            },
+            'oceania': {
+                name: 'Oceania'
+            },
+            'asia': {
+                name: 'Southeast Asia'
+            },
+            'china': {
+                name: 'China'
+            },
+            'asia2': {
+                name: 'Southeast Asia #2'
+            }
+        };
+        var markers = [], layer;
+
+        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 161 /* header */ - 60 /* padding */));
+        $('#left').height(height);
+        $('#map').height(height);
+
+        var catChange = function () {
+            var newElem = $(this);
+            var newNext = newElem.next();
+            var currentElem = $('.accordion.active');
+            var currentNext = currentElem.next();
+
+            /* Toggle accordion */
+            currentElem.removeClass('active');
+            newElem.toggleClass('active');
+
+            currentNext.removeClass('show');
+            newNext.toggleClass('show');
+
+            if (!map) {
+                return;
+            }
+
+            /* Remove all existing markers */
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+
+            /* Add new markers and move map to them */
+            var bounds = new google.maps.LatLngBounds();
+            newNext.find('.post-list > li').each(function (index, elem) {
+                var lat = $(elem).attr('data-lat').split(',');
+                var lng = $(elem).attr('data-lng').split(',');
+
+                for (var i = 0; i < lat.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: {lat: parseFloat(lat[i]), lng: parseFloat(lng[i])},
+                        label: '' + (index + 1),
+                        map: map
+                    });
+
+                    bounds.extend(marker.getPosition());
+                    markers.push(marker);
+                }
+            });
+            map.fitBounds(bounds);
+            map.setZoom(Math.min(map.getZoom(), 5));
+
+            /* Remove old KML layer if there is one */
+            if (layer) {
+                layer.setMap(null);
+                layer = null;
+            }
+
+            /* If there is a KML layer add it */
+            var index = newElem.attr('data-category');
+            if (data[index].kml) {
+                if (!data[index].layer) {
+                    data[index].layer = new google.maps.KmlLayer({
+                        url: 'http://www.road-beers.com/kml/' + data[index].kml,
+                        map: map
+                    });
+                }
+                layer = data[index].layer;
+                layer.setMap(map);
+            }
+        };
+
+        var accordion = $('.accordion');
+        accordion.each(function (index, elem) {
+            elem = $(elem);
+            elem.text(data[elem.attr('data-category')]['name']);
+            elem.click(catChange);
+
+            if (index == accordion.length - 1) {
+                elem.click();
+            }
+        });
     };
+
     var map;
-    var markers = [], layer;
-
-    var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 161 /* header */ - 60 /* padding */));
-    $('#left').height(height);
-    $('#map').height(height);
-
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 0, lng: 0},
             zoom: 2
         });
 
-        $('.accordion.active').click();
+        var active = document.querySelector('.accordion.active');
+        if(active) {
+            active.click();
+        }
     }
 
-    var catChange = function () {
-        var newElem = $(this);
-        var newNext = newElem.next();
-        var currentElem = $('.accordion.active');
-        var currentNext = currentElem.next();
-
-        // Toggle accordion
-        currentElem.removeClass('active');
-        newElem.toggleClass('active');
-
-        currentNext.removeClass('show');
-        newNext.toggleClass('show');
-
-        if(!map) {
-            return;
-        }
-
-        // Remove all existing markers
-        for (var i = 0; i < markers.length; i++) {
-            markers[i].setMap(null);
-        }
-        markers = [];
-
-        // Add new markers and move map to them
-        var bounds = new google.maps.LatLngBounds();
-        newNext.find('.post-list > li').each(function (index, elem) {
-            var lat = $(elem).attr('data-lat').split(',');
-            var lng = $(elem).attr('data-lng').split(',');
-
-            for(var i = 0; i < lat.length; i++) {
-                var marker = new google.maps.Marker({
-                    position: {lat: parseFloat(lat[i]), lng: parseFloat(lng[i])},
-                    label: '' + (index+1),
-                    map: map
-                });
-
-                bounds.extend(marker.getPosition());
-                markers.push(marker);
-            }
-        });
-        map.fitBounds(bounds);
-        map.setZoom(Math.min(map.getZoom(), 5));
-
-        // Remove old KML layer if there is one
-        if(layer) {
-            layer.setMap(null);
-            layer = null;
-        }
-
-        // If there is a KML layer add it
-        var index = newElem.attr('data-category');
-        if(data[index].kml) {
-            if(!data[index].layer) {
-                data[index].layer = new google.maps.KmlLayer({
-                    url: 'http://www.road-beers.com/kml/' + data[index].kml,
-                    map: map
-                });
-            }
-            layer = data[index].layer;
-            layer.setMap(map);
-        }
-    };
-
-    var accordion = $('.accordion');
-    accordion.each(function (index, elem) {
-        elem = $(elem);
-        elem.text(data[elem.attr('data-category')]['name']);
-        elem.click(catChange);
-
-        if(index == accordion.length - 1) {
-            elem.click();
-        }
-    });
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD56SmCl6V9AengboOB2vXlG4CMBPpxtNY&callback=initMap"

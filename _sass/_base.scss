@@ -17,7 +17,9 @@ html {
  */
 body {
     height: 100%;
-    font: #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-family: $base-font-family;
     color: $base-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -26,11 +28,20 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-}
 
-p {
-    font: #{$text-font-size}/#{$text-line-height} $text-font-family;
-    color: $text-color;
+    &.fonts-loaded {
+        font-family: $base-font-family-loaded;
+    }
+
+    p {
+        font-size: $text-font-size;
+        line-height: $text-line-height;
+        font-family: $text-font-family;
+    }
+
+    &.fonts-loaded p {
+        font-family: $text-font-family-loaded;
+    }
 }
 
 /**
@@ -141,20 +152,6 @@ pre {
     @media screen and (max-width: $content-width-small - 1) {
         margin: 0;
         width: 100%;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 

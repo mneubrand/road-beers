@@ -6,7 +6,7 @@ layout: post
 <div id="jmt-map" class="jmt-map jmt-container" style="display: none;"></div>
 
 <script>
-    (function() {
+    window.onScriptLoad = function() {
         var margin = 15;
 
         function showContainers() {
@@ -79,13 +79,13 @@ layout: post
             }
         }
 
-        showContainers(); // TODO also bind that to resize
+        showContainers(); /* TODO also bind that to resize */
 
         $(window).scroll(function () {
             positionContainers();
             highlightActiveDay(true);
         });
-    })();
+    };
 
     var map;
     function initMap() {

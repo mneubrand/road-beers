@@ -1,0 +1,50 @@
+
+// Our variables
+$base-font-family: 'Helvetica Neue', Helvetica, sans-serif;
+$base-font-family-loaded: 'Raleway', $base-font-family;
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$text-font-family: Georgia,Cambria,'Times New Roman',Times,serif;
+$text-font-family-loaded: 'Martel', $text-font-family;
+$text-font-size:   16px;
+$text-line-height: 1.8;
+
+$spacing-unit:     30px;
+
+$text-color:       #333;
+$background-color: #f4f4f4;
+
+$inner-background-color: #ffffff;
+
+$base-color:      #143856;
+$highlight-color: #888;
+
+$grey-color:       #888;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1260px;
+$content-width-small:    960px;
+
+$footer-height:    60px;
+
+$nav-height:       120px;
+$blur:             20px;
+
+%button {
+	border: 3px solid $base-color;
+	color: $base-color;
+	text-transform: uppercase;
+}
+
+%clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

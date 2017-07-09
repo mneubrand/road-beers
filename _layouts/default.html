@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
 
@@ -15,15 +18,50 @@
     {% include footer.html %}
     </div>
 
-    <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}" defer onload="if(window.onScriptLoad) { window.onScriptLoad(); }"></script>
     <script>
+    function initLightbox() {
       lightbox.option({
         'resizeDuration': 400,
         'fadeDuration': 300,
         'showImageNumberLabel': false
       });
+    }
+    </script>
+    <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}" defer onload="initLightbox()"></script>
+
+    <script src="{{ "/js/picturefill.min.js" | prepend: site.baseurl }}" async defer></script>
+    <script src="{{ "/js/lazysizes.min.js" | prepend: site.baseurl }}" async defer></script>
+
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="{{ "/css/lightbox.min.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}">
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement);
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) { raf(function() { window.setTimeout(loadDeferredStyles, 0); }); }
+        else { window.addEventListener('load', loadDeferredStyles); }
     </script>
 
+    <script>
+      function initFontFaceObserver() {
+          var fontA = new FontFaceObserver('Martel', { weight: 300 });
+          var fontB = new FontFaceObserver('Raleway', { weight: 400 });
+
+          Promise.all([fontA.load(), fontB.load()]).then(function () {
+            document.body.className += " fonts-loaded";
+          });
+      }
+    </script>
+    <script src="{{ "/js/fontfaceobserver.standalone.js" | prepend: site.baseurl }}" async defer onload="initFontFaceObserver()"></script>
   </body>
 
 </html>

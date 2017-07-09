@@ -13,9 +13,7 @@ require "RMagick"
 
 module Jekyll
 
-
 	class GalleryTag < Liquid::Block
-
 
 	 	def initialize(tag_name, markup, tokens)
 			super
@@ -39,7 +37,7 @@ module Jekyll
 				images_html << "<div class=\"gallery-item\">"
 				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
 				images_html << "<img src=\"#{lqip}\" class=\"blur\" />"
-				images_html << "<img data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" />"
+				images_html << "<img data-sizes=\"auto\" data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" />"
 				images_html << "<noscript><img src=\"#{image['thumbnail']}\" /></noscript>"
 				images_html << "</a>"
 				images_html << "<div class=\"gallery-caption\">#{image['caption']}</div>"
@@ -114,7 +112,6 @@ module Jekyll
 
 	class ThumbGenerator < Jekyll::Generator
 
-
 	 	def generate(site)
 
 	 		@config = site.config['gallerytag']
@@ -123,6 +120,58 @@ module Jekyll
 
 	 		thumbify(files_to_resize(site))
 
+            for post in site.posts.docs
+                preview = post.data['preview']
+                file = File.join(@gallery_dir, preview)
+                dir = File.join(@config['dir'], File.basename(File.dirname(file)))
+
+                name_lqip = File.basename(file).sub(File.extname(file), "-preview-lqip#{File.extname(file)}")
+                name_small = File.basename(file).sub(File.extname(file), "-preview-900#{File.extname(file)}")
+                name_large = File.basename(file).sub(File.extname(file), "-preview-1200#{File.extname(file)}")
+
+                previewname_lqip = File.join(@gallery_dest, File.basename(File.dirname(file)), name_lqip)
+                previewname_small = File.join(@gallery_dest, File.basename(File.dirname(file)), name_small)
+                previewname_large = File.join(@gallery_dest, File.basename(File.dirname(file)), name_large)
+
+                site.static_files << GalleryFile.new(site, site.source, dir, name_lqip)
+                site.static_files << GalleryFile.new(site, site.source, dir, name_small)
+                site.static_files << GalleryFile.new(site, site.source, dir, name_large)
+
+                img = nil
+                if !File.exists?(previewname_lqip)
+                    if !img
+                        img = Magick::Image.read(file).first
+                    end
+
+                    preview_image = img.resize_to_fill(80, 39)
+                    preview_image.write(previewname_lqip)
+                    preview_image.destroy!
+                end
+
+                if !File.exists?(previewname_small)
+                    if !img
+                        img = Magick::Image.read(file).first
+                    end
+
+                    preview_image = img.resize_to_fill(900, 435)
+                    preview_image.write(previewname_small)
+                    preview_image.destroy!
+                end
+
+                if !File.exists?(previewname_large)
+                    if !img
+                        img = Magick::Image.read(file).first
+                    end
+
+                    preview_image = img.resize_to_fill(1200, 580)
+                    preview_image.write(previewname_large)
+                    preview_image.destroy!
+                end
+
+                if img
+                    img.destroy!
+                end
+            end
 	 	end
 
 
@@ -137,23 +186,17 @@ module Jekyll
 	 				retina = thumbname.sub(/\.jpg/, '@2x.jpg')
 	 				lqip = thumbname.sub(/\.jpg/, '@lqip.jpg')
 
-	 				name_lqip = File.basename(file).sub(File.extname(file), "@lqip#{File.extname(file)}")
-	 				lqip_full = File.join(@gallery_dest, File.basename(File.dirname(file)), name_lqip)
-
 	                # Keep the thumb files from being cleaned by Jekyll
 	                dir = File.join(@config['dir'], File.basename(File.dirname(file)))
 	                site.static_files << GalleryFile.new(site, site.source, dir, name )
 	                site.static_files << GalleryFile.new(site, site.source, dir, name.sub(/\.jpg/, '@2x.jpg') )
 	                site.static_files << GalleryFile.new(site, site.source, dir, name.sub(/\.jpg/, '@lqip.jpg') )
-	                site.static_files << GalleryFile.new(site, site.source, dir, name_lqip )
 
 	 				if !File.exists?(thumbname)
 	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
 	 				elsif !File.exists?(retina)
 	 				    to_resize.push({ "file" => file, "thumbname" => thumbname })
                     elsif !File.exists?(lqip)
-                        to_resize.push({ "file" => file, "thumbname" => thumbname })
-                     elsif !File.exists?(lqip_full)
                         to_resize.push({ "file" => file, "thumbname" => thumbname })
 	 				end
 	 			end
@@ -167,40 +210,43 @@ module Jekyll
 	 	def thumbify(items)
 	 		if items.count > 0
 		 		items.each do |item|
-		 		    if !File.exists?(item['thumbname'])
-                        dir = File.dirname(item['thumbname'])
-                        if !File.exists?(dir)
-                            FileUtils.mkdir_p(dir)
-                        end
+                    dir = File.dirname(item['thumbname'])
+                    if !File.exists?(dir)
+                        FileUtils.mkdir_p(dir)
+                    end
 
-                        img = Magick::Image.read(item['file']).first
-                        thumb = img.resize_to_fill!(@config['thumb_width'], @config['thumb_height'])
+                    img = nil
+		 		    if !File.exists?(item['thumbname'])
+		 		        if !img
+		 		            img = Magick::Image.read(item['file']).first
+		 		        end
+                        thumb = img.resize_to_fill(@config['thumb_width'], @config['thumb_height'])
                         thumb.write(item['thumbname'])
                         thumb.destroy!
                     end
 
                     retina = item['thumbname'].sub(/\.jpg/, '@2x.jpg');
                     if !File.exists?(retina)
-                        img = Magick::Image.read(item['file']).first
-                        thumb_retina = img.resize_to_fill!(@config['thumb_width'] * 2, @config['thumb_height'] * 2)
+                        if !img
+                            img = Magick::Image.read(item['file']).first
+                        end
+                        thumb_retina = img.resize_to_fill(@config['thumb_width'] * 2, @config['thumb_height'] * 2)
                         thumb_retina.write(retina)
                         thumb_retina.destroy!
                     end
 
                     lqip = item['thumbname'].sub(/\.jpg/, '@lqip.jpg');
                     if !File.exists?(lqip)
-                        img = Magick::Image.read(item['file']).first
-                        thumb_lqip = img.resize_to_fill!(@config['thumb_width'] * 0.2, @config['thumb_height'] * 0.2)
+                        if !img
+		 		            img = Magick::Image.read(item['file']).first
+		 		        end
+                        thumb_lqip = img.resize_to_fill(@config['thumb_width'] * 0.2, @config['thumb_height'] * 0.2)
                         thumb_lqip.write(lqip)
                         thumb_lqip.destroy!
                     end
 
-                    lqip_full = item['thumbname'].sub(/-thumb\.jpg/, '@lqip.jpg');
-                    if !File.exists?(lqip_full)
-                        img = Magick::Image.read(item['file']).first
-                        thumb_lqip = img.resize(0.1)
-                        thumb_lqip.write(lqip_full)
-                        thumb_lqip.destroy!
+                    if img
+                        img.destroy!
                     end
 		 		end
 	 		end
