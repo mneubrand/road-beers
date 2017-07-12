@@ -50,6 +50,10 @@
 			min-height: 32px;
 
 			@media screen and (max-width: $content-width-small - 1) {
+				padding: 0 5px;
+			}
+
+			@media screen and (max-width: 800px) {
 				height: auto;
 				padding: 0;
 				float: none;
@@ -63,7 +67,7 @@
 
 				@media screen and (max-width: $content-width-small - 1) {
 					height: auto;
-					padding: 5px;
+					padding: 6px;
 					margin: 0;
 					float: none;
 				}
@@ -74,32 +78,13 @@
 			}
 		}
 
-		.social-icons {
-			text-align: center;
-			display: flex;
-			justify-content: center;
-		}
-
 		.social-icon {
-			float: left;
+			display: inline-block;
 			margin: 0 5px;
 			width: 32px;
 			height: 32px;
-			background: #000;
+			background: $base-color;
 			border-radius: 16px;
-			display: flex;
-			justify-content: center;
-			text-align: center;
-
-			a, a:hover {
-				color: #fff;
-				font-weight: bold;
-			}
-
-			img {
-				width: 18px;
-				height: 18px;
-			}
 		}
 	}
 
@@ -128,7 +113,11 @@
 		}
 
 		@media screen and (max-width: $content-width-small - 1) {
-			height: 300px;
+			height: 290px;
+		}
+
+		@media screen and (max-width: 599px) {
+			height: 180px;
 		}
 
 		> * {
@@ -206,4 +195,8 @@ img.lazyload, img.lazyloading, img.lazyerror {
 
 img.lazyloaded {
 	opacity: 1;
+}
+
+.center {
+	text-align: center;
 }

@@ -2,7 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
@@ -35,7 +35,7 @@ layout: compress
 
     <noscript id="deferred-styles">
         <link rel="stylesheet" href="{{ "/css/lightbox.min.css" | prepend: site.baseurl }}">
-        <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}?{% checksum %}css/extra.css{% endchecksum %}">
     </noscript>
     <script>
         var loadDeferredStyles = function() {

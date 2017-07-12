@@ -1,7 +1,7 @@
 <header class="site-header">
 
     <div class="site-title">
-        <a href="/">
+        <a href="/" title="Road Beers Logo">
             {% include small_logo.svg %}
             <h1>Road Beers</h1>
         </a>
@@ -13,9 +13,9 @@
         <li><a class="{% if page.url contains '/about' %}active{% endif %}" href="/about">About</a></li>
         <li><div id="current-location">Currently in<br/>Hanoi, Vietnam</div></li>
         <li>
-            <div class="social-icons">
-                <div class="social-icon"><a href="/feed.xml"><img src="{{ site.baseurl }}/images/rss_feed.svg" alt="feed icon" /></a></div>
-                <div class="social-icon"><a href="https://www.facebook.com/wwwroadbeerscom/">f</a></div>
+            <div class="center">
+                <div class="social-icon"><a href="/feed.xml">{% include rss.svg %}</a></div>
+                <div class="social-icon"><a href="https://www.facebook.com/wwwroadbeerscom/">{% include facebook.svg %}</a></div>
             </div>
         </li>
     </ul>

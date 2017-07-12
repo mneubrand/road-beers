@@ -1,6 +1,6 @@
 Sync folder:
-aws s3 sync . s3://road-beers.com --dryrun
-aws s3 sync . s3://road-beers.com
+aws s3 sync . s3://road-beers.com --delete --exclude "*" --include "*.html" --include "*.xml" --cache-control="max-age=0, no-cache" --dryrun
+aws s3 sync . s3://road-beers.com --delete --exclude "*.html" --exclude "*.xml" --cache-control="max-age=31536000" --dryrun
 
 Prep photos:
 c=1; for i in *; do mv $i "$c".jpg; (( c=c+1 )); done
