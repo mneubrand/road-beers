@@ -9,13 +9,6 @@ p, blockquote, ol, ul {
 
 html {
     height: 100%;
-}
-
-/**
- * Basic styling
- */
-body {
-    height: 100%;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-family: $base-font-family;
@@ -35,6 +28,13 @@ body {
     &.fonts-loaded p {
         font-family: $text-font-family-loaded;
     }
+}
+
+/**
+ * Basic styling
+ */
+body {
+    height: 100%;
 }
 
 /**
@@ -59,7 +59,9 @@ a {
     }
 }
 
-
+img {
+    max-width: 100%;
+}
 
 /**
  * Blockquotes

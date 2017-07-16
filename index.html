@@ -6,7 +6,8 @@ layout: default
 <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="post-image">
-            {% if forloop.first == true %}
+            {% assign inline_all = true %}
+            {% if forloop.first == true or inline_all %}
             {% capture lqip_path %}{{site.gallerytag.url | remove_first: '/' }}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}{% endcapture %}
             <!-- {{ lqip_path }} -->
             <div class="blur-container"><img src="{% base64 %}{{lqip_path}}{% endbase64 %}" class="blur" alt="{{post.title}} Preview"/></div>

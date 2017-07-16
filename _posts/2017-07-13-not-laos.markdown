@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Not Laos"
+date:   2017-07-13 01:00 +0800
+categories: asia2
+lat: 22.3603925,21.4148378,21.0227431,13.7248946
+lng: 103.7993528,103.0049582,105.8194541,100.4930264
+preview: not_laos/7.jpg
+---
+
+After our tour in Ha Giang we slowly made our way towards the Laotian border with stops in Lao Cai and Dien Bien Phu on the way.
+
+<!--more-->
+
+We took a bus from Ha Giang first to Lao Cai where we stayed the night before hopping on another bus to the border town of Dien Bien Phu. At one point during that ride there was a motorcycle and
+some live chickens inside our little mini bus. The entire experience in Lao Cai was a bit stressful as we had to dodge touts trying to rip us off on the buses. For example, a German couple who was
+on the same bus with us from Lao Cai to Dien Bien Phu payed more than double what it was supposed to cost (despite the official amount listed on the bus). As the bus was hard to find, they thought
+that they had purchased an official ticket the night before from a tout on the street, but they had not. Luckily we managed to get the number of the bus company from a different bus company and then
+had a waitress who spoke both English and Vietnamese call ahead for us, our process went smoother than the Germans.
+
+Once in Dien Bien Phu, we bought tickets to take us across the border and on to Luang Prabang, Laos. The bus left early the following day, so we visited some of the main attractions in Dien Bien
+Phu. This city was the spot of a major battle and victory for the Vietnamese in the Frecnh Indochina War. In fact, the war ended shortly after this battle and the 1954 Geneva Accords were then
+signed. We visited a fairly new museum dedicated to the battle and also went to one of the main battlefields.
+
+The next day, we boarded our bus for the border, but had a major set back. Vietnam is switching to an e-Visa system and they have not worked out all of the kinks. As an American, Megan received
+an e-Visa, however, Markus had to pay for a paper visa on arrival. Unfortunately it turns out that not all border crossings accept this e-Visa yet and when we arrived Megan was told they could
+not process it and was turned away. The problem was Markus was already stamped as "exited" and they tried to force him on without her. It was a chaotic scene. We eventually got them to call
+someone higher up that spoke English who almost got them to just stamp Megan through, however that didn't work out. But he could get them to write an official letter for Markus explaining what
+happened and why he was still in the country for when we would try to exit again. The entire process was long and frustrating. We were then stuck at the border for hours waiting for a bus to bring
+us back to Dien Bien Phu.
+
+From there we immediately boarded a less than comfortable overnight bus back to Hanoi. While we were sad to have missed out on our plans to visit Laos, we decided to just take a cheap flight
+($40 USD) to Bangkok and make plans to meet our friends there rather than in Chiang Mai. We essentially used this opportunity to relax a bit in Hanoi and then Bangkok. In both locations we picked
+Airbnb rentals that were a bit more residential and mainly just hung out and relaxed. We were in Bangkok for the 4th of July, and since we had a proper kitchen we used the opportunity to cook
+burgers. We later went to a bar on the other side of town to celebrate the 4th, but became a bit frustrated over their stadium beer prices and the fact that the clientele appeared to mainly
+consist of underage rich expat kids. We also met an old friend who went to the same Spanish school as us in Xela, Guatemala. It was great to share our travel stories from the past months since
+we left Guatemala and dance the night away.
+
+{% gallery not_laos %}
+not_laos/1.jpg:: Bus ride
+not_laos/2.jpg:: Dien Bien Phu Museum
+not_laos/3.jpg:: Dien Bien Phu Museum
+not_laos/4.jpg:: Dien Bien Phu
+not_laos/5.jpg:: Dien Bien Phu
+not_laos/6.jpg:: Vietnamese Border
+not_laos/7.jpg:: Hanoi Opera
+not_laos/8.jpg:: Hanoi Art Museum
+not_laos/9.jpg:: Hanoi Art Museum
+not_laos/10.jpg:: Hanoi night market
+not_laos/11.jpg:: Hanoi night market
+not_laos/12.jpg:: Burgers on the 4th
+not_laos/13.jpg:: Meeting Mateo
+{% endgallery %}

@@ -36,9 +36,9 @@ module Jekyll
 
 				images_html << "<div class=\"gallery-item\">"
 				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
-				images_html << "<img src=\"#{lqip}\" class=\"blur\" />"
-				images_html << "<img data-sizes=\"auto\" data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" />"
-				images_html << "<noscript><img src=\"#{image['thumbnail']}\" /></noscript>"
+				images_html << "<img src=\"#{lqip}\" class=\"blur\" alt=\"#{image['caption']}\" />"
+				images_html << "<img data-sizes=\"auto\" data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" alt=\"#{image['caption']}\" />"
+				images_html << "<noscript><img src=\"#{image['thumbnail']}\" alt=\"#{image['caption']}\" /></noscript>"
 				images_html << "</a>"
 				images_html << "<div class=\"gallery-caption\">#{image['caption']}</div>"
 				images_html << "</div>"
