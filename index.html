@@ -6,13 +6,13 @@ layout: default
 <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="post-image">
-            {% assign inline_all = true %}
+            {% assign inline_all = false %}
             {% if forloop.first == true or inline_all %}
             {% capture lqip_path %}{{site.gallerytag.url | remove_first: '/' }}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}{% endcapture %}
             <!-- {{ lqip_path }} -->
             <div class="blur-container"><img src="{% base64 %}{{lqip_path}}{% endbase64 %}" class="blur" alt="{{post.title}} Preview"/></div>
             {% else %}
-            <div class="blur-container"><img src="{{site.gallerytag.url}}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}" class="blur" alt="{{post.title}} Preview"/></div>
+            <div class="blur-container"><img data-src="{{site.gallerytag.url}}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}" class="blur lazyload" alt="{{post.title}} Preview"/></div>
             {% endif %}
             <img data-sizes="auto" alt="{{post.title}} Preview" class="lazyload"
                  data-srcset="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-900.jpg'}} 900w, {{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}} 1200w" />
