@@ -31,15 +31,6 @@
 
 	.post-content {
 
-		h1, h2, h3, h4 {
-			margin: 20px auto 15px auto;
-		}
-
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-
 		blockquote {
 			background: #f9f9f9;
 			border-left: 10px solid #ccc;
@@ -88,28 +79,25 @@
 .gallery {
 	margin: 0 auto;
 	text-align: center;
+	line-height: 0;
 
 	.gallery-item {
 		position: relative;
 		display: inline-block;
-		margin: 0;
+		margin: 6px;
 		height: 300px;
 		width: 300px;
 		overflow: hidden;
 
 		img {
-			border: 0;
-			margin: 0;
-			padding: 0;
 			position: absolute;
-			top: 0;
-			bottom: 0;
 			height: 300px;
 			width: 300px;
 			transition: opacity 400ms;
 		}
 
 		.gallery-caption {
+			line-height: $base-line-height;
 			background-color: rgba(0, 0, 0, 0.5);
 			color: #f7f7f7;
 			width: 100%;
@@ -229,6 +217,7 @@
 
 .lb-data .lb-details .lb-caption {
 	font-size: 1.2em;
+	font-weight: 400;
 }
 
 .lb-container {

@@ -2,50 +2,51 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-<article class="post">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="post-image">
-            {% assign inline_all = false %}
-            {% if forloop.first == true or inline_all %}
-            {% capture lqip_path %}{{site.gallerytag.url | remove_first: '/' }}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}{% endcapture %}
-            <!-- {{ lqip_path }} -->
-            <div class="blur-container"><img src="{% base64 %}{{lqip_path}}{% endbase64 %}" class="blur" alt="{{post.title}} Preview"/></div>
-            {% else %}
-            <div class="blur-container"><img data-src="{{site.gallerytag.url}}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}" class="blur lazyload" alt="{{post.title}} Preview"/></div>
-            {% endif %}
-            <img data-sizes="auto" alt="{{post.title}} Preview" class="lazyload"
-                 data-srcset="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-900.jpg'}} 900w, {{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}} 1200w" />
-            <noscript><img src="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}}"/></noscript>
+<div class="page-content">
+    {% for post in paginator.posts %}
+    <article class="post">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <div class="post-image">
+                {% assign inline_all = false %}
+                {% if forloop.first == true or inline_all %}
+                {% capture lqip_path %}{{site.gallerytag.url | remove_first: '/' }}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}{% endcapture %}
+                <!-- {{ lqip_path }} -->
+                <div class="blur-container"><img src="{% base64 %}{{lqip_path}}{% endbase64 %}" class="blur" alt="{{post.title}} Preview"/></div>
+                {% else %}
+                <div class="blur-container"><img data-src="{{site.gallerytag.url}}/{{ post.preview | replace: '.jpg', '-preview-lqip.jpg' }}" class="blur lazyload lazypreload" alt="{{post.title}} Preview"/></div>
+                {% endif %}
+                <img data-sizes="auto" alt="{{post.title}} Preview" class="lazyload"
+                     data-srcset="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-900.jpg'}} 900w, {{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}} 1200w" />
+                <noscript><img src="{{site.gallerytag.url}}/{{ post.preview  | replace: '.jpg', '-preview-1200.jpg'}}"/></noscript>
+            </div>
+        </a>
+
+        <div class="post-preview">
+
+            <div class="post-header">
+                <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+
+                <h1>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h1>
+            </div>
+
+            <p>
+                {% assign s = post.content | split:"<!--more-->" %}
+                {{ s[0] | strip_html }}
+            </p>
+
+            <div class="read-more"><a href="{{ post.url }}">Read More</a></div>
         </div>
-    </a>
 
-    <div class="post-preview">
+        <div class="clear"></div>
+    </article>
+    {% endfor %}
 
-        <div class="post-header">
-            <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-
-            <h1>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h1>
-        </div>
-
-        <p>
-            {% assign s = post.content | split:"<!--more-->" %}
-            {{ s[0] | strip_html }}
-        </p>
-
-        <div class="read-more"><a href="{{ post.url }}">Read More</a></div>
-    </div>
-
-    <div class="clear"></div>
-</article>
-{% endfor %}
-
-<div class="center">
-    <div class="pagination">
-        {% if paginator.previous_page %}
-        <span><a href="{{ paginator.previous_page_path }}">«</a>
+    <div class="center">
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <span><a href="{{ paginator.previous_page_path }}">«</a>
             {% else %}
         <span class="disabled">«
             {% endif %}
@@ -69,7 +70,9 @@ layout: default
         <span class="disabled">»
             {% endif %}
         </span>
+        </div>
+
+        <div class="clear"></div>
     </div>
 
-    <div class="clear"></div>
 </div>

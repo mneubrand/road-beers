@@ -11,19 +11,15 @@ layout: compress
     <div class="wrapper">
     {% include header.html %}
 
-    <div class="page-content">
     {{ content }}
-    </div>
 
     {% include footer.html %}
     </div>
 
-    <noscript id="deferred-styles">
-        <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}?{% checksum %}css/extra.css{% endchecksum %}">
-        <link rel="stylesheet" href="{{ "/css/lightbox.min.css" | prepend: site.baseurl }}">
-    </noscript>
     <script>
-        var initFontFaceObserver = function () {
+      window.lazySizesConfig = { expand: 100 };
+
+      var initFontFaceObserver = function () {
         var fontA = new FontFaceObserver('Martel', {weight: 300});
         var fontB = new FontFaceObserver('Raleway', {weight: 400});
 
@@ -72,6 +68,17 @@ layout: compress
         }
       };
 
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredScripts, 0); });
+      else window.addEventListener('load', loadDeferredScripts);
+    </script>
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}?{% checksum %}css/extra.css{% endchecksum %}">
+      <link rel="stylesheet" href="{{ "/css/lightbox.min.css" | prepend: site.baseurl }}">
+    </noscript>
+    <script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
@@ -81,8 +88,8 @@ layout: compress
       };
       var raf = requestAnimationFrame || mozRequestAnimationFrame ||
               webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); window.setTimeout(loadDeferredScripts, 0); });
-      else window.addEventListener('load', function() { loadDeferredStyles(); loadDeferredScripts(); });
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
     </script>
   </body>
 

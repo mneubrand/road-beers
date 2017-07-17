@@ -100,29 +100,31 @@
 }
 
 .post {
+	background-color: $inner-background-color;
 	margin-bottom: $spacing-unit;
+
+	.post-content {
+
+		h1, h2, h3, h4 {
+			margin: 20px auto 15px auto;
+		}
+
+		p {
+			padding: 0 $spacing-unit;
+			text-align: justify;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 
 	.post-image {
 		width: 100%;
-		height: 580px;
+		padding-top: 48.33%;
 		overflow: hidden;
 		position: relative;
-
-		@media screen and (max-width: $content-width - 1) {
-			height: 435px;
-		}
-
-		@media screen and (max-width: $content-width-small - 1) {
-			height: 299px;
-		}
-
-		@media screen and (max-width: 668px) {
-			height: 240px;
-		}
-
-		@media screen and (max-width: 400px) {
-			height: 160px;
-		}
 
 		> * {
 			width: 100%;
@@ -134,13 +136,8 @@
 			transition: opacity 400ms;
 		}
 
-		.blur-container {
-			overflow: hidden;
-
-			* {
-				width: 100%;
-			}
-
+		.blur-container * {
+			width: 100%;
 		}
 	}
 
@@ -175,7 +172,7 @@
 
 	.post-header {
 		text-align: center;
-		margin-top: $spacing-unit;
+		padding-top: $spacing-unit;
 
 		&::after {
 			content: "";
