@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<style type="text/css">
+    {% capture include_to_scssify %}{% include post.scss %}{% endcapture %}
+    {{ include_to_scssify | scssify }}
+</style>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="post-header">
@@ -16,3 +20,19 @@ layout: default
     </div>
 
 </article>
+
+<script>
+    var baguetteBoxLoaded = function () {
+        baguetteBox.run('.gallery', {
+            animation: 'fadeIn',
+            buttons: true,
+            overlayBackgroundColor: 'rgba(0,0,0,0.9)'
+        });
+    };
+</script>
+<script src="{{ "/js/baguetteBox.min.js" | prepend: site.baseurl }}" async defer onload="baguetteBoxLoaded()"></script>
+
+<link rel="preload" href="{{ "/css/baguetteBox.min.css" | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="{{ "/css/baguetteBox.min.css" | prepend: site.baseurl }}">
+</noscript>

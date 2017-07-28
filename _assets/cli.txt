@@ -4,7 +4,8 @@ aws s3 sync . s3://road-beers.com --delete --exclude "*" --include "*.html" --in
 
 Prep photos:
 c=1; for i in *; do mv $i "$c".jpg; (( c=c+1 )); done
-mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 85% -resize 33% *.jpg
+mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 85% -resize 50% *.jpg
+
 
 Invalidate CF:
 aws cloudfront create-invalidation --distribution-id EH5WFMYUJAR5S --paths "/*"

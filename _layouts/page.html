@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<style type="text/css">
+  {% capture include_to_scssify %}{% include post.scss %}{% endcapture %}
+  {{ include_to_scssify | scssify }}
+</style>
 <div class="page-content">
   <article class="post">
 

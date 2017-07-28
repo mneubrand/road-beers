@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Dubai"
+date:   2017-07-19 01:00 +0800
+preview: dubai/3.jpg
+---
+
+We were unsure what to expect from Dubai, and while it's known to be glitzy and and a playground for the rich, we still found it warm and inviting.
+
+<!--more-->
+
+After Thailand we needed to figure out what we wanted to do with our time before heading to Austria. With only a bit over a month left we decided that we would go overland from Istanbul. While looking
+at plane tickets we realized that we could also add a few days in Dubai, and while we knew it would be quite an expensive city, we decided we wanted to see it for ourselves. Dubai is truly a city of
+contradictions. Yes, the UAE is a muslim country, however compared to many of it's neighbors the rules appear to be either much more liberal or easily bent in particular if you are a foreigner. The
+entire city feels like it was built over night and continues to grow--oozing as much luxury as the oil that's built the city. One of the best things to do in Dubai is escape the 110 degree hit in
+one of their numerous malls, the most notable two being Mall of the Emirates and Dubai Mall. Here you could spend hours enjoying the AC and people watching. Women wearing niqabs are just as likely
+to shop in the most fashionable stores as their western counterparts, it's an interesting sight to see.
+
+Since Dubai is known for over the top entertainment, we decided to splurge one day and cool off at the Aquaventure Waterpark at Atlantis. Speedos, board shorts, two piece, one piece, and burkinis are
+all welcome at this waterpark. We had a fantastic time riding the slides and floating down the different rivers built along the attractions. Since we'd worked up a bit of a tan over the past months,
+we were spared from third degree sunburns unlike many of the other westerners. We spent our last morning going to the observation deck of the Burj Khalifa--the tallest building in the world. We've
+been to many skyscraper observation decks in the past, but this was the first where in all directions there is empty space, however the city appears to insist on prioritizing the development of high
+rises.
+
+During our stay in Dubai we rented a room in an apartment and we had a wonderful time meeting the others who live there. Our host, Antoun originates from Lebanon, his girlfriend, Tatyana, from 
+Ukraine, and their roommate Adrian, is Indian, however is soon to be an Australian citizen. They provided us with a wealth of insider knowledge about Dubai and the region as well as their experiences
+being part of the over 80% of the population that's foreign born. On our last night we had a get-together at the apartment with pork ribs (illegal to purchase if you're muslim), mussels, and salad. We also
+learned that while booze is technically illegal to purchase unless you have an alcohol license, it's really one phone call away with your "dealer."
+
+{% gallery dubai %}
+dubai/1.jpg:: Mall of the Emirates
+dubai/2.jpg:: Mall of the Emirates
+dubai/3.jpg:: Burj Khalifa
+dubai/4.jpg:: Burj Khalifa
+dubai/5.jpg:: Burj Khalifa
+dubai/6.jpg:: Burj Khalifa
+dubai/7.jpg:: Dubai Mall
+dubai/8.jpg:: Dubai Mall
+dubai/9.jpg:: Dubai Mall
+dubai/10.jpg:: Dubai Mall
+dubai/11.jpg:: Burj Khalifa
+{% endgallery %}

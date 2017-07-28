@@ -103,23 +103,6 @@
 	background-color: $inner-background-color;
 	margin-bottom: $spacing-unit;
 
-	.post-content {
-
-		h1, h2, h3, h4 {
-			margin: 20px auto 15px auto;
-		}
-
-		p {
-			padding: 0 $spacing-unit;
-			text-align: justify;
-		}
-
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-	}
-
 	.post-image {
 		width: 100%;
 		padding-top: 48.33%;

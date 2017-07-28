@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables";
+
+.jmt-days {
+	font-size: 1em;
+
+	li {
+		margin-bottom: 10px;
+		list-style: none;
+	}
+
+	li.active {
+
+		a {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+	}
+}
+
+.jmt-map {
+	height: 500px;
+}
+
+.jmt-container {
+	padding: 5px;
+	width: 250px;
+	background-color: #fff;
+}

@@ -34,14 +34,12 @@ module Jekyll
 			    lqip = image['thumbnail'].to_s().sub(/\.jpg/, '@lqip.jpg')
 			    retina = image['thumbnail'].to_s().sub(/\.jpg/, '@2x.jpg')
 
-				images_html << "<div class=\"gallery-item\">"
-				images_html << "<a class=\"gallery-link\" data-lightbox=\"#{@gallery_name}\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
+				images_html << "<a class=\"gallery-item\" href=\"#{image['url']}\" title=\"#{image['caption']}\">"
 				images_html << "<img data-src=\"#{lqip}\" class=\"blur lazyload lazypreload\" alt=\"#{image['caption']}\" />"
 				images_html << "<img data-sizes=\"auto\" data-srcset=\"#{image['thumbnail']} 300w, #{retina} 600w\" class=\"lazyload\" alt=\"#{image['caption']}\" />"
 				images_html << "<noscript><img src=\"#{image['thumbnail']}\" alt=\"#{image['caption']}\" /></noscript>"
-				images_html << "</a>"
 				images_html << "<div class=\"gallery-caption\">#{image['caption']}</div>"
-				images_html << "</div>"
+				images_html << "</a>"
 			end
 			gallery_html = "<div class=\"gallery\">\n#{images_html}\n</div><div class=\"clear\"></div>\n"
 

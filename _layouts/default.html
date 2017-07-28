@@ -27,69 +27,17 @@ layout: compress
           document.documentElement.classList.add('fonts-loaded');
         });
       };
-
-      var jqLoaded = function () {
-        lightbox.option({
-          'resizeDuration': 400,
-          'fadeDuration': 300,
-          'showImageNumberLabel': false
-        });
-
-        if (window.onScriptLoad) {
-          window.onScriptLoad();
-        }
-      };
-
-      var loadDeferredScripts = function() {
-        var scripts = [
-          {
-            name: '{{ "/js/jq_lightbox.min.js" | prepend: site.baseurl }}',
-            onload: jqLoaded
-          },
-          {
-            name: '{{ "/js/picturefill.min.js" | prepend: site.baseurl }}'
-          },
-          {
-            name: '{{ "/js/lazysizes.min.js" | prepend: site.baseurl }}'
-          },
-          {
-            name: '{{"/js/fontfaceobserver.standalone.js" | prepend:site.baseurl }}',
-            onload: initFontFaceObserver
-          }
-        ];
-        for (var i = 0; i < scripts.length; i++) {
-          var script = scripts[i];
-          var element = document.createElement("script");
-          element.src = script.name;
-          if (script.onload) {
-            element.onload = script.onload;
-          }
-          document.body.appendChild(element);
-        }
-      };
-
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredScripts, 0); });
-      else window.addEventListener('load', loadDeferredScripts);
     </script>
+    <script src="{{ "/js/fontfaceobserver.standalone.js" | prepend: site.baseurl }}" async defer onload="initFontFaceObserver()"></script>
+    <script src="{{ "/js/picturefill.min.js" | prepend: site.baseurl }}" async defer></script>
+    <script src="{{ "/js/lazysizes.min.js" | prepend: site.baseurl }}" async defer></script>
 
-    <noscript id="deferred-styles">
+    <link rel="preload" href="{{ "/css/extra.css" | prepend: site.baseurl }}?{% checksum %}css/extra.css{% endchecksum %}" as="style" onload="this.rel='stylesheet'">
+    <noscript>
       <link rel="stylesheet" href="{{ "/css/extra.css" | prepend: site.baseurl }}?{% checksum %}css/extra.css{% endchecksum %}">
-      <link rel="stylesheet" href="{{ "/css/lightbox.min.css" | prepend: site.baseurl }}">
     </noscript>
     <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement);
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
+      {% include loadCSS_relpreload.min.js %}
     </script>
   </body>
 

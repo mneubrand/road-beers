@@ -1,33 +1,37 @@
 ---
 layout: default
 ---
-
-<div class="destinations">
-    <div id="right">
-        {% for category in site.categories %}
-        <button class="accordion"
-                data-category="{{ category[0] }}"></button>
-        <div class="accordionPanel">
-            <ol class="post-list">
-                {% for posts in category %}
-                    {% for post in posts reversed %}
-                        {% if post.url %}
-                        <li data-lat="{{post.lat}}" data-lng="{{post.lng}}"><a href="{{ post.url }}">{{ post.title | prepend: site.baseurl }}</a></li>
-                        {% endif %}
+<style type="text/css">
+    {% capture include_to_scssify %}{% include destinations.scss %}{% endcapture %}
+    {{ include_to_scssify | scssify }}
+</style>
+<div class="page-content">
+    <div class="destinations">
+        <div id="right">
+            {% for category in site.categories %}
+            <button class="accordion"
+                    data-category="{{ category[0] }}"></button>
+            <div class="accordionPanel">
+                <ol class="post-list">
+                    {% for posts in category %}
+                        {% for post in posts reversed %}
+                            {% if post.url %}
+                            <li data-lat="{{post.lat}}" data-lng="{{post.lng}}"><a href="{{ post.url }}">{{ post.title | prepend: site.baseurl }}</a></li>
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
-            </ol>
+                </ol>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div id="left">
+            <div id="map"></div>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div id="left">
-        <div id="map"></div>
-    </div>
-    <div class="clear"></div>
 </div>
-
 <script>
-    window.onScriptLoad = function() {
+    (function() {
         var data = {
             'northamerica': {
                 name: 'North America',
@@ -52,54 +56,60 @@ layout: default
             },
             'asia2': {
                 name: 'Southeast Asia #2'
+            },
+            'europe': {
+                name: 'Europe'
             }
         };
         var markers = [], layer;
 
-        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 161 /* header */ - 60 /* padding */));
-        $('#left').height(height);
-        $('#map').height(height);
+        var height = Math.min(window.innerWidth, Math.min(800, window.innerHeight - 161 /* header */ - 60 /* padding */)) + 'px';
+        document.getElementById('left').style.height = height;
+        document.getElementById('map').style.height = height;
 
         var catChange = function () {
-            var newElem = $(this);
-            var newNext = newElem.next();
-            var currentElem = $('.accordion.active');
-            var currentNext = currentElem.next();
+            var currentElem = document.querySelector('.accordion.active');
+            if(currentElem) {
+                var currentNext = currentElem.nextElementSibling;
+                currentElem.classList.remove('active');
+                currentNext.classList.remove('show');
+            }
 
-            /* Toggle accordion */
-            currentElem.removeClass('active');
-            newElem.toggleClass('active');
-
-            currentNext.removeClass('show');
-            newNext.toggleClass('show');
+            var newElem = this;
+            var newNext = newElem.nextElementSibling;
+            newElem.classList.toggle('active');
+            newNext.classList.toggle('show');
 
             if (!map) {
                 return;
             }
 
             /* Remove all existing markers */
-            for (var i = 0; i < markers.length; i++) {
+            var i;
+            for (i = 0; i < markers.length; i++) {
                 markers[i].setMap(null);
             }
             markers = [];
 
             /* Add new markers and move map to them */
             var bounds = new google.maps.LatLngBounds();
-            newNext.find('.post-list > li').each(function (index, elem) {
-                var lat = $(elem).attr('data-lat').split(',');
-                var lng = $(elem).attr('data-lng').split(',');
+            var listItems = newNext.querySelectorAll('.post-list > li');
+            for (i = 0; i < listItems.length; i++) {
+                var elem = listItems[i];
+                var lat = elem.getAttribute('data-lat').split(',');
+                var lng = elem.getAttribute('data-lng').split(',');
 
-                for (var i = 0; i < lat.length; i++) {
+                for (var j = 0; j < lat.length; j++) {
                     var marker = new google.maps.Marker({
-                        position: {lat: parseFloat(lat[i]), lng: parseFloat(lng[i])},
-                        label: '' + (index + 1),
+                        position: {lat: parseFloat(lat[j]), lng: parseFloat(lng[j])},
+                        label: '' + (i + 1),
                         map: map
                     });
 
                     bounds.extend(marker.getPosition());
                     markers.push(marker);
                 }
-            });
+            }
             map.fitBounds(bounds);
             map.setZoom(Math.min(map.getZoom(), 5));
 
@@ -110,7 +120,7 @@ layout: default
             }
 
             /* If there is a KML layer add it */
-            var index = newElem.attr('data-category');
+            var index = newElem.getAttribute('data-category');
             if (data[index].kml) {
                 if (!data[index].layer) {
                     data[index].layer = new google.maps.KmlLayer({
@@ -123,17 +133,17 @@ layout: default
             }
         };
 
-        var accordion = $('.accordion');
-        accordion.each(function (index, elem) {
-            elem = $(elem);
-            elem.text(data[elem.attr('data-category')]['name']);
-            elem.click(catChange);
+        var accordion = document.querySelectorAll('.accordion');
+        for (var i = 0; i < accordion.length; i++) {
+            var elem = accordion[i];
+            elem.textContent = data[elem.getAttribute('data-category')]['name'];
+            elem.onclick = catChange;
 
-            if (index == accordion.length - 1) {
+            if (i == accordion.length - 1) {
                 elem.click();
             }
-        });
-    };
+        }
+    })();
 
     var map;
     function initMap() {

@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables";
+
+.destinations {
+
+	#left {
+		width: 100%;
+
+		@media (min-width: $content-width) {
+			float: left;
+			width: 930px;
+		}
+
+		#map {
+			width: 100%;
+
+			@media (min-width: $content-width) {
+				width: 930px;
+			}
+		}
+
+		#description {
+			margin-top: 10px;
+		}
+	}
+
+	#right {
+		width: 100%;
+		margin-bottom: 10px;
+
+		@media (min-width: $content-width) {
+			float: right;
+			width: 250px;
+		}
+	}
+
+	button.accordion {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: $spacing-unit / 2;
+		font-size: 1.2em;
+		width: 100%;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+
+		&.active, &:hover {
+			background-color: #ddd;
+		}
+
+		&:after {
+			content: "+";
+			float: right;
+			margin-left: 5px;
+		}
+
+		&.active:after {
+			content: "";
+		}
+	}
+
+	div.accordionPanel {
+		padding: 0 10px 0 25px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.3s ease-in-out;
+		opacity: 0;
+
+		ol {
+			margin: $spacing-unit/2 0px;
+		}
+
+		&.show {
+			max-height: 680px;
+			opacity: 1;
+		}
+	}
+}

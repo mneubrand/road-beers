@@ -1,40 +1,51 @@
 ---
 layout: post
 ---
-<div id="jmt-days" class="jmt-days jmt-container" style="display: none;"></div>
+<style type="text/css">
+    {% capture include_to_scssify %}{% include jmt.scss %}{% endcapture %}
+    {{ include_to_scssify | scssify }}
+</style>
+<div id="jmt-days" class="jmt-days jmt-container"></div>
 {{ content }}
-<div id="jmt-map" class="jmt-map jmt-container" style="display: none;"></div>
+<div id="jmt-map" class="jmt-map jmt-container" style="display:none"></div>
 
 <script>
-    window.onScriptLoad = function() {
+    (function() {
         var margin = 15;
 
         function showContainers() {
-            var postOffset = $('.post').offset();
-            var jmtDays = $('#jmt-days');
-            var jmtMap = $('#jmt-map');
+            var rect = document.querySelector('.post').getBoundingClientRect();
+            var postOffset =  {
+                top: rect.top + document.body.scrollTop,
+                left: rect.left + document.body.scrollLeft
+            };
+            var jmtDays = document.getElementById('jmt-days');
+            var jmtMap = document.getElementById('jmt-map');
 
-            if (postOffset.left > jmtDays.width() + 2 * margin) {
-                jmtDays.css('display', 'block');
-                jmtDays.css('position', 'absolute');
-                jmtDays.css('left', (postOffset.left - jmtDays.width()) / 2);
-                jmtDays.css('top', postOffset.top);
+            if (postOffset.left > jmtDays.offsetWidth + 2 * margin) {
+                jmtDays.style.display = 'block';
+                jmtDays.style.position = 'absolute';
+                jmtDays.style.left = ((postOffset.left - jmtDays.offsetWidth) / 2) + 'px';
+                jmtDays.style.top = postOffset.top + 'px';
 
                 var html = '<ul>';
-                $('.post-content h1').each(function (index, elem) {
-                    html += '<li><a href="#day' + (index+1) + '">' + elem.innerText + '</a></li>';
-                    $(elem).attr('id', 'day' + (index+1));
-                });
+                var listItems = document.querySelectorAll('.post-content h1');
+                var i;
+                for (i = 0; i < listItems.length; i++) {
+                    var elem = listItems[i];
+                    html += '<li><a href="#day' + (i+1) + '">' + elem.innerText + '</a></li>';
+                    elem.setAttribute('id', 'day' + (i+1));
+                }
                 html += '</ul>';
-                jmtDays.html(html);
+                jmtDays.innerHTML = html;
 
-                //jmtMap.css('display', 'block');
-                jmtMap.css('position', 'absolute');
-                jmtMap.css('right', (postOffset.left - jmtMap.width()) / 2);
-                jmtMap.css('top', postOffset.top);
+                /*jmtMap.css('display', 'block');*/
+                jmtMap.style.position = 'absolute';
+                jmtMap.style.right = ((postOffset.left - jmtMap.offsetWidth) / 2) + 'px';
+                jmtMap.style.top = postOffset.top + 'px';
             } else {
-                jmtDays.css('display', 'none');
-                jmtMap.css('display', 'none');
+                jmtDays.style.display = 'none';
+                jmtMap.style.display = 'none';
             }
 
             positionContainers();
@@ -42,50 +53,57 @@ layout: post
         }
 
         function positionContainers() {
-            var postOffset = $('.post').offset();
-            var scroll = $(window).scrollTop();
-            var jmtDays = $('.jmt-container');
+            var rect = document.querySelector('.post').getBoundingClientRect();
+            var postOffset =  {
+                top: rect.top + document.body.scrollTop,
+                left: rect.left + document.body.scrollLeft
+            };
+            var scroll = document.body.scrollTop;
+            var jmtDays =  document.querySelector('.jmt-container');
 
             if (scroll >= postOffset.top + margin) {
-                jmtDays.css('position', 'fixed');
-                jmtDays.css('top', margin);
+                jmtDays.style.position = 'fixed';
+                jmtDays.style.top = margin + 'px';
             } else {
-                jmtDays.css('position', 'absolute');
-                jmtDays.css('top', postOffset.top);
+                jmtDays.style.position = 'absolute';
+                jmtDays.style.top = postOffset.top + 'px';
             }
         }
 
         function highlightActiveDay(updateHash) {
             var closest;
-            $('.post-content h1').each(function (index, elem) {
-                elem = $(elem);
-                var offset = $(window).scrollTop();
-                if (!closest || Math.abs(elem.offset().top - offset) < Math.abs(closest.offset().top - offset)) {
+
+            var listItems = document.querySelectorAll('.post-content h1');
+            var i, elem;
+            for (i = 0; i < listItems.length; i++) {
+                elem = listItems[i];
+                if (!closest || Math.abs(elem.getBoundingClientRect().top) < Math.abs(closest.getBoundingClientRect().top)) {
                     closest = elem;
                 }
-            });
+            }
 
-            $('.jmt-days li').each(function (index, elem) {
-                elem = $(elem);
-                if(elem.text() === closest.text()) {
-                    elem.addClass('active');
+            listItems = document.querySelectorAll('.jmt-days li');
+            for (i = 0; i < listItems.length; i++) {
+                elem = listItems[i];
+                if(elem.textContent === closest.textContent) {
+                    elem.classList.add('active');
                 } else {
-                    elem.removeClass('active');
+                    elem.classList.remove('active');
                 }
-            });
+            }
 
             if(updateHash) {
-                history.replaceState(undefined, undefined, '#' + closest.attr('id'));
+                history.replaceState(undefined, undefined, '#' + closest.getAttribute('id'));
             }
         }
 
         showContainers(); /* TODO also bind that to resize */
 
-        $(window).scroll(function () {
+        document.onscroll = function () {
             positionContainers();
             highlightActiveDay(true);
-        });
-    };
+        };
+    })();
 
     var map;
     function initMap() {

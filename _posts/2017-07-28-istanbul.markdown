@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Istanbul"
+date:   2017-07-28 01:00 +0800
+categories: europe
+lat: 41.0054958
+lng: 28.8720968
+preview: istanbul/15.jpg
+---
+
+There are some cities where you barely make it out of the airport, bus or train terminal and have already decided you've fallen in love--Istanbul is one of those cities.
+
+<!--more-->
+
+We left the airport around 10:30pm on a Sunday night and as we drove it became obvious the city was still very much alive. Much of the route we took curved around the waterfront, where any open
+park or even small strip of grass was covered with people barbecuing and enjoying the warm summer night. We were so excited to arrive in Istanbul, unfortunately Megan was sick--again. Every time
+we fly longer than an hour the chances that she comes off the plane sick are pretty high. She'd been feeling it come on while in Dubai and it had officially taken over once we arrived in Istanbul.
+For the first two days she powered through the day and we slept early, but by the third day she needed to stay in.
+
+Our first morning in Istanbul was spent doing all of the typical, yet wonderful, tourist attractions. We visited the Blue Mosque, Topkapi Palace, and Hagia Sophia. One of the best options for
+visiting Istanbul is to purchase a museum pass for 24 USD. It paid for itself with just the palace visit (including Harem Quarters) and the Hagia Sophia. The Blue Mosque is free to enter, but they
+have a strict proper clothing etiquette and are happy to provide you with a robe and/or head scarf if needed. The architecture of the blue mosque is breathtaking and it's easy to understand why
+it's one of the top tourist destinations. By the time we reached the palace it was a bit busy and could be difficult to navigate around the tourists, however, the Harem Quarter which is included
+in the museum pass, but not just the ticket, was much more quiet and Megan's favorite part of the palace. We took a break from sightseeing to share some lunch and had a fun conversation with one
+of the "tour guides" who had taken a beer break. He discussed with us some helpful information about Istanbul and Turks including this gem as he left "Alright, going to cheat some tourists now,
+but just a little bit, I swear, only medium..10 percent." He was very honest with us about how to cheat properly, there are standards of course. While the Blue Mosque is incredibly impressive
+from the outside, the opposite is true for the Hagia Sophia. While not so impressive outside, the minute you walk in your breath is taken away--she's gorgeous.
+
+The next day we went down to the Bosphorus Straight to take a cruise--well, really a ferry. We avoided the overly expensive tourist cruises and instead took a ferry that essentially takes the same
+route down the river. The ferry cost 4.25 USD and took about 1.5 hours round trip, there are longer ones, but this was enough for us. As Megan was increasingly feeling unwell, it was a relaxing way
+to take in the sights and enjoy the fresh air. From there we walked to the Archaeological Museum. Located on beautiful grounds and held within 4 different buildings, one can see that this museum
+must have been amazing in it's heyday. A lot of the museum is currently closed due to renovations and it's easy to see why--the exhibits that we could view appeared outdated. We later visited the
+Basilica Cistern, which is also located close to the main attractions we visited the previous day. We enjoyed this quite a bit, the columns all lit up provide such a beautiful, yet eerie atmosphere.
+Sadly, by this point in our day Megan needed to throw in the towel.
+
+The following day Markus went out on his own to visit the Grand Bazaar and the Suleymaniye Mosque in the morning. The Grand Bazaar was still pretty quiet and peaceful in the morning. All the
+shopkeepers were still busy having their morning coffee or tea and opening up their stalls so they didn't have time to try and sell you stuff. Suleymaniye Mosque is a short walk from the Bazaar and
+Markus favorite Mosque in Istanbul. It is surrounded by some green space on top of a hill and is a great lookout point. In the afternoon Markus visited Taksim Square and the Ataturk Library nearby.
+He wasn't impressed by either because of all the construction going on in that area. His last stop of the day was the Galata Tower which offers some nice views over the city especially the
+Sultanahmet neighborhood.
+
+While we were a bit nervous to visit Istanbul considering their current political climate, we wished we'd had more time there. One could easily spend a week in Istanbul and not get bored. We will
+certainly be back with plans to explore more of Turkey.
+
+{% gallery istanbul %}
+istanbul/1.jpg:: Blue Mosque
+istanbul/2.jpg:: Blue Mosque
+istanbul/3.jpg:: Blue Mosque
+istanbul/4.jpg:: Blue Mosque
+istanbul/5.jpg:: Hagia Sophia
+istanbul/6.jpg:: Sultanahmet Square
+istanbul/7.jpg:: Topkapi Palace
+istanbul/8.jpg:: Topkapi Palace
+istanbul/9.jpg:: Topkapi Palace
+istanbul/10.jpg:: Hagia Sophia
+istanbul/11.jpg:: Hagia Sophia
+istanbul/12.jpg:: Blue Mosque
+istanbul/13.jpg:: Dolmabahce Palace
+istanbul/14.jpg:: Sultan Mehmet Brige
+istanbul/15.jpg:: Galata Bridge
+istanbul/16.jpg:: Basilica Cistern
+istanbul/17.jpg:: Basilica Cistern
+istanbul/18.jpg:: Grand Bazaar
+istanbul/19.jpg:: Grand Bazaar
+istanbul/20.jpg:: Suleymaniye Mosque
+istanbul/21.jpg:: Suleymaniye Mosque
+istanbul/22.jpg:: Suleymaniye Mosque
+istanbul/23.jpg:: Taksim Square
+istanbul/24.jpg:: View from Galata Tower
+{% endgallery %}

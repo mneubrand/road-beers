@@ -52,7 +52,22 @@ layout: default
             {% endif %}
         </span>
 
-        {% for page in (1..paginator.total_pages) %}
+        {% assign min = paginator.page | minus: 2 %}
+        {% if min >= 1 %}
+        {% assign start = min %}
+        {% else %}
+        {% assign start = 1 %}
+        {% endif %}
+
+        {% assign max = start | plus: 4 %}
+        {% if max <= paginator.total_pages %}
+        {% assign end = max %}
+        {% else %}
+        {% assign end = paginator.total_pages %}
+        {% endif %}
+
+
+        {% for page in (start..end) %}
         <span>
         {% if page == paginator.page %}
         <a href="#" class="active">{{ page }}</a>
