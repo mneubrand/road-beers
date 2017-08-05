@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Sofia"
+date:   2017-08-02 01:00 +0800
+categories: europe
+lat: 42.695537
+lng: 23.2539071
+preview: sofia/4.jpg
+---
+
+We were sad to leave Istanbul, but also excited to begin our Balkan adventure in Bulgaria.
+
+<!--more-->
+
+We left Istanbul around 8am for a bus bound for Sofia, Bulgaria. We had apparently made it out of Istanbul just in time because a
+[summer storm](https://www.theguardian.com/world/2017/jul/27/people-injured-as-summer-storm-strikes-istanbul-turkey-floods) blasted through the city just a few hours later. As we left the city we
+could actually see the storm brewing in the distance--it looked menacing. We also had some hailstones slam into the windshield of the bus, strong enough to force the driver to pull over and
+investigate. As we reached the border crossing we picked up a passenger who was talking about intense hail, but we never saw it. Once we passed the border, the weather appeared to quiet down a bit.
+The entire journey took us about 10 hours, mainly because we took various lengthy "smoke" breaks.
+
+Compared to the electric pulse that permeates through Istanbul, Sofia is oddly quiet. When we arrived it was only 8pm, but all of the shops and restaurants were either already closed or closing.
+We figured it may be because it's Thursday and the weekend will be more lively--nope. The city in general appears to operate between the hours of 10/11am-6/7pm. Our first full day in Sofia we
+visited the main tourist spots including Alexandar Nevsky Cathedral, Saint Nikolas Church, and Vitosha Boulevard. While all of these locations are beautiful, the highlight of the day was honestly
+lunch. We ate at a restaurant [Hadjidraganovite Izbi](http://www.izbite.com/en), a typical Bulgarian restaurant. While the street outside was quiet, as soon as we walked in this place was filled
+with boisterous locals. This was the moment we'd been looking forward to for some months, so we ordered like kings. A large lamb kebab plate with a skewer reaching for the ceiling and a plate of
+Bulgarian cheese and dried meat, all washed down with local wine and beer--perfection.
+
+The next morning we decided to take a day trip to the Rila Monastery, located a bit over 70 miles outside of the city and in the Rila Mountains. We chose to forgo the typical pricey tours that 
+would take us their and instead opted for public transportation taking the tram to the outskirts of the city and boarding a bus that takes you directly to the entrance for a total of 11 EUR.
+The architecture of the monastery nestled amongst the mountains and residing by the Rsika River make it well worth the journey. While there's not much to do there, it's a peaceful setting and
+allows you to take a break and just enjoy the scenery.
+
+{% gallery sofia %}
+sofia/1.jpg:: Saint Sofia Monument
+sofia/2.jpg:: Former Communist Party House
+sofia/3.jpg:: Saint Nikolas Church
+sofia/4.jpg:: Alexandar Nevsky Cathedral
+sofia/5.jpg:: Knyazheska Garden
+sofia/6.jpg:: Hadjidraganovite Izbi
+sofia/7.jpg:: Sveta Nedelya
+sofia/8.jpg:: Rila Monastery
+sofia/9.jpg:: Rila Monastery
+sofia/10.jpg:: Rila Monastery
+sofia/11.jpg:: Rila Monastery
+{% endgallery %}
