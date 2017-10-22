@@ -8,6 +8,10 @@
 	.post-content {
 		padding: $spacing-unit 0;
 
+		a {
+			text-decoration: underline;
+		}
+
 		h1, h2, h3, h4 {
 			padding: 0 $spacing-unit;
 			margin: 20px auto 15px auto;

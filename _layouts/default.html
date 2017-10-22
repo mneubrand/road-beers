@@ -25,6 +25,8 @@ layout: compress
 
         Promise.all([fontA.load(), fontB.load()]).then(function () {
           document.documentElement.classList.add('fonts-loaded');
+        }, function (err) {
+          console.error('Loading fonts failed: ' + err);
         });
       };
     </script>

@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Finishing our journey"
+date:   2017-09-30 01:00 +0800
+categories: europe
+lat: 48.220778,35.2481189,36.4072716,37.9908997
+lng: 16.3100205,24.3516469,25.3505912,23.70332
+preview: end/1.jpg
+---
+
+After spending some time with Markus' family and friends in Austria and a trip to Greece with Markus' parents our journey has come to an end for now.
+
+<!--more-->
+
+In our year of travel we stayed in over 100 different accommodations in over 30 countries and travelled via bus, car, train, ship and plane. For
+now our journey has come to an end and we're back in the U.S. and excited to be moving to Chicago soon.
+
+<div style="margin: 0 auto; width: 800px; height: 600px">
+<iframe src="https://www.google.com/maps/d/embed?mid=1hCcNw-eJdMBSpi20NhgO6tjKdW8" width="800" height="600"></iframe>
+</div>

@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Zurich"
+date:   2017-08-22 01:00 +0800
+categories: europe
+lat: 47.3775499
+lng: 8.4666756
+preview: zurich/5.jpg
+---
+
+Switzerland feels a bit like a fairytale--however, it comes with a hefty pricetag.
+
+<!--more-->
+
+The overnight train from Zagreb to Zurich was not exactly comfortable. We went with the cheapest option of the 6 person bunk and ended up with the top most bunks. There really wasn't much room for
+movement and as everyone had luggage it made it even more difficult. We had purchased our tickets before we knew that our friends would be joining us and ended up being in separate compartments.
+The next morning we arrived in Zurich and temporarily parted ways with our friends as we were both there to meet other friends (we would meet again in Munich). The purpose of our visit to Zurich
+was to meet friends, Jan and Alice, who had recently relocated there from Vienna. They live in a beautiful village just 10 minutes outside Zurich with lovely walking paths and access to stores
+nearby. As this was our second time in Zurich, we spent more time in other parts of Switzerland. For example, the day we arrived we drove to Lucerne to take a stroll around the city--it's absolutely
+beautiful.
+
+The next day we all went to Zurich to meet another friend of ours, Anet and her husband Iker. We enjoyed the weather at Frau Gerolds Garten--something like a beer garden, but with many options of
+cuisine and art. As Anet had also studied in Denmark with us, it was really nice to catch up with her and share our old stories. The following morning we went back to Lucerne, but this time to take
+a brunch cruise on Lake Lucerne--this was outstanding! The views of the mountains from the cruise were phenomenal, some even still contained snow caps. The food was also delicious with an assortment
+of fresh bread, cheese, and meats. Jan used this opportunity to sell us on the magical wonderland of Switzerland and why it's a great place to live--Megan is fully convinced, but Markus is still
+skeptical. In the afternoon Jan drove us around to some smaller villages on Lake Lucerne, including the one he works at Vitznau. The next morning we went with Jan to his work and from there took
+two buses to take us to a mountain to hike. The efficiency of the buses was amazing, on time to the dot, but the price was a bit rough to swallow at 22 CHF for a day ticket. We hiked the Stoos Ridge.
+While it was a bit difficult and pricey to access, it was well worth it. The ridge takes in 360 degree views that are outstanding. While in the US it takes a lot of effort to get to these types of
+views, the infrastructure here allows for those less mobile to reach these beautiful peaks, including a pair of nuns that passed us on the trail.
+
+{% gallery zurich %}
+zurich/1.jpg:: Lucerne
+zurich/2.jpg:: Lucerne
+zurich/3.jpg:: Frau Gerolds Garten
+zurich/4.jpg:: Lake Lucerne
+zurich/5.jpg:: Lake Lucerne
+zurich/6.jpg:: Lake Lucerne
+zurich/7.jpg:: Lake Lucerne
+zurich/8.jpg:: Vitznau
+zurich/9.jpg:: Stoos
+zurich/10.jpg:: Stoos Ridge Trail
+zurich/11.jpg:: Stoos Ridge Trail
+zurich/12.jpg:: Stoos Ridge Trail
+zurich/13.jpg:: Stoos Ridge Trail
+zurich/14.jpg:: Stoos Ridge Trail
+{% endgallery %}
